@@ -1,0 +1,63 @@
+"use client";
+import { useState } from "react";
+
+const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  return (
+    <header className="bg-blue-900 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo */}
+          <a href="#" className="text-2xl font-bold">
+            Alfa Biztosítás
+          </a>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-6">
+            <a href="#services" className="hover:text-blue-300 transition">Szolgáltatásaink</a>
+            <a href="#about" className="hover:text-blue-300 transition">Bemutatkozás</a>
+            <a href="#contact" className="hover:text-blue-300 transition">Kapcsolat</a>
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-blue-600"
+            onClick={toggleMenu}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {isMobileMenuOpen && (
+        <div className="bg-blue-800 md:hidden">
+          <nav className="flex flex-col space-y-4 p-4">
+            <a href="#services" className="text-white hover:text-blue-300 transition">Szolgáltatásaink</a>
+            <a href="#about" className="text-white hover:text-blue-300 transition">Bemutatkozás</a>
+            <a href="#contact" className="text-white hover:text-blue-300 transition">Kapcsolat</a>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Navbar;
