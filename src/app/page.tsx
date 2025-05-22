@@ -4,6 +4,7 @@
 export default function Home() {
   return (
     <div className="text-white bg-primary-blue">
+    
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row py-12 px-6 sm:px-12 lg:px-24">
         <div className="md:w-1/2 flex items-center justify-center">
@@ -161,79 +162,144 @@ export default function Home() {
         </div>
       </section>
 
-      {/* When Needed Section */}
+      {/* D&O Insurance Benefits - Main Title */}
       <section className="py-12 px-6 sm:px-12 lg:px-24 bg-primary-blue border-t border-secondary-blue">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-8 text-center font-antonio">
-            MIBEN SEGÍT AZ ÜGYVEZETŐ FELELŐSSÉGBIZTOSÍTÁS?
+            MIBEN SEGÍT AZ ÜGYVEZETŐI FELELŐSSÉGBIZTOSÍTÁS?
           </h2>
-          <div className="flex justify-center mb-8">
-            <div className="w-full md:w-3/4 text-center">
-              <p className="text-lg font-telegraf">
-                A D&O biztosítás (Vezetői Felelősségbiztosítás) finanszírozza a
-                jogi védekezést és a kártérítést
-              </p>
+          <p className="text-lg font-telegraf text-center mb-8 max-w-3xl mx-auto">
+            A D&O Biztosítás Létfontosságú Fedezetei
+            <br />
+            (mindig a konkrét kötvény a mérvadó)
+          </p>
+        </div>
+      </section>
+
+      {/* D&O Insurance Benefits - First Row */}
+      <section className="pb-8 px-6 sm:px-12 lg:px-24 bg-primary-blue">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="relative group overflow-hidden">
+              <img
+                src="/legal-protection.jpg"
+                alt="Jogi védekezés"
+                className="w-full h-72 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  JOGI VÉDEKEZÉS
+                  <br />
+                  KÖLTSÉGEINEK FEDEZÉSE
+                </h3>
+                <p className="text-white font-telegraf">
+                  Átvállalja a jogi eljárások minden indokolt költségét (ügyvédi
+                  díjak, bírósági költségek), akár a bűnösség jogerős
+                  kimondásáig büntetőügyekben is.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="flex justify-center mb-12">
-            <img
-              src="/handshake.jpg"
-              alt="Business handshake"
-              className="rounded-lg max-h-64 object-cover"
-            />
+            <div className="relative group overflow-hidden">
+              <img
+                src="/claim-settlement.jpg"
+                alt="Kártérítési összegek"
+                className="w-full h-72 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  KÁRTÉRÍTÉSI ÖSSZEGEK
+                  <br />
+                  KIFIZETÉSE
+                </h3>
+                <p className="text-white font-telegraf">
+                  Segít a jogosan megítélt kártérítési összegek megfizetésében a
+                  biztosítási limit erejéig.
+                </p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden">
+              <img
+                src="/businessman-presses-face-emoji-concept-evaluating-customer-service.jpg"
+                alt="Bírságok fedezete"
+                className="w-full h-72 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  BIZONYOS BÍRSÁGOK
+                  <br />
+                  FEDEZETE
+                </h3>
+                <p className="text-white font-telegraf">
+                  Bizonyos típusú bírságokra és adminisztratív szankciókra is
+                  fedezetet nyújthat a biztosítási szerződés feltételei szerint.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Services Grid Section */}
-      <section className="py-12 px-6 sm:px-12 lg:px-24 bg-secondary-blue">
+      {/* D&O Insurance Benefits - Second Row */}
+      <section className="pt-8 pb-16 px-6 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold mb-8 text-center font-antonio">
-            MIBEN SEGÍT AZ ÜGYVEZETŐ FELELŐSSÉGBIZTOSÍTÁS?
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-primary-blue p-6 rounded-lg">
-              <img
-                src="/legal-protection.jpg"
-                alt="Legal protection"
-                className="w-full h-40 object-cover rounded mb-4"
-              />
-              <h3 className="text-xl font-semibold mb-2 font-antonio">
-                JOGI VÉDELEM FINANSZÍROZÁSA
-              </h3>
-              <p className="font-interphases">
-                A biztosító átvállalja a jogi védekezéssel kapcsolatos
-                költségeket, beleértve az ügyvédi díjakat és perköltségeket.
-              </p>
-            </div>
-            <div className="bg-primary-blue p-6 rounded-lg">
-              <img
-                src="/claim-settlement.jpg"
-                alt="Claim settlement"
-                className="w-full h-40 object-cover rounded mb-4"
-              />
-              <h3 className="text-xl font-semibold mb-2 font-antonio">
-                KÁRTÉRÍTÉSI IGÉNYEK RENDEZÉSE
-              </h3>
-              <p className="font-interphases">
-                Fedezetet nyújt a jogos kártérítési igények kifizetésére,
-                megvédve az Ön személyes vagyonát.
-              </p>
-            </div>
-            <div className="bg-primary-blue p-6 rounded-lg">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="relative group overflow-hidden">
               <img
                 src="/reputation-defense.jpg"
-                alt="Reputation defense"
-                className="w-full h-40 object-cover rounded mb-4"
+                alt="Jó hírnév helyreállítása"
+                className="w-full h-72 object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2 font-antonio">
-                REPUTÁCIÓ VÉDELME
-              </h3>
-              <p className="font-interphases">
-                Segít helyreállítani az Ön és a vállalat hírnevét
-                krízishelyzetben, szakértői támogatással.
-              </p>
+              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  JÓ HÍRNÉV
+                  <br />
+                  HELYREÁLLÍTÁSÁNAK
+                  <br />
+                  TÁMOGATÁSA
+                </h3>
+                <p className="text-white font-telegraf">
+                  A biztosítás fedezetet nyújthat a hírnévvédelemmel kapcsolatos
+                  költségekre, beleértve a PR és kommunikációs szakértők díjait.
+                </p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden">
+              <img
+                src="/man-stands-front-cross-that-says-word-it.jpg"
+                alt="Múltbeli tevékenység"
+                className="w-full h-72 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  MÚLTBELI TEVÉKENYSÉG
+                  <br />
+                  FEDEZETE
+                </h3>
+                <p className="text-white font-telegraf">
+                  A biztosítás kiterjed olyan múltbeli tevékenységekre is,
+                  amelyek a szerződés megkötése előtt történtek, de a kárigény
+                  később merül fel.
+                </p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden">
+              <img
+                src="/close-up-man-hand-holding-crystal-ball.jpg"
+                alt="Védelem távozás után"
+                className="w-full h-72 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  VÉDELEM TÁVOZÁS
+                  <br />
+                  UTÁN IS
+                </h3>
+                <p className="text-white font-telegraf">
+                  A biztosítás akkor is fedezetet nyújt, ha a vezető már
+                  elhagyta a vállalatot, de korábbi tisztségével kapcsolatban
+                  merül fel kártérítési igény.
+                </p>
+              </div>
             </div>
           </div>
         </div>
