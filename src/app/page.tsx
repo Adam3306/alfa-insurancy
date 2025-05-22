@@ -68,7 +68,7 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="bg-secondary-blue p-6 rounded-lg">
+            <div className="bg-secondary-blue p-6 rounded-lg faq-card">
               <h3 className="text-xl font-semibold mb-3 font-antonio">
                 SZEMÉLYES FELELŐSSÉG A PÉL. SZERINT
               </h3>
@@ -77,7 +77,7 @@ export default function Home() {
                 személyektől elvárható gondossággal köteles ellátni.
               </p>
             </div>
-            <div className="bg-secondary-blue p-6 rounded-lg">
+            <div className="bg-secondary-blue p-6 rounded-lg faq-card">
               <h3 className="text-xl font-semibold mb-3 font-antonio">
                 BÜNTETŐJOGI KÖVETKEZMÉNYEK
               </h3>
@@ -86,19 +86,19 @@ export default function Home() {
                 jogszabálysértések esetén.
               </p>
             </div>
-            <div className="bg-secondary-blue p-6 rounded-lg text-center flex flex-col items-center justify-center">
+            <div className="bg-secondary-blue p-6 rounded-lg text-center flex flex-col items-center justify-center faq-card">
               <h3 className="text-xl font-semibold mb-3 font-antonio">
                 BŐVEBB INFÓ
               </h3>
-              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg mt-auto font-telegraf">
+              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg mt-auto font-telegraf cta-button">
                 TUDJ MEG TÖBBET
               </button>
             </div>
-            <div className="bg-secondary-blue p-6 rounded-lg text-center flex flex-col items-center justify-center">
+            <div className="bg-secondary-blue p-6 rounded-lg text-center flex flex-col items-center justify-center faq-card">
               <h3 className="text-xl font-semibold mb-3 font-antonio">
                 BŐVEBB INFÓ
               </h3>
-              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg mt-auto font-telegraf">
+              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg mt-auto font-telegraf cta-button">
                 TUDJ MEG TÖBBET
               </button>
             </div>
@@ -110,7 +110,7 @@ export default function Home() {
       <section className="py-12 px-6 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-            <div className="bg-primary-blue p-6 rounded-lg flex flex-col items-center justify-between">
+            <div className="bg-primary-blue p-6 rounded-lg flex flex-col items-center justify-between faq-card">
               <h3 className="text-xl font-semibold mb-3 text-center font-antonio">
                 EVENT GYANÚS
               </h3>
@@ -118,11 +118,11 @@ export default function Home() {
                 Ön egy vezetőként felelős a vállalat eseményeiért és azok
                 következményeiért.
               </p>
-              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg font-telegraf">
+              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg font-telegraf cta-button">
                 TUDJ MEG TÖBBET
               </button>
             </div>
-            <div className="bg-primary-blue p-6 rounded-lg flex flex-col items-center justify-between">
+            <div className="bg-primary-blue p-6 rounded-lg flex flex-col items-center justify-between faq-card">
               <h3 className="text-xl font-semibold mb-3 text-center font-antonio">
                 SPECIÁLIS ESETEK
               </h3>
@@ -130,29 +130,29 @@ export default function Home() {
                 Speciális esetek, amelyek vezetői felelősséget vonnak maguk
                 után.
               </p>
-              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg font-telegraf">
+              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg font-telegraf cta-button">
                 TUDJ MEG TÖBBET
               </button>
             </div>
-            <div className="bg-primary-blue p-6 rounded-lg flex flex-col items-center justify-between">
+            <div className="bg-primary-blue p-6 rounded-lg flex flex-col items-center justify-between faq-card">
               <h3 className="text-xl font-semibold mb-3 text-center font-antonio">
                 BŐVEBB INFÓ
               </h3>
               <p className="text-center mb-4 font-telegraf">
                 További információk a vezetői felelősségről és kockázatokról.
               </p>
-              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg font-telegraf">
+              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg font-telegraf cta-button">
                 TUDJ MEG TÖBBET
               </button>
             </div>
-            <div className="bg-primary-blue p-6 rounded-lg flex flex-col items-center justify-between">
+            <div className="bg-primary-blue p-6 rounded-lg flex flex-col items-center justify-between faq-card">
               <h3 className="text-xl font-semibold mb-3 text-center font-antonio">
                 BŐVEBB INFÓ
               </h3>
               <p className="text-center mb-4 font-telegraf">
                 További információk a D&O felelősségbiztosításról.
               </p>
-              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg font-telegraf">
+              <button className="bg-light-blue hover:bg-highlight-blue py-2 px-4 rounded-lg font-telegraf cta-button">
                 TUDJ MEG TÖBBET
               </button>
             </div>
@@ -178,13 +178,13 @@ export default function Home() {
       <section className="pb-8 px-6 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="relative group overflow-hidden">
+            <div className="relative rounded-lg overflow-hidden image-card">
               <img
                 src="/legal-protection.jpg"
                 alt="Jogi védekezés"
                 className="w-full h-72 object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                   JOGI VÉDEKEZÉS
                   <br />
@@ -197,13 +197,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative group overflow-hidden">
+            <div className="relative rounded-lg overflow-hidden image-card">
               <img
                 src="/claim-settlement.jpg"
                 alt="Kártérítési összegek"
                 className="w-full h-72 object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                   KÁRTÉRÍTÉSI ÖSSZEGEK
                   <br />
@@ -215,13 +215,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative group overflow-hidden">
+            <div className="relative rounded-lg overflow-hidden image-card">
               <img
                 src="/businessman-presses-face-emoji-concept-evaluating-customer-service.jpg"
                 alt="Bírságok fedezete"
                 className="w-full h-72 object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                   BIZONYOS BÍRSÁGOK
                   <br />
@@ -241,13 +241,13 @@ export default function Home() {
       <section className="pt-8 pb-16 px-6 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="relative group overflow-hidden">
+            <div className="relative rounded-lg overflow-hidden image-card">
               <img
                 src="/reputation-defense.jpg"
                 alt="Jó hírnév helyreállítása"
                 className="w-full h-72 object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                   JÓ HÍRNÉV
                   <br />
@@ -261,13 +261,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative group overflow-hidden">
+            <div className="relative rounded-lg overflow-hidden image-card">
               <img
                 src="/man-stands-front-cross-that-says-word-it.jpg"
                 alt="Múltbeli tevékenység"
                 className="w-full h-72 object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                   MÚLTBELI TEVÉKENYSÉG
                   <br />
@@ -280,13 +280,13 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative group overflow-hidden">
+            <div className="relative rounded-lg overflow-hidden image-card">
               <img
                 src="/close-up-man-hand-holding-crystal-ball.jpg"
                 alt="Védelem távozás után"
                 className="w-full h-72 object-cover"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-end">
+              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                   VÉDELEM TÁVOZÁS
                   <br />
@@ -349,21 +349,21 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4">
               <a
                 href="#contact"
-                className="bg-light-blue hover:bg-highlight-blue text-white py-4 px-8 rounded-full flex items-center justify-between min-w-[320px]"
+                className="bg-light-blue hover:bg-highlight-blue text-white py-4 px-8 rounded-full flex items-center justify-between min-w-[320px] cta-button"
               >
                 <span className="font-antonio text-lg">
                   INGYENES AJÁNLATOT KÉREK
                 </span>
-                <span className="text-2xl">&raquo;</span>
+                <span className="text-2xl arrow">&raquo;</span>
               </a>
               <a
                 href="#contact"
-                className="bg-light-blue hover:bg-highlight-blue text-white py-4 px-8 rounded-full flex items-center justify-between min-w-[320px]"
+                className="bg-light-blue hover:bg-highlight-blue text-white py-4 px-8 rounded-full flex items-center justify-between min-w-[320px] cta-button"
               >
                 <span className="font-antonio text-lg">
                   KÉRDÉSEM VAN / KONZULTÁCIÓT KÉREK!
                 </span>
-                <span className="text-2xl">&raquo;</span>
+                <span className="text-2xl arrow">&raquo;</span>
               </a>
             </div>
           </div>
@@ -389,13 +389,13 @@ export default function Home() {
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="border border-secondary-blue p-6 rounded-lg">
+            <div className="border border-secondary-blue p-6 rounded-lg faq-card">
               <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
                 MI AZ A PTK. SZERINTI ÜGYVEZETŐI FELELŐSSÉG, ÉRTHETŐEN?
               </h3>
             </div>
 
-            <div className="border border-secondary-blue p-6 rounded-lg">
+            <div className="border border-secondary-blue p-6 rounded-lg faq-card">
               <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
                 MIBEN MÁS EZ, MINT A CÉGÜNK "NORMÁL" FELELŐSSÉGBIZTOSÍTÁSA?
               </h3>
@@ -403,14 +403,14 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="border border-secondary-blue p-6 rounded-lg">
+            <div className="border border-secondary-blue p-6 rounded-lg faq-card">
               <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
                 MI TÖRTÉNIK, HA ELHAGYOM A VEZETŐI POZÍCIÓT? VÉGE A
                 FELELŐSSÉGEMNEK?
               </h3>
             </div>
 
-            <div className="border border-secondary-blue p-6 rounded-lg">
+            <div className="border border-secondary-blue p-6 rounded-lg faq-card">
               <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
                 MIKOR NEM FIZET A D&O BIZTOSÍTÁS?
               </h3>
@@ -418,7 +418,7 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center">
-            <div className="border border-secondary-blue p-6 rounded-lg w-full md:w-1/2">
+            <div className="border border-secondary-blue p-6 rounded-lg w-full md:w-1/2 faq-card">
               <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
                 MI TÖRTÉNIK, HA FELSZÁMOLÁS ALÁ KERÜL A CÉG?
               </h3>
@@ -512,7 +512,7 @@ export default function Home() {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-highlight-blue hover:bg-light-blue text-white py-3 px-6 rounded-lg font-medium text-lg font-antonio"
+                className="bg-highlight-blue hover:bg-light-blue text-white py-3 px-6 rounded-lg font-medium text-lg font-antonio cta-button"
               >
                 AJÁNLATKÉRÉS KÜLDÉSE
               </button>
