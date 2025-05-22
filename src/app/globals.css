@@ -2,20 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Antonio';
+  src: url('/fonts/Antonio-Regular.woff2') format('woff2'),
+       url('/fonts/Antonio-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Antonio';
+  src: url('/fonts/Antonio-Bold.woff2') format('woff2'),
+       url('/fonts/Antonio-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('/fonts/Telegraf-Regular.woff2') format('woff2'),
+       url('/fonts/Telegraf-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('/fonts/Telegraf-Bold.woff2') format('woff2'),
+       url('/fonts/Telegraf-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Interphases';
+  src: url('/fonts/TTInterphases-Regular.woff2') format('woff2'),
+       url('/fonts/TTInterphases-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Interphases';
+  src: url('/fonts/TTInterphases-Bold.woff2') format('woff2'),
+       url('/fonts/TTInterphases-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-blue: #102550;
+  --secondary-blue: #1A3A76;
+  --light-blue: #2C4F99;
+  --highlight-blue: #3B67C1;
+  --text-light: #FFFFFF;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Telegraf', sans-serif;
+  background-color: var(--primary-blue);
+  color: var(--text-light);
 }
