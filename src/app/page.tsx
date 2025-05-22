@@ -1,10 +1,8 @@
 "use client";
 
-
 export default function Home() {
   return (
     <div className="text-white bg-primary-blue">
-    
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row py-12 px-6 sm:px-12 lg:px-24">
         <div className="md:w-1/2 flex items-center justify-center">
@@ -340,31 +338,41 @@ export default function Home() {
 
       {/* Call To Action Section */}
       <section className="py-12 px-6 sm:px-12 lg:px-24 bg-secondary-blue">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-6 font-antonio">
-            KÉRJEN INGYENES AJÁNLATOT!
-          </h2>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-0 font-antonio">
+              KÉRJEN INGYENES
+              <br />
+              AJÁNLATOT!
+            </h2>
 
-          <div className="flex flex-col md:flex-row justify-center gap-4 mb-8">
-            <a
-              href="#contact"
-              className="bg-highlight-blue hover:bg-light-blue text-white py-3 px-6 rounded-lg flex items-center justify-center font-telegraf"
-            >
-              <span className="mr-2">INGYENES AJÁNLATKÉRÉS</span> &gt;&gt;
-            </a>
-            <a
-              href="#contact"
-              className="bg-light-blue hover:bg-highlight-blue text-white py-3 px-6 rounded-lg flex items-center justify-center font-telegraf"
-            >
-              <span className="mr-2">KÉRDÉSE VAN?</span> &gt;&gt;
-            </a>
+            <div className="flex flex-col md:flex-row gap-4">
+              <a
+                href="#contact"
+                className="bg-light-blue hover:bg-highlight-blue text-white py-4 px-8 rounded-full flex items-center justify-between min-w-[320px]"
+              >
+                <span className="font-antonio text-lg">
+                  INGYENES AJÁNLATOT KÉREK
+                </span>
+                <span className="text-2xl">&raquo;</span>
+              </a>
+              <a
+                href="#contact"
+                className="bg-light-blue hover:bg-highlight-blue text-white py-4 px-8 rounded-full flex items-center justify-between min-w-[320px]"
+              >
+                <span className="font-antonio text-lg">
+                  KÉRDÉSEM VAN / KONZULTÁCIÓT KÉREK!
+                </span>
+                <span className="text-2xl">&raquo;</span>
+              </a>
+            </div>
           </div>
 
           <div className="mt-12">
             <img
               src="/handshake-business.jpg"
               alt="Business handshake"
-              className="mx-auto rounded-lg max-h-64 object-cover"
+              className="w-full h-80 object-cover"
             />
           </div>
         </div>
@@ -373,46 +381,47 @@ export default function Home() {
       {/* FAQ Section */}
       <section className="py-12 px-6 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold mb-8 text-center font-antonio">
+          <h2 className="text-3xl font-bold mb-8 text-center font-antonio">
             KÉRDÉSE VAN?
-            <br />
-            ÍME A LEGGYAKORIBB KÉRDÉSEK A D&O BIZTOSÍTÁSRÓL
           </h2>
+          <h3 className="text-2xl font-bold mb-12 text-center font-antonio">
+            ÍME A LEGGYAKORIBB KÉRDÉSEK A D&O BIZTOSÍTÁSRÓL
+          </h3>
 
-          <div className="space-y-6 mb-8">
-            <div className="bg-secondary-blue p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2 font-antonio">
-                MI AZ A D&O SZERINTI ÜGYVEZETŐI FELELŐSSÉG?
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="border border-secondary-blue p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
+                MI AZ A PTK. SZERINTI ÜGYVEZETŐI FELELŐSSÉG, ÉRTHETŐEN?
               </h3>
-              <p className="font-interphases">
-                A D&O (Directors and Officers) biztosítás védelmet nyújt a
-                vezetők személyes vagyona számára olyan kárigényekkel szemben,
-                amelyeket a vállalat működésével kapcsolatban támasztanak velük
-                szemben.
-              </p>
             </div>
 
-            <div className="bg-secondary-blue p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2 font-antonio">
-                MIKOR MÁS EZ, MINT A VÁLLALATI FELELŐSSÉGBIZTOSÍTÁS?
+            <div className="border border-secondary-blue p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
+                MIBEN MÁS EZ, MINT A CÉGÜNK "NORMÁL" FELELŐSSÉGBIZTOSÍTÁSA?
               </h3>
-              <p className="font-interphases">
-                Míg a vállalati felelősségbiztosítás a céget védi, a D&O
-                biztosítás kifejezetten a vezetők személyes vagyonát védi az
-                ellenük indított perek és eljárások esetén.
-              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="border border-secondary-blue p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
+                MI TÖRTÉNIK, HA ELHAGYOM A VEZETŐI POZÍCIÓT? VÉGE A
+                FELELŐSSÉGEMNEK?
+              </h3>
             </div>
 
-            <div className="bg-secondary-blue p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2 font-antonio">
-                MIKOR VÁLIK SZÜKSÉGESSÉ EZ A BIZTOSÍTÁS?
+            <div className="border border-secondary-blue p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
+                MIKOR NEM FIZET A D&O BIZTOSÍTÁS?
               </h3>
-              <p className="font-interphases">
-                A biztosítás akkor válik szükségessé, amikor a vezetőt
-                személyesen vonják felelősségre egy üzleti döntés vagy mulasztás
-                miatt, és a vállalat nem téríti meg a kárt vagy nem fizeti a
-                jogi védekezés költségeit.
-              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="border border-secondary-blue p-6 rounded-lg w-full md:w-1/2">
+              <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
+                MI TÖRTÉNIK, HA FELSZÁMOLÁS ALÁ KERÜL A CÉG?
+              </h3>
             </div>
           </div>
         </div>
