@@ -2,16 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alfa Biztosítás - D&O Felelősségbiztosítás",
+  title:
+    "Ügyvezetői Felelősségbiztosítás: Nyugodt döntéshozatal vezető pozícióban! | D&O Biztosítás - [Az Ön Cégneve]",
   description:
-    "Vezető tisztségviselők felelősségbiztosítása - D&O biztosítás, ami Önt védi",
+    "Ügyvezetőként személyes vagyonával felel a 2014-es Ptk. alapján hozott döntéseiért. Tudjon meg többet D&O biztosítással kapcsolatban! Kérjen ajánlatot vezető tisztségviselő felelősségbiztosításra!",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="hu">
       <body className="antialiased">{children}</body>
