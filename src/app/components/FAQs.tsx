@@ -43,39 +43,42 @@ const FAQs = () => {
   ];
 
   return (
-    <section className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue" id="faqs">
+    <section
+      className="py-12 px-4 sm:py-16 sm:px-12 lg:px-24 bg-primary-blue"
+      id="faqs"
+    >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 font-antonio text-white">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 font-antonio text-white">
           KÉRDÉSE VAN?
           <br />
           ÍME A LEGGYAKORIBB KÉRDÉSEK A D&O BIZTOSÍTÁSRÓL
         </h2>
 
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 gap-3 sm:gap-4">
           {faqItems.map((faq, index) => (
             <div
               key={index}
               className="bg-secondary-blue rounded-lg shadow-lg overflow-hidden"
             >
               <button
-                className="p-6 w-full flex justify-between items-center text-left focus:outline-none"
+                className="p-4 sm:p-6 w-full flex justify-between items-start sm:items-center text-left focus:outline-none"
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={openFAQs.includes(index)}
               >
-                <h3 className="text-xl font-bold font-antonio text-white">
+                <h3 className="text-base sm:text-xl font-bold font-antonio text-white pr-3">
                   {faq.question}
                 </h3>
-                <div className="text-white flex items-center justify-center w-8 h-8 rounded-full bg-[#3A5D98]">
+                <div className="text-white flex-shrink-0 flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#3A5D98] mt-1 sm:mt-0">
                   {openFAQs.includes(index) ? (
                     <span
-                      className="flex items-center justify-center w-full h-full text-xl font-bold leading-none pb-0.5"
+                      className="flex items-center justify-center w-full h-full text-lg sm:text-xl font-bold leading-none pb-0.5"
                       aria-hidden="true"
                     >
                       −
                     </span>
                   ) : (
                     <span
-                      className="flex items-center justify-center w-full h-full text-xl font-bold leading-none"
+                      className="flex items-center justify-center w-full h-full text-lg sm:text-xl font-bold leading-none"
                       aria-hidden="true"
                     >
                       +
@@ -85,8 +88,10 @@ const FAQs = () => {
               </button>
 
               {openFAQs.includes(index) && (
-                <div className="px-6 pb-6">
-                  <p className="font-telegraf text-white">{faq.answer}</p>
+                <div className="px-4 pb-4 sm:px-6 sm:pb-6">
+                  <p className="font-telegraf text-sm sm:text-base text-white">
+                    {faq.answer}
+                  </p>
                 </div>
               )}
             </div>

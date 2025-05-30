@@ -4,6 +4,21 @@ import { useEffect, useState, useCallback } from "react";
 
 export default function ScrollControls() {
   const [activeSection, setActiveSection] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if on mobile device
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
 
   // Memoize scroll handler for better performance
   const handleScroll = useCallback(() => {
@@ -122,20 +137,24 @@ export default function ScrollControls() {
     "areas",
     "about",
     "benefits",
-    "faq",
+    "faqs",
     "free-quote",
   ];
 
   return (
     <>
       {/* Section dots navigation */}
-      <div className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 hidden md:block">
+      <div
+        className={`fixed ${
+          isMobile ? "right-2 top-1/2" : "left-6 top-1/2"
+        } transform -translate-y-1/2 z-50 hidden md:block`}
+      >
         <div className="flex flex-col space-y-4">
           {mainSections.map((sectionId) => (
             <button
               key={sectionId}
               onClick={() => scrollToSection(sectionId)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                 activeSection === sectionId
                   ? "bg-highlight-blue shadow-glow scale-125"
                   : "bg-gray-400 opacity-70 hover:opacity-100"
@@ -148,13 +167,15 @@ export default function ScrollControls() {
 
       {/* Scroll to explore indicator (first screen only) */}
       <div
-        className={`fixed bottom-6 left-1/2 transform -translate-x-1/2 text-white text-opacity-80 text-center transition-opacity duration-500 z-30 ${
+        className={`fixed bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 text-white text-opacity-80 text-center transition-opacity duration-500 z-30 ${
           activeSection === "hero" ? "opacity-100" : "opacity-0"
         }`}
       >
-        <p className="mb-2 text-sm font-antonio"> GÖRGESSEN TOVÁBB</p>
-        <div className="w-6 h-10 border-2 border-white border-opacity-60 rounded-full mx-auto relative">
-          <div className="absolute top-1 left-1/2 w-2 h-2 bg-white rounded-full animate-scroll-down transform -translate-x-1/2"></div>
+        <p className="mb-1 md:mb-2 text-xs md:text-sm font-antonio">
+          GÖRGESSEN TOVÁBB
+        </p>
+        <div className="w-5 h-8 md:w-6 md:h-10 border-2 border-white border-opacity-60 rounded-full mx-auto relative">
+          <div className="absolute top-1 left-1/2 w-1.5 md:w-2 h-1.5 md:h-2 bg-white rounded-full animate-scroll-down transform -translate-x-1/2"></div>
         </div>
       </div>
     </>

@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="flex flex-col md:flex-row min-h-screen items-stretch relative"
+        className="flex flex-col md:flex-row min-h-[90vh] md:min-h-screen items-stretch relative"
         id="hero"
       >
         {/* Left column - Image */}
@@ -53,10 +53,10 @@ export default function Home() {
         </div>
 
         {/* Right column - Text and logo */}
-        <div className="md:w-1/2 bg-[#0C1D3D] p-10 md:p-16 lg:p-20 flex flex-col justify-center">
-          <div className="mb-14">
+        <div className="md:w-1/2 bg-[#0C1D3D] p-6 md:p-16 lg:p-20 flex flex-col justify-center">
+          <div className="mb-8 md:mb-14">
             {/* Placeholder logo */}
-            <div className="mb-14">
+            <div className="mb-8 md:mb-14">
               <div className="text-white text-xl md:text-3xl font-bold font-antonio tracking-widest">
                 <div className="flex flex-col items-start">
                   <div className="relative">
@@ -69,12 +69,12 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-antonio leading-tight tracking-wide">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white font-antonio leading-tight tracking-wide">
               BIZTONSÁGBAN
               <br />
               ÜGYVEZETŐKÉNT IS:
               <br />
-              <span className="text-3xl md:text-4xl lg:text-5xl">A D&O</span>
+              <span className="text-2xl md:text-4xl lg:text-5xl">A D&O</span>
               <br />
               FELELŐSSÉGBIZTOSÍTÁS,
               <br />
@@ -82,8 +82,11 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="mt-10">
-            <a href="#free-quote" className="cta-button inline-block">
+          <div className="mt-6 md:mt-10">
+            <a
+              href="#free-quote"
+              className="cta-button inline-block text-sm md:text-base"
+            >
               INGYENES AJÁNLATOT KÉREK
               <span className="arrow ml-2">→</span>
             </a>
@@ -92,11 +95,14 @@ export default function Home() {
       </section>
 
       {/* Executive Risk Section */}
-      <section className="py-16 px-6 sm:px-12 lg:px-24 bg-[#3A5D98]" id="risks">
+      <section
+        className="py-10 md:py-16 px-4 sm:px-12 lg:px-24 bg-[#3A5D98]"
+        id="risks"
+      >
         <div className="max-w-6xl mx-auto">
-          <div className="mb-10">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/3 mb-4 md:mb-0 relative aspect-square md:aspect-[4/3] h-72 md:h-auto">
+          <div className="mb-6 md:mb-10">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+              <div className="w-full md:w-1/3 mb-4 md:mb-0 relative aspect-square md:aspect-[4/3] h-60 md:h-72">
                 <Suspense
                   fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
@@ -113,11 +119,11 @@ export default function Home() {
                 </Suspense>
               </div>
               <div className="md:w-2/3">
-                <h2 className="text-2xl font-bold mb-6 font-antonio tracking-wide">
+                <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 font-antonio tracking-wide">
                   TISZTELT ÜGYVEZETŐ, IGAZGATÓSÁGI TAG, DÖNTÉSHOZÓ!
                 </h2>
-                <div className="space-y-4 font-telegraf">
-                  <p className="text-lg">
+                <div className="space-y-3 md:space-y-4 font-telegraf">
+                  <p className="text-base md:text-lg">
                     Tudjuk, hogy vezetőként nap, mint nap fontos döntéseket hoz.
                     Ezek a döntések a cég jövőjét formálják. Ugyanakkor fontos
                     tisztában lenni azzal is, hogy a 2014-es Polgári
@@ -125,16 +131,16 @@ export default function Home() {
                     személy szerint is felelhet a vezetői tevékenységével
                     összefüggésben okozott károkért.
                   </p>
-                  <p className="text-lg font-bold">
+                  <p className="text-base md:text-lg font-bold">
                     Ma már a károsultak (legyen szó vevőről, beszállítóról,
                     hitelezőről, vagy akár magáról a cégről) közvetlenül Öntől
                     is követelhetik a kártérítést.
                   </p>
-                  <p className="text-lg">
+                  <p className="text-base md:text-lg">
                     Ez a felelősség akár a magánvagyonát, az évek alatt
                     felépített egzisztenciáját is érintheti.
                   </p>
-                  <p className="text-lg">
+                  <p className="text-base md:text-lg">
                     Az Ügyvezetői Szakmai Felelősségbiztosítás (Directors &
                     Officers biztosítás) a személyes pénzügyi biztonságának
                     alapja ebben a megváltozott jogi környezetben. Ami pontosan
@@ -151,54 +157,57 @@ export default function Home() {
       </section>
 
       {/* Protected Areas Section */}
-      <section className="py-16 px-6 sm:px-12 lg:px-24 bg-[#0C1D3D]" id="areas">
+      <section
+        className="py-10 md:py-16 px-4 sm:px-12 lg:px-24 bg-[#0C1D3D]"
+        id="areas"
+      >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center font-antonio tracking-wide">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center font-antonio tracking-wide">
             MIK AZOK A VEZETŐI KOCKÁZATOK, AMIKRE ÉRDEMES FELKÉSZÜLNI?
           </h2>
-          <p className="text-lg font-telegraf text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg font-telegraf text-center mb-8 md:mb-12 max-w-3xl mx-auto">
             Vezetőként számos helyzet adódhat, amikor a Ptk. alapján személyes
             felelősség merülhet fel. Fontos, hogy ismerje ezeket, hogy
             felkészülhessen. Íme néhány példa a kockázatokra, amelyek
             kezelésében a D&O biztosítás segíthet:
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="bg-[#183762] p-6 border-t-4 border-white shadow-lg faq-card">
-              <h3 className="text-xl font-semibold mb-3 font-antonio tracking-wide">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
                 SZEMÉLYES FELELŐSSÉG A PTK. SZERINT
               </h3>
-              <p className="font-interphases">
+              <p className="text-sm md:text-base font-interphases">
                 A törvény lehetőséget ad arra, hogy a károsultak (pl. partnerek,
                 munkavállalók, sőt a cég is) bizonyos esetekben közvetlenül
                 Öntől követeljenek kártérítést, ami a magánvagyonát érintheti.
               </p>
             </div>
-            <div className="bg-[#183762] p-6 border-t-4 border-white shadow-lg faq-card">
-              <h3 className="text-xl font-semibold mb-3 font-antonio tracking-wide">
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
                 JOGI ELJÁRÁSOK KÖLTSÉGEI
               </h3>
-              <p className="font-interphases">
+              <p className="text-sm md:text-base font-interphases">
                 Akár jogos, akár alaptalan az igény, egy jogi eljárás vagy
                 hatósági vizsgálat jelentős költségekkel járhat a védekezés
                 során (ügyvédi díjak, szakértők). A biztosítás éves díjának
                 sokszorosa lehet.
               </p>
             </div>
-            <div className="bg-[#183762] p-6 border-t-4 border-white shadow-lg faq-card">
-              <h3 className="text-xl font-semibold mb-3 font-antonio tracking-wide">
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
                 HATÓSÁGI BÍRSÁGOK
               </h3>
-              <p className="font-interphases">
+              <p className="text-sm md:text-base font-interphases">
                 Bizonyos esetekben a hatóságok nem csak a cégre, de közvetlenül
                 a felelős vezetőre is szabhatnak ki bírságot.
               </p>
             </div>
-            <div className="bg-[#183762] p-6 border-t-4 border-white shadow-lg faq-card">
-              <h3 className="text-xl font-semibold mb-3 font-antonio tracking-wide">
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
                 BÜNTETŐJOGI ELJÁRÁSOK VÉDEKEZÉSI KÖLTSÉGEI
               </h3>
-              <p className="font-interphases">
+              <p className="text-sm md:text-base font-interphases">
                 Bár a biztosítás nem fedezi a büntetést, a büntetőjogi
                 eljárással kapcsolatos jogi védekezés költségei nagyon magasak
                 lehetnek, ezek fedezésében segít a D&O biztosítás a bűnösség
@@ -214,23 +223,23 @@ export default function Home() {
 
       {/* D&O Insurance Benefits */}
       <section
-        className="py-16 px-6 sm:px-12 lg:px-24 bg-[#3A5D98] border-t border-[#0C1D3D]"
+        className="py-10 md:py-16 px-4 sm:px-12 lg:px-24 bg-[#3A5D98] border-t border-[#0C1D3D]"
         id="benefits"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center font-antonio tracking-wide">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center font-antonio tracking-wide">
             MIBEN SEGÍT AZ ÜGYVEZETŐI FELELŐSSÉGBIZTOSÍTÁS?
           </h2>
-          <p className="text-lg font-telegraf text-center mb-12 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg font-telegraf text-center mb-8 md:mb-12 max-w-3xl mx-auto">
             Az Ügyvezetői Szakmai Felelősségbiztosítás az a pajzs, amire
             szüksége van a fent említett kockázatokkal szemben. Ez a biztosítás
             nem a hibákat akadályozza meg, hanem azok pénzügyi következményeitől
             véd meg.
           </p>
 
-          <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-8">
+          <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
             <div className="md:w-1/3 card-container">
-              <div className="relative overflow-hidden image-card h-80 rounded">
+              <div className="relative overflow-hidden image-card h-64 md:h-80 rounded-none">
                 <Suspense
                   fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
@@ -244,13 +253,13 @@ export default function Home() {
                     quality={75}
                   />
                 </Suspense>
-                <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio tracking-wide">
+                <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end card-content">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 font-antonio tracking-wide">
                     JOGI VÉDEKEZÉS
                     <br />
                     KÖLTSÉGEINEK FEDEZÉSE
                   </h3>
-                  <p className="text-white font-telegraf">
+                  <p className="text-sm md:text-base text-white font-telegraf">
                     Átvállalja a jogi eljárások minden indokolt költségét
                     (ügyvédi díjak, bírósági költségek), akár a bűnösség jogerős
                     kimondásáig büntetőügyekben is.
@@ -260,7 +269,7 @@ export default function Home() {
             </div>
 
             <div className="md:w-1/3 card-container">
-              <div className="relative overflow-hidden image-card h-80 rounded">
+              <div className="relative overflow-hidden image-card h-64 md:h-80 rounded-none">
                 <Suspense
                   fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
@@ -274,13 +283,13 @@ export default function Home() {
                     quality={75}
                   />
                 </Suspense>
-                <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio tracking-wide">
+                <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end card-content">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 font-antonio tracking-wide">
                     KÁRTÉRÍTÉSI ÖSSZEGEK
                     <br />
                     KIFIZETÉSE
                   </h3>
-                  <p className="text-white font-telegraf">
+                  <p className="text-sm md:text-base text-white font-telegraf">
                     Segít a jogosan megítélt kártérítési összegek megfizetésében
                     a biztosítási limit erejéig.
                   </p>
@@ -289,7 +298,7 @@ export default function Home() {
             </div>
 
             <div className="md:w-1/3 card-container">
-              <div className="relative overflow-hidden image-card h-80 rounded-none">
+              <div className="relative overflow-hidden image-card h-64 md:h-80 rounded-none">
                 <Suspense
                   fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
@@ -303,13 +312,13 @@ export default function Home() {
                     quality={75}
                   />
                 </Suspense>
-                <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio tracking-wide">
+                <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end card-content">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 font-antonio tracking-wide">
                     BIZTONSÁG HIÁNYÁNAK
                     <br />
                     FEDEZÉSE
                   </h3>
-                  <p className="text-white font-telegraf">
+                  <p className="text-sm md:text-base text-white font-telegraf">
                     Segít a hírnév helyreállításában, szakértői tanácsadást
                     biztosít krízishelyzetekben, és anyagi támogatást nyújt a
                     nehéz időszakokban.
@@ -326,67 +335,79 @@ export default function Home() {
 
       {/* CTA Section */}
       <section
-        className="py-16 px-6 sm:px-12 lg:px-24 bg-secondary-blue"
+        className="py-10 md:py-16 px-4 sm:px-12 lg:px-24 bg-secondary-blue"
         id="free-quote"
       >
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-6 font-antonio">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-antonio">
                 KÉRJEN INGYENES AJÁNLATOT!
               </h2>
-              <p className="font-telegraf mb-8">
+              <p className="font-telegraf text-sm md:text-base mb-6 md:mb-8">
                 Töltse ki az alábbi űrlapot, és 24 órán belül felveszem Önnel a
                 kapcsolatot. Kérdés esetén keressen bizalommal!
               </p>
 
-              <form className="space-y-4">
+              <form className="space-y-3 md:space-y-4">
                 <div>
-                  <label htmlFor="name" className="block mb-1 font-telegraf">
+                  <label
+                    htmlFor="name"
+                    className="block mb-1 font-telegraf text-sm md:text-base"
+                  >
                     Név*
                   </label>
                   <input
                     type="text"
                     id="name"
-                    className="w-full p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue"
+                    className="w-full p-2 md:p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue text-sm md:text-base"
                     placeholder="Teljes név"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block mb-1 font-telegraf">
+                  <label
+                    htmlFor="email"
+                    className="block mb-1 font-telegraf text-sm md:text-base"
+                  >
                     Email*
                   </label>
                   <input
                     type="email"
                     id="email"
-                    className="w-full p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue"
+                    className="w-full p-2 md:p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue text-sm md:text-base"
                     placeholder="email@pelda.hu"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block mb-1 font-telegraf">
+                  <label
+                    htmlFor="phone"
+                    className="block mb-1 font-telegraf text-sm md:text-base"
+                  >
                     Telefon
                   </label>
                   <input
                     type="tel"
                     id="phone"
-                    className="w-full p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue"
+                    className="w-full p-2 md:p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue text-sm md:text-base"
                     placeholder="+36 xx xxx xxxx"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block mb-1 font-telegraf">
+                  <label
+                    htmlFor="message"
+                    className="block mb-1 font-telegraf text-sm md:text-base"
+                  >
                     Üzenet
                   </label>
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue"
+                    className="w-full p-2 md:p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue text-sm md:text-base"
                     placeholder="Kérem írja le röviden, hogy miben segíthetek..."
                   ></textarea>
                 </div>
@@ -394,7 +415,7 @@ export default function Home() {
                 <div>
                   <button
                     type="submit"
-                    className="cta-button w-full justify-center py-3"
+                    className="cta-button w-full justify-center py-2 md:py-3 text-sm md:text-base"
                   >
                     KÉREM AZ INGYENES AJÁNLATOT
                   </button>
@@ -402,8 +423,8 @@ export default function Home() {
               </form>
             </div>
 
-            <div className="md:w-1/2">
-              <div className="relative h-[500px] w-full rounded-lg overflow-hidden">
+            <div className="md:w-1/2 mt-8 md:mt-0">
+              <div className="relative h-[300px] md:h-[500px] w-full rounded-lg overflow-hidden">
                 <Suspense
                   fallback={
                     <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
@@ -413,6 +434,7 @@ export default function Home() {
                     src="/handshake-business.jpg"
                     alt="Üzleti partnerek"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     style={{ objectFit: "cover" }}
                     className="rounded-lg shadow-xl"
                     loading="lazy"
@@ -426,13 +448,13 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 sm:px-12 lg:px-24 bg-primary-blue border-t border-secondary-blue">
+      <footer className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue border-t border-secondary-blue">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 md:mb-10">
             {/* Column 1: Logo and Company */}
             <div>
               <div className="flex items-center mb-4">
-                <div className="relative h-10 w-10 mr-2">
+                <div className="relative h-8 w-8 md:h-10 md:w-10 mr-2">
                   <Image
                     src="/alfa-insurance-logo.png"
                     alt="Alfa Biztosítás"
@@ -440,11 +462,11 @@ export default function Home() {
                     style={{ objectFit: "contain" }}
                   />
                 </div>
-                <span className="text-xl font-bold font-antonio">
+                <span className="text-lg md:text-xl font-bold font-antonio">
                   ALFA BIZTOSÍTÁS
                 </span>
               </div>
-              <p className="text-sm font-telegraf mt-4 text-gray-300">
+              <p className="text-xs md:text-sm font-telegraf mt-3 md:mt-4 text-gray-300">
                 Megbízható biztosítási megoldások vezetőknek és vállalatoknak.
                 Szakértői tanácsadás, személyre szabott ajánlatok.
               </p>
@@ -452,10 +474,10 @@ export default function Home() {
 
             {/* Column 2: Quick Links */}
             <div>
-              <h3 className="text-lg font-bold mb-4 font-antonio">
+              <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio">
                 Gyors Linkek
               </h3>
-              <ul className="space-y-2 font-telegraf">
+              <ul className="space-y-1 md:space-y-2 font-telegraf text-sm md:text-base">
                 <li>
                   <a href="#about" className="hover:text-blue-300 transition">
                     Bemutatkozás
@@ -487,10 +509,10 @@ export default function Home() {
 
             {/* Column 3: Legal */}
             <div>
-              <h3 className="text-lg font-bold mb-4 font-antonio">
+              <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio">
                 Jogi Információk
               </h3>
-              <ul className="space-y-2 font-telegraf">
+              <ul className="space-y-1 md:space-y-2 font-telegraf text-sm md:text-base">
                 <li>
                   <a href="/aszf" className="hover:text-blue-300 transition">
                     Általános Szerződési Feltételek
@@ -522,12 +544,14 @@ export default function Home() {
 
             {/* Column 4: Contact */}
             <div>
-              <h3 className="text-lg font-bold mb-4 font-antonio">Kapcsolat</h3>
-              <ul className="space-y-2 font-telegraf">
-                <li className="flex items-center">
+              <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio">
+                Kapcsolat
+              </h3>
+              <ul className="space-y-1 md:space-y-2 font-telegraf text-sm md:text-base">
+                <li className="flex items-start md:items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-light-blue"
+                    className="h-4 w-4 md:h-5 md:w-5 mr-2 text-light-blue flex-shrink-0 mt-0.5 md:mt-0"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -539,10 +563,10 @@ export default function Home() {
                   </svg>
                   <span>1052 Budapest, Váci utca 12.</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-start md:items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-light-blue"
+                    className="h-4 w-4 md:h-5 md:w-5 mr-2 text-light-blue flex-shrink-0 mt-0.5 md:mt-0"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -550,10 +574,10 @@ export default function Home() {
                   </svg>
                   <span>+36 1 123 4567</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-start md:items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-light-blue"
+                    className="h-4 w-4 md:h-5 md:w-5 mr-2 text-light-blue flex-shrink-0 mt-0.5 md:mt-0"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -571,7 +595,7 @@ export default function Home() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="h-5 w-5 md:h-6 md:w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -585,7 +609,7 @@ export default function Home() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="h-5 w-5 md:h-6 md:w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -599,7 +623,7 @@ export default function Home() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
+                    className="h-5 w-5 md:h-6 md:w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -611,14 +635,15 @@ export default function Home() {
           </div>
 
           {/* Bottom copyright and certification */}
-          <div className="pt-8 mt-8 border-t border-secondary-blue">
+          <div className="pt-6 md:pt-8 mt-6 md:mt-8 border-t border-secondary-blue">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="font-telegraf text-sm text-gray-400 mb-4 md:mb-0">
+              <p className="font-telegraf text-xs md:text-sm text-gray-400 mb-4 md:mb-0 text-center md:text-left">
                 © {new Date().getFullYear()} Alfa Biztosítás. Minden jog
                 fenntartva.
               </p>
-              <div className="flex space-x-4 text-sm font-telegraf text-gray-400">
+              <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-xs md:text-sm font-telegraf text-gray-400 text-center md:text-left">
                 <span>MNB engedély szám: H-EN-I-596/2018</span>
+                <span className="hidden md:inline">|</span>
                 <span>Adószám: 12345678-2-41</span>
               </div>
             </div>
