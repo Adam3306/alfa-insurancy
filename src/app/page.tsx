@@ -1,15 +1,20 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="text-white bg-primary-blue">
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row py-12 px-6 sm:px-12 lg:px-24">
-        <div className="md:w-1/2 flex items-center justify-center">
-          <img
+        <div className="md:w-1/2 flex items-center justify-center relative h-96">
+          <Image
             src="/executive-businessman.jpg"
             alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
-            className="max-h-96 object-cover"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0">
@@ -32,11 +37,14 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
             <div className="flex flex-col md:flex-row items-center mb-8">
-              <div className="md:w-1/3 mb-4 md:mb-0">
-                <img
+              <div className="md:w-1/3 mb-4 md:mb-0 relative aspect-square md:aspect-[4/3] h-72 md:h-auto">
+                <Image
                   src="/stressed-executive.jpg"
                   alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
-                  className="rounded-lg max-h-72 object-cover"
+                  className="rounded-lg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="md:w-2/3 md:pl-8">
@@ -197,10 +205,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative rounded-lg overflow-hidden image-card">
-              <img
+              <Image
                 src="/legal-protection.jpg"
                 alt="Jogi védekezés"
-                className="w-full h-72 object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
@@ -216,10 +226,12 @@ export default function Home() {
               </div>
             </div>
             <div className="relative rounded-lg overflow-hidden image-card">
-              <img
+              <Image
                 src="/claim-settlement.jpg"
                 alt="Kártérítési összegek"
-                className="w-full h-72 object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
@@ -234,10 +246,12 @@ export default function Home() {
               </div>
             </div>
             <div className="relative rounded-lg overflow-hidden image-card">
-              <img
+              <Image
                 src="/businessman-presses-face-emoji-concept-evaluating-customer-service.jpg"
                 alt="Bírságok fedezete"
-                className="w-full h-72 object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
@@ -260,10 +274,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative rounded-lg overflow-hidden image-card">
-              <img
+              <Image
                 src="/reputation-defense.jpg"
                 alt="Jó hírnév helyreállítása"
-                className="w-full h-72 object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
@@ -281,10 +297,12 @@ export default function Home() {
               </div>
             </div>
             <div className="relative rounded-lg overflow-hidden image-card">
-              <img
+              <Image
                 src="/man-stands-front-cross-that-says-word-it.jpg"
                 alt="Múltbeli tevékenység"
-                className="w-full h-72 object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
@@ -299,10 +317,12 @@ export default function Home() {
               </div>
             </div>
             <div className="relative rounded-lg overflow-hidden image-card">
-              <img
+              <Image
                 src="/close-up-man-hand-holding-crystal-ball.jpg"
                 alt="Védelem távozás után"
-                className="w-full h-72 object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                 <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
@@ -331,11 +351,14 @@ export default function Home() {
           </h2>
 
           <div className="flex flex-col md:flex-row items-center mb-12">
-            <div className="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-              <img
+            <div className="md:w-1/2 md:pr-8 mb-6 md:mb-0 relative aspect-[4/3] h-80 md:h-auto w-full">
+              <Image
                 src="/executive-smiling.jpg"
                 alt="Smiling executive"
-                className="rounded-lg w-full h-auto"
+                className="rounded-lg"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className="md:w-1/2">
@@ -399,11 +422,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-12">
-            <img
+          <div className="mt-12 relative h-80 w-full">
+            <Image
               src="/handshake-business.jpg"
               alt="Business handshake"
-              className="w-full h-80 object-cover"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
@@ -435,7 +460,8 @@ export default function Home() {
 
             <div className="border border-secondary-blue p-6 rounded-lg faq-card">
               <h3 className="text-xl font-semibold text-center mb-4 font-antonio">
-                MIBEN MÁS EZ, MINT A CÉGÜNK "NORMÁL" FELELŐSSÉGBIZTOSÍTÁSA?
+                MIBEN MÁS EZ, MINT A CÉGÜNK &ldquo;NORMÁL&rdquo;
+                FELELŐSSÉGBIZTOSÍTÁSA?
               </h3>
               <p className="font-telegraf">
                 A cég általános felelősségbiztosítása a cég működésével
@@ -456,9 +482,9 @@ export default function Home() {
               <p className="font-telegraf">
                 Fontos tudni, hogy a korábbi vezetői döntéseiért való
                 felelőssége nem szűnik meg automatikusan a távozással. A D&O
-                biztosítások tartalmaznak egy "kiterjesztett jelentési
-                időszakot", ami azt jelenti, hogy a biztosítás idején történt,
-                de később felmerülő hibákra is vonatkozhat a fedezet a
+                biztosítások tartalmaznak egy &ldquo;kiterjesztett jelentési
+                időszakot&rdquo;, ami azt jelenti, hogy a biztosítás idején
+                történt, de később felmerülő hibákra is vonatkozhat a fedezet a
                 biztosítás megszűnése után még egy bizonyos ideig (jellemzően 12
                 hónapig).
               </p>
