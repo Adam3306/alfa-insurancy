@@ -146,79 +146,13 @@ export default function ScrollControls() {
         </div>
       </div>
 
-      {/* Navigation arrows */}
-      <div
-        className="fixed z-40 w-full pointer-events-none"
-        style={{ top: "50vh" }}
-      >
-        <div className="container mx-auto max-w-6xl flex justify-between items-center px-4">
-          <button
-            onClick={() => {
-              const prevSection = getSiblingSection("prev");
-              if (prevSection) scrollToSection(prevSection);
-            }}
-            className={`text-white bg-secondary-blue bg-opacity-60 hover:bg-opacity-80 p-3 rounded-full border-2 border-white shadow-lg transform transition-all duration-300 pointer-events-auto animate-bounce-subtle ${
-              getSiblingSection("prev")
-                ? "opacity-80"
-                : "opacity-30 cursor-not-allowed"
-            }`}
-            disabled={!getSiblingSection("prev")}
-            aria-label="Previous section"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
-
-          <button
-            onClick={() => {
-              const nextSection = getSiblingSection("next");
-              if (nextSection) scrollToSection(nextSection);
-            }}
-            className={`text-white bg-secondary-blue bg-opacity-60 hover:bg-opacity-80 p-3 rounded-full border-2 border-white shadow-lg transform transition-all duration-300 pointer-events-auto animate-bounce-subtle ${
-              getSiblingSection("next")
-                ? "opacity-80"
-                : "opacity-30 cursor-not-allowed"
-            }`}
-            disabled={!getSiblingSection("next")}
-            aria-label="Next section"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
       {/* Scroll to explore indicator (first screen only) */}
       <div
         className={`fixed bottom-6 left-1/2 transform -translate-x-1/2 text-white text-opacity-80 text-center transition-opacity duration-500 z-30 ${
           activeSection === "hero" ? "opacity-100" : "opacity-0"
         }`}
       >
-        <p className="mb-2 text-sm font-antonio">SCROLL TO EXPLORE</p>
+        <p className="mb-2 text-sm font-antonio"> GÖRGESSEN TOVÁBB</p>
         <div className="w-6 h-10 border-2 border-white border-opacity-60 rounded-full mx-auto relative">
           <div className="absolute top-1 left-1/2 w-2 h-2 bg-white rounded-full animate-scroll-down transform -translate-x-1/2"></div>
         </div>

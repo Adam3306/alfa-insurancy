@@ -27,93 +27,83 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="flex flex-col-reverse md:flex-row py-16 px-6 sm:px-12 lg:px-24 min-h-screen items-center relative"
+        className="flex flex-col md:flex-row min-h-screen items-stretch relative"
         id="hero"
       >
-        <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-antonio leading-tight">
-            BIZTONSÁGBAN
-            <br />
-            ÜGYVEZETŐKÉNT IS:
-            <br />
-            A D&O
-            <br />
-            FELELŐSSÉGBIZTOSÍTÁS,
-            <br />
-            AMI ÖNT VÉDI
-          </h1>
+        {/* Left column - Image */}
+        <div className="md:w-1/2 bg-[#3A5D98] relative flex flex-col h-[40vh] md:h-auto">
+          <div className="h-full w-full relative flex-grow">
+            <Suspense
+              fallback={<div className="bg-[#3A5D98] w-full h-full"></div>}
+            >
+              <Image
+                src="/executive-handshake.jpg"
+                alt="Executive handshake in professional environment"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                className="opacity-95 mix-blend-soft-light"
+                loading="eager"
+                fetchPriority="high"
+                quality={90}
+              />
+            </Suspense>
+          </div>
+        </div>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="#free-quote" className="cta-button">
+        {/* Right column - Text and logo */}
+        <div className="md:w-1/2 bg-[#0C1D3D] p-10 md:p-16 lg:p-20 flex flex-col justify-center">
+          <div className="mb-14">
+            {/* Placeholder logo */}
+            <div className="mb-14">
+              <div className="text-white text-xl md:text-3xl font-bold font-antonio tracking-widest">
+                <div className="flex flex-col items-start">
+                  <div className="relative">
+                    <div className="bg-white text-[#0C1D3D] px-4 py-1.5">
+                      ALPHA
+                    </div>
+                  </div>
+                  <div className="mt-0.5">TRUST</div>
+                </div>
+              </div>
+            </div>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-antonio leading-tight tracking-wide">
+              BIZTONSÁGBAN
+              <br />
+              ÜGYVEZETŐKÉNT IS:
+              <br />
+              <span className="text-3xl md:text-4xl lg:text-5xl">A D&O</span>
+              <br />
+              FELELŐSSÉGBIZTOSÍTÁS,
+              <br />
+              AMI ÖNT VÉDI
+            </h1>
+          </div>
+
+          <div className="mt-10">
+            <a href="#free-quote" className="cta-button inline-block">
               INGYENES AJÁNLATOT KÉREK
               <span className="arrow ml-2">→</span>
             </a>
           </div>
         </div>
-
-        <div className="md:w-1/2 flex items-center justify-center relative h-96 md:h-[500px]">
-          <div className="absolute top-4 right-4 z-10">
-            <div className="bg-white p-2 rounded-lg shadow-lg">
-              <Suspense fallback={<div className="w-[100px] h-[50px]"></div>}>
-                <Image
-                  src="/alfa-insurance-logo.png"
-                  alt="Alfa Biztosítás"
-                  width={100}
-                  height={50}
-                  style={{ objectFit: "contain" }}
-                />
-              </Suspense>
-            </div>
-          </div>
-          <Suspense
-            fallback={
-              <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
-            }
-          >
-            <Image
-              src="/executive-businessman.jpg"
-              alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
-              style={{ objectFit: "cover" }}
-              className="rounded-lg shadow-xl"
-              loading="eager"
-              fetchPriority="high"
-              quality={85}
-            />
-          </Suspense>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center hidden md:block">
-          <div className="text-white opacity-80 mb-2 font-antonio">
-            GÖRGESSEN TOVÁBB
-          </div>
-          <div className="w-8 h-12 rounded-full border-2 border-white mx-auto relative overflow-hidden">
-            <div className="scroll-dot absolute top-2 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-white rounded-full animate-scroll-down"></div>
-          </div>
-        </div>
       </section>
 
       {/* Executive Risk Section */}
-      <section
-        className="py-16 px-6 sm:px-12 lg:px-24 bg-secondary-blue"
-        id="risks"
-      >
+      <section className="py-16 px-6 sm:px-12 lg:px-24 bg-[#3A5D98]" id="risks">
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3 mb-4 md:mb-0 relative aspect-square md:aspect-[4/3] h-72 md:h-auto">
                 <Suspense
-                  fallback={
-                    <div className="bg-primary-blue rounded-lg w-full h-full"></div>
-                  }
+                  fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
                   <Image
                     src="/stressed-executive.jpg"
                     alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
-                    className="rounded-lg shadow-lg"
+                    className="rounded-none shadow-lg"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     style={{ objectFit: "cover" }}
@@ -123,7 +113,7 @@ export default function Home() {
                 </Suspense>
               </div>
               <div className="md:w-2/3">
-                <h2 className="text-2xl font-bold mb-6 font-antonio">
+                <h2 className="text-2xl font-bold mb-6 font-antonio tracking-wide">
                   TISZTELT ÜGYVEZETŐ, IGAZGATÓSÁGI TAG, DÖNTÉSHOZÓ!
                 </h2>
                 <div className="space-y-4 font-telegraf">
@@ -161,12 +151,9 @@ export default function Home() {
       </section>
 
       {/* Protected Areas Section */}
-      <section
-        className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue"
-        id="areas"
-      >
+      <section className="py-16 px-6 sm:px-12 lg:px-24 bg-[#0C1D3D]" id="areas">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center font-antonio">
+          <h2 className="text-3xl font-bold mb-8 text-center font-antonio tracking-wide">
             MIK AZOK A VEZETŐI KOCKÁZATOK, AMIKRE ÉRDEMES FELKÉSZÜLNI?
           </h2>
           <p className="text-lg font-telegraf text-center mb-12 max-w-3xl mx-auto">
@@ -177,8 +164,8 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="bg-secondary-blue p-6 rounded-lg shadow-lg faq-card">
-              <h3 className="text-xl font-semibold mb-3 font-antonio">
+            <div className="bg-[#183762] p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-xl font-semibold mb-3 font-antonio tracking-wide">
                 SZEMÉLYES FELELŐSSÉG A PTK. SZERINT
               </h3>
               <p className="font-interphases">
@@ -187,8 +174,8 @@ export default function Home() {
                 Öntől követeljenek kártérítést, ami a magánvagyonát érintheti.
               </p>
             </div>
-            <div className="bg-secondary-blue p-6 rounded-lg shadow-lg faq-card">
-              <h3 className="text-xl font-semibold mb-3 font-antonio">
+            <div className="bg-[#183762] p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-xl font-semibold mb-3 font-antonio tracking-wide">
                 JOGI ELJÁRÁSOK KÖLTSÉGEI
               </h3>
               <p className="font-interphases">
@@ -198,8 +185,8 @@ export default function Home() {
                 sokszorosa lehet.
               </p>
             </div>
-            <div className="bg-secondary-blue p-6 rounded-lg shadow-lg faq-card">
-              <h3 className="text-xl font-semibold mb-3 font-antonio">
+            <div className="bg-[#183762] p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-xl font-semibold mb-3 font-antonio tracking-wide">
                 HATÓSÁGI BÍRSÁGOK
               </h3>
               <p className="font-interphases">
@@ -207,8 +194,8 @@ export default function Home() {
                 a felelős vezetőre is szabhatnak ki bírságot.
               </p>
             </div>
-            <div className="bg-secondary-blue p-6 rounded-lg shadow-lg faq-card">
-              <h3 className="text-xl font-semibold mb-3 font-antonio">
+            <div className="bg-[#183762] p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-xl font-semibold mb-3 font-antonio tracking-wide">
                 BÜNTETŐJOGI ELJÁRÁSOK VÉDEKEZÉSI KÖLTSÉGEI
               </h3>
               <p className="font-interphases">
@@ -227,11 +214,11 @@ export default function Home() {
 
       {/* D&O Insurance Benefits */}
       <section
-        className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue border-t border-secondary-blue"
+        className="py-16 px-6 sm:px-12 lg:px-24 bg-[#3A5D98] border-t border-[#0C1D3D]"
         id="benefits"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center font-antonio">
+          <h2 className="text-3xl font-bold mb-8 text-center font-antonio tracking-wide">
             MIBEN SEGÍT AZ ÜGYVEZETŐI FELELŐSSÉGBIZTOSÍTÁS?
           </h2>
           <p className="text-lg font-telegraf text-center mb-12 max-w-3xl mx-auto">
@@ -241,13 +228,11 @@ export default function Home() {
             véd meg.
           </p>
 
-          <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10">
+          <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-8">
             <div className="md:w-1/3 card-container">
-              <div className="relative rounded-lg overflow-hidden image-card h-80">
+              <div className="relative overflow-hidden image-card h-80 rounded-none">
                 <Suspense
-                  fallback={
-                    <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
-                  }
+                  fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
                   <Image
                     src="/legal-protection.jpg"
@@ -260,7 +245,7 @@ export default function Home() {
                   />
                 </Suspense>
                 <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio tracking-wide">
                     JOGI VÉDEKEZÉS
                     <br />
                     KÖLTSÉGEINEK FEDEZÉSE
@@ -275,11 +260,9 @@ export default function Home() {
             </div>
 
             <div className="md:w-1/3 card-container">
-              <div className="relative rounded-lg overflow-hidden image-card h-80">
+              <div className="relative overflow-hidden image-card h-80 rounded-none">
                 <Suspense
-                  fallback={
-                    <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
-                  }
+                  fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
                   <Image
                     src="/claim-settlement.jpg"
@@ -292,7 +275,7 @@ export default function Home() {
                   />
                 </Suspense>
                 <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio tracking-wide">
                     KÁRTÉRÍTÉSI ÖSSZEGEK
                     <br />
                     KIFIZETÉSE
@@ -306,11 +289,9 @@ export default function Home() {
             </div>
 
             <div className="md:w-1/3 card-container">
-              <div className="relative rounded-lg overflow-hidden image-card h-80">
+              <div className="relative overflow-hidden image-card h-80 rounded-none">
                 <Suspense
-                  fallback={
-                    <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
-                  }
+                  fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
                   <Image
                     src="/reputation-damage.jpg"
@@ -323,7 +304,7 @@ export default function Home() {
                   />
                 </Suspense>
                 <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio tracking-wide">
                     BIZTONSÁG HIÁNYÁNAK
                     <br />
                     FEDEZÉSE

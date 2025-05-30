@@ -64,11 +64,12 @@ html {
 }
 
 :root {
-  --primary-blue: #102550;
-  --secondary-blue: #1A3A76;
-  --light-blue: #2C4F99;
+  --primary-blue: #0C1D3D;
+  --secondary-blue: #183762;
+  --light-blue: #3A5D98;
   --highlight-blue: #3B67C1;
   --text-light: #FFFFFF;
+  --hero-left-blue: #3A5D98;
 }
 
 body {
@@ -86,6 +87,45 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 1.6;
   margin-bottom: 1rem;
+}
+
+/* Hero section styles */
+#hero {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#hero h1 {
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+}
+
+#hero .cta-button {
+  background-color: transparent;
+  border: 2px solid white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+  font-weight: 600;
+}
+
+#hero .cta-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  #hero h1 {
+    font-size: 2.5rem;
+  }
 }
 
 /* Enhanced section transition animations */
@@ -208,13 +248,13 @@ section.scroll-target {
   position: relative;
   aspect-ratio: 4/3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
   margin: 0;
+  border-radius: 0;
 }
 
 /* Use scale and shadow for hover effect instead of translate */
 .image-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -243,11 +283,30 @@ section.scroll-target {
 }
 
 .image-card:hover h3 {
-  transform: translateY(-5px);
-  text-shadow: 0 2px 10px rgba(59, 103, 193, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Updated Card content overlay */
+.card-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%);
+  transition: all 0.3s ease;
+}
+
+.image-card:hover .card-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.75) 60%, rgba(0, 0, 0, 0.4) 100%);
 }
 
 /* FAQ cards */
+.faq-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
 .faq-card h3 {
   transition: transform 0.3s ease;
   font-size: 1.25rem;
@@ -257,9 +316,8 @@ section.scroll-target {
 }
 
 .faq-card:hover h3 {
-  transform: scale(1.05);
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  color: var(--highlight-blue);
+  transform: scale(1.02);
+  color: white;
 }
 
 /* Button animations */
@@ -270,16 +328,6 @@ section.scroll-target {
 .cta-button .arrow {
   margin-left: 0.5rem;
   transition: transform 0.3s ease;
-}
-
-/* Updated Card content overlay */
-.card-content {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%);
-  transition: all 0.3s ease;
-}
-
-.image-card:hover .card-content {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 /* Ensure proper grid layout */
