@@ -70,12 +70,48 @@ body {
   color: var(--text-light);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Antonio', sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: var(--highlight-blue);
+}
+
+.highlight-text {
+  color: var(--highlight-blue);
+  font-weight: bold;
+}
+
 /* Card Animation Effects */
 .image-card {
   transition: all 0.4s ease;
   overflow: hidden;
   position: relative;
   aspect-ratio: 4/3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 .image-card:hover {
@@ -102,10 +138,18 @@ body {
   transition: all 0.4s ease;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
   z-index: 10;
+  padding: 20px;
 }
 
 .image-card:hover .card-content {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.image-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .image-card:hover h3 {
@@ -117,6 +161,11 @@ body {
   position: relative;
   transition: all 0.3s ease;
   overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .faq-card::before {
@@ -127,7 +176,7 @@ body {
   width: 100%;
   height: 100%;
   border: 2px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   transition: all 0.3s ease;
   z-index: -1;
 }
@@ -144,17 +193,34 @@ body {
 
 .faq-card h3 {
   transition: transform 0.3s ease;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  line-height: 1.3;
 }
 
 .faq-card:hover h3 {
   transform: scale(1.05);
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: var(--highlight-blue);
 }
 
 .cta-button {
   position: relative;
   transition: all 0.3s ease;
   overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: var(--highlight-blue);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button::before {
@@ -175,10 +241,25 @@ body {
 .cta-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--light-blue);
 }
 
 .cta-button:hover .arrow {
   animation: bounceRight 1s infinite;
+}
+
+.cta-button .arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 30;
+  width: 120px;
+  height: auto;
 }
 
 @keyframes bounceRight {
@@ -187,5 +268,45 @@ body {
   }
   50% {
     transform: translateX(5px);
+  }
+}
+
+.text-highlight {
+  font-weight: bold;
+  color: var(--highlight-blue);
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
   }
 }

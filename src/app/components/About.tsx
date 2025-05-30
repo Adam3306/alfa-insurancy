@@ -1,27 +1,73 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const About = () => {
   return (
-    <section id="about" className="bg-blue-50 py-16 px-6 sm:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse md:flex-row items-center">
+    <section
+      className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue"
+      id="about"
+    >
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row items-start gap-12">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold text-blue-900 sm:text-4xl pb-5">Rólam</h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Szegő Zsombornak hívnak, független biztosítási tanácsadó vagyok. Évek óta dolgozom a biztosítási iparágban, és személyre szabott megoldásokat kínálok, hogy a legjobb fedezetet találhassák meg az egyedi igényeikhez. Célom, hogy a biztosítás egyszerű és elérhető legyen mindenki számára.
-            </p>
-            <p className="text-lg text-gray-600">
-              Legyen szó élet-, egészség- vagy vagyonbiztosításról, objektív tanácsokat adok, és széles választékot kínálok, hogy a legjobb áron biztosítást találhasson. Ne habozzon kapcsolatba lépni velem, és beszéljünk az Ön biztosítási igényeiről!
-            </p>
+            <h2 className="text-3xl font-bold mb-6 font-antonio text-white">
+              MIÉRT ÉRDEMES ENGEM VÁLASZTANIA D&O BIZTOSÍTÁSI PARTNERÉÜL?
+            </h2>
+
+            <div className="space-y-6 font-telegraf text-white">
+              <p>
+                Tudom, hogy a biztosítás világa néha bonyolultnak tűnhet.
+                Különösen igaz ez a szakmai felelősségbiztosításokra, amelynek
+                feltételei sokfélék lehetnek. Azt is tudom, hogy a
+                döntéshozóként kevés ideje marad foglalkozni egyéb ügyekkel.
+              </p>
+
+              <p className="font-bold">
+                Én, mint független biztosítási alkusz, azért vagyok, hogy
+                segítsek Önnek eligazodni a lehetőséges labirintusában.
+              </p>
+
+              <p>
+                Nem egy biztosító termékeit kínálom, hanem megértem az Ön
+                helyzetét, a specifikus kockázatait (beleértve a Ptk. szerinti
+                szempontokat), és összehasonlítom a piacon elérhető legjobb
+                ajánlatokat.
+              </p>
+
+              <p className="font-bold">
+                Célom, hogy személyre szabott, érthető és valóban megfelelő D&O
+                biztosítást találjunk Önnek, ami illeszkedik az igényeihez és a
+                költségvetéséhez.
+              </p>
+
+              <p className="italic text-highlight">
+                Bízza rám a keresést és az összehasonlítást!
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <a href="#free-quote" className="cta-button">
+                  INGYENES AJÁNLATOT KÉREK
+                  <span className="arrow ml-2">→</span>
+                </a>
+
+                <a
+                  href="#consultation"
+                  className="cta-button bg-secondary-blue hover:bg-light-blue"
+                >
+                  KÉRDÉSEM VAN / KONZULTÁCIÓT KÉREK!
+                  <span className="arrow ml-2">→</span>
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg mx-auto">
+
+          <div className="md:w-1/2 relative">
+            <div className="relative h-[600px] w-full rounded-lg overflow-hidden">
               <Image
-                src="/me.jpeg"
-                alt="Szegő Zsombor"
-                width={192}
-                height={192}
-                className="object-cover"
+                src="/insurance-consultant.jpg"
+                alt="Biztosítási szakértő"
+                fill
+                style={{ objectFit: "cover" }}
+                className="rounded-lg"
               />
             </div>
           </div>
