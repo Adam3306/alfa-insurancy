@@ -230,7 +230,7 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-8">
             <div className="md:w-1/3 card-container">
-              <div className="relative overflow-hidden image-card h-80 rounded-none">
+              <div className="relative overflow-hidden image-card h-80 rounded">
                 <Suspense
                   fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
@@ -260,7 +260,7 @@ export default function Home() {
             </div>
 
             <div className="md:w-1/3 card-container">
-              <div className="relative overflow-hidden image-card h-80 rounded-none">
+              <div className="relative overflow-hidden image-card h-80 rounded">
                 <Suspense
                   fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
@@ -294,7 +294,7 @@ export default function Home() {
                   fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
                   <Image
-                    src="/reputation-damage.jpg"
+                    src="/reputation-defense.jpg"
                     alt="Jó hírnév helyreállítása"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
