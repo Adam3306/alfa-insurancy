@@ -1,14 +1,20 @@
 "use client";
-
 import Image from "next/image";
 import About from "./components/About";
 import FAQs from "./components/FAQs";
+import ScrollControls from "./components/ScrollControls";
 
 export default function Home() {
   return (
     <div className="text-white bg-primary-blue">
+      {/* Scroll Controls */}
+      <ScrollControls />
+
       {/* Hero Section */}
-      <section className="flex flex-col-reverse md:flex-row py-16 px-6 sm:px-12 lg:px-24 min-h-[80vh] items-center">
+      <section
+        className="flex flex-col-reverse md:flex-row py-16 px-6 sm:px-12 lg:px-24 min-h-screen items-center relative"
+        id="hero"
+      >
         <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0">
           <h1 className="text-4xl md:text-5xl font-bold text-white font-antonio leading-tight">
             BIZTONSÁGBAN
@@ -52,10 +58,23 @@ export default function Home() {
             className="rounded-lg shadow-xl"
           />
         </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center hidden md:block">
+          <div className="text-white opacity-80 mb-2 font-antonio">
+            GÖRGESSEN TOVÁBB
+          </div>
+          <div className="w-8 h-12 rounded-full border-2 border-white mx-auto relative overflow-hidden">
+            <div className="scroll-dot absolute top-2 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-white rounded-full animate-scroll-down"></div>
+          </div>
+        </div>
       </section>
 
       {/* Executive Risk Section */}
-      <section className="py-16 px-6 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section
+        className="py-16 px-6 sm:px-12 lg:px-24 bg-secondary-blue"
+        id="risks"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
             <div className="flex flex-col md:flex-row items-center gap-8">
@@ -108,7 +127,10 @@ export default function Home() {
       </section>
 
       {/* Protected Areas Section */}
-      <section className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue">
+      <section
+        className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue"
+        id="areas"
+      >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center font-antonio">
             MIK AZOK A VEZETŐI KOCKÁZATOK, AMIKRE ÉRDEMES FELKÉSZÜLNI?
@@ -170,7 +192,10 @@ export default function Home() {
       <About />
 
       {/* D&O Insurance Benefits */}
-      <section className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue border-t border-secondary-blue">
+      <section
+        className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue border-t border-secondary-blue"
+        id="benefits"
+      >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center font-antonio">
             MIBEN SEGÍT AZ ÜGYVEZETŐI FELELŐSSÉGBIZTOSÍTÁS?
@@ -182,67 +207,75 @@ export default function Home() {
             véd meg.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="relative rounded-lg overflow-hidden image-card h-80">
-              <Image
-                src="/legal-protection.jpg"
-                alt="Jogi védekezés"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                style={{ objectFit: "cover" }}
-              />
-              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
-                  JOGI VÉDEKEZÉS
-                  <br />
-                  KÖLTSÉGEINEK FEDEZÉSE
-                </h3>
-                <p className="text-white font-telegraf">
-                  Átvállalja a jogi eljárások minden indokolt költségét (ügyvédi
-                  díjak, bírósági költségek), akár a bűnösség jogerős
-                  kimondásáig büntetőügyekben is.
-                </p>
+          <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10">
+            <div className="md:w-1/3 card-container">
+              <div className="relative rounded-lg overflow-hidden image-card h-80">
+                <Image
+                  src="/legal-protection.jpg"
+                  alt="Jogi védekezés"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: "cover" }}
+                />
+                <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
+                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                    JOGI VÉDEKEZÉS
+                    <br />
+                    KÖLTSÉGEINEK FEDEZÉSE
+                  </h3>
+                  <p className="text-white font-telegraf">
+                    Átvállalja a jogi eljárások minden indokolt költségét
+                    (ügyvédi díjak, bírósági költségek), akár a bűnösség jogerős
+                    kimondásáig büntetőügyekben is.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="relative rounded-lg overflow-hidden image-card h-80">
-              <Image
-                src="/claim-settlement.jpg"
-                alt="Kártérítési összegek"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                style={{ objectFit: "cover" }}
-              />
-              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
-                  KÁRTÉRÍTÉSI ÖSSZEGEK
-                  <br />
-                  KIFIZETÉSE
-                </h3>
-                <p className="text-white font-telegraf">
-                  Segít a jogosan megítélt kártérítési összegek megfizetésében a
-                  biztosítási limit erejéig.
-                </p>
+
+            <div className="md:w-1/3 card-container">
+              <div className="relative rounded-lg overflow-hidden image-card h-80">
+                <Image
+                  src="/claim-settlement.jpg"
+                  alt="Kártérítési összegek"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: "cover" }}
+                />
+                <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
+                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                    KÁRTÉRÍTÉSI ÖSSZEGEK
+                    <br />
+                    KIFIZETÉSE
+                  </h3>
+                  <p className="text-white font-telegraf">
+                    Segít a jogosan megítélt kártérítési összegek megfizetésében
+                    a biztosítási limit erejéig.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="relative rounded-lg overflow-hidden image-card h-80">
-              <Image
-                src="/reputation-damage.jpg"
-                alt="Jó hírnév helyreállítása"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                style={{ objectFit: "cover" }}
-              />
-              <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
-                <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
-                  BIZTONSÁG HIÁNYÁNAK
-                  <br />
-                  FEDEZÉSE
-                </h3>
-                <p className="text-white font-telegraf">
-                  Segít a hírnév helyreállításában, szakértői tanácsadást
-                  biztosít krízishelyzetekben, és anyagi támogatást nyújt a
-                  nehéz időszakokban.
-                </p>
+
+            <div className="md:w-1/3 card-container">
+              <div className="relative rounded-lg overflow-hidden image-card h-80">
+                <Image
+                  src="/reputation-damage.jpg"
+                  alt="Jó hírnév helyreállítása"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: "cover" }}
+                />
+                <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
+                  <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
+                    BIZTONSÁG HIÁNYÁNAK
+                    <br />
+                    FEDEZÉSE
+                  </h3>
+                  <p className="text-white font-telegraf">
+                    Segít a hírnév helyreállításában, szakértői tanácsadást
+                    biztosít krízishelyzetekben, és anyagi támogatást nyújt a
+                    nehéz időszakokban.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -339,165 +372,6 @@ export default function Home() {
                   style={{ objectFit: "cover" }}
                   className="rounded-lg shadow-xl"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section
-        id="contact"
-        className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue"
-      >
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center font-antonio">
-            KAPCSOLAT
-          </h2>
-
-          <div className="flex flex-col md:flex-row gap-12">
-            {/* Contact Info */}
-            <div className="md:w-1/2">
-              <div className="bg-secondary-blue p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold mb-6 font-antonio">
-                  IRODÁNK ELÉRHETŐSÉGEI
-                </h3>
-
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="bg-highlight-blue p-3 rounded-full mr-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold mb-1 font-telegraf">Cím</h4>
-                      <p className="font-telegraf">
-                        1052 Budapest, Váci utca 12.
-                      </p>
-                      <p className="font-telegraf">5. emelet</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="bg-highlight-blue p-3 rounded-full mr-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold mb-1 font-telegraf">Telefon</h4>
-                      <p className="font-telegraf">+36 1 123 4567</p>
-                      <p className="font-telegraf">+36 30 123 4567</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="bg-highlight-blue p-3 rounded-full mr-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold mb-1 font-telegraf">Email</h4>
-                      <p className="font-telegraf">info@alfabiztositas.hu</p>
-                      <p className="font-telegraf">
-                        ugyfelszolgalat@alfabiztositas.hu
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="bg-highlight-blue p-3 rounded-full mr-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-bold mb-1 font-telegraf">
-                        Nyitvatartás
-                      </h4>
-                      <p className="font-telegraf">
-                        Hétfő - Péntek: 9:00 - 17:00
-                      </p>
-                      <p className="font-telegraf">Hétvégén: Zárva</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Map */}
-            <div className="md:w-1/2">
-              <div className="h-full rounded-lg overflow-hidden shadow-lg">
-                <div className="relative h-[400px] w-full bg-secondary-blue rounded-lg flex items-center justify-center">
-                  <p className="text-center font-telegraf px-6">
-                    Itt egy Google térkép található.
-                    <br />
-                    A beágyazáshoz szükséges a Google Maps API kulcs és
-                    JavaScript kód.
-                    <br />
-                    <br />
-                    <a
-                      href="https://goo.gl/maps/yourlocation"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-button inline-block mt-4"
-                    >
-                      Mutasd a térképen
-                    </a>
-                  </p>
-                </div>
               </div>
             </div>
           </div>

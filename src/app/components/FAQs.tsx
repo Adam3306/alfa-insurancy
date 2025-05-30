@@ -1,6 +1,6 @@
 const FAQs = () => {
   return (
-    <section className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue">
+    <section className="py-16 px-6 sm:px-12 lg:px-24 bg-primary-blue" id="faqs">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 font-antonio text-white">
           KÉRDÉSE VAN?

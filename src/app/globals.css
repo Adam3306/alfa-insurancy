@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Disable smooth scrolling when users have requested reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 @font-face {
   font-family: 'Antonio';
   src: url('/fonts/Antonio-Regular.woff2') format('woff2'),
@@ -20,40 +33,34 @@
   font-display: swap;
 }
 
+/* Use system fonts as fallback for Telegraf */
 @font-face {
   font-family: 'Telegraf';
-  src: url('/fonts/Telegraf-Regular.woff2') format('woff2'),
-       url('/fonts/Telegraf-Regular.woff') format('woff');
+  src: local('Helvetica Neue'), local('Arial'), local('sans-serif');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'Telegraf';
-  src: url('/fonts/Telegraf-Bold.woff2') format('woff2'),
-       url('/fonts/Telegraf-Bold.woff') format('woff');
+  src: local('Helvetica Neue Bold'), local('Arial Bold'), local('sans-serif');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+}
+
+/* Use system fonts as fallback for TT Interphases */
+@font-face {
+  font-family: 'TT Interphases';
+  src: local('Helvetica Neue'), local('Arial'), local('sans-serif');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Interphases';
-  src: url('/fonts/TTInterphases-Regular.woff2') format('woff2'),
-       url('/fonts/TTInterphases-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'TT Interphases';
-  src: url('/fonts/TTInterphases-Bold.woff2') format('woff2'),
-       url('/fonts/TTInterphases-Bold.woff') format('woff');
+  src: local('Helvetica Neue Bold'), local('Arial Bold'), local('sans-serif');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 
 :root {
@@ -65,7 +72,7 @@
 }
 
 body {
-  font-family: 'Telegraf', sans-serif;
+  font-family: 'Telegraf', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--primary-blue);
   color: var(--text-light);
 }
@@ -81,30 +88,120 @@ p {
   margin-bottom: 1rem;
 }
 
-.section-title {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
+/* Enhanced section transition animations */
+section {
+  transition: opacity 0.8s ease-in-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
-  display: inline-block;
+  z-index: 1;
+  will-change: transform, opacity;
 }
 
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 80px;
-  height: 4px;
+section.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  z-index: 2;
+}
+
+section.inactive-above {
+  opacity: 0.3;
+  transform: translateY(-60px) scale(0.95);
+}
+
+section.inactive-below {
+  opacity: 0.3;
+  transform: translateY(60px) scale(0.95);
+}
+
+/* Target section animation when scrolled to */
+section.scroll-target {
+  animation: highlight 1s ease-in-out;
+}
+
+@keyframes highlight {
+  0% { box-shadow: inset 0 0 0 4px rgba(59, 103, 193, 0); }
+  50% { box-shadow: inset 0 0 0 4px rgba(59, 103, 193, 0.5); }
+  100% { box-shadow: inset 0 0 0 4px rgba(59, 103, 193, 0); }
+}
+
+/* Shadow glow for scroll indicators */
+.shadow-glow {
+  box-shadow: 0 0 15px 3px rgba(59, 103, 193, 0.6);
+}
+
+/* Subtle pulse animation for the down arrow */
+@keyframes pulse-subtle {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}
+
+/* Add classes for interphases font */
+.font-interphases {
+  font-family: 'TT Interphases', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Add utility classes for animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Button styles */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
   background-color: var(--highlight-blue);
-}
-
-.highlight-text {
-  color: var(--highlight-blue);
+  color: white;
   font-weight: bold;
+  font-family: 'Antonio', sans-serif;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
 }
 
-/* Card Animation Effects */
+.cta-button:hover {
+  background-color: var(--light-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card container to prevent overflow */
+.card-container {
+  padding: 10px;
+  position: relative;
+  overflow: visible;
+}
+
+/* Card Animation Effects - Fixed to prevent overlapping */
 .image-card {
   transition: all 0.4s ease;
   overflow: hidden;
@@ -112,10 +209,12 @@ p {
   aspect-ratio: 4/3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  margin: 0;
 }
 
+/* Use scale and shadow for hover effect instead of translate */
 .image-card:hover {
-  transform: translateY(-8px);
+  transform: scale(1.03);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -131,18 +230,7 @@ p {
 
 .image-card:hover img,
 .image-card:hover > span {
-  transform: scale(1.1);
-}
-
-.image-card .card-content {
-  transition: all 0.4s ease;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
-  z-index: 10;
-  padding: 20px;
-}
-
-.image-card:hover .card-content {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.3) 100%);
+  transform: scale(1.05);
 }
 
 .image-card h3 {
@@ -150,6 +238,8 @@ p {
   margin-bottom: 0.75rem;
   line-height: 1.2;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
 }
 
 .image-card:hover h3 {
@@ -157,40 +247,7 @@ p {
   text-shadow: 0 2px 10px rgba(59, 103, 193, 0.6);
 }
 
-.faq-card {
-  position: relative;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.faq-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  z-index: -1;
-}
-
-.faq-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.faq-card:hover::before {
-  border-color: var(--highlight-blue);
-  box-shadow: 0 0 20px rgba(59, 103, 193, 0.4);
-}
-
+/* FAQ cards */
 .faq-card h3 {
   transition: transform 0.3s ease;
   font-size: 1.25rem;
@@ -205,45 +262,7 @@ p {
   color: var(--highlight-blue);
 }
 
-.cta-button {
-  position: relative;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.125rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: var(--highlight-blue);
-  color: white;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.cta-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: all 0.6s ease;
-}
-
-.cta-button:hover::before {
-  left: 100%;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: var(--light-blue);
-}
-
+/* Button animations */
 .cta-button:hover .arrow {
   animation: bounceRight 1s infinite;
 }
@@ -251,6 +270,52 @@ p {
 .cta-button .arrow {
   margin-left: 0.5rem;
   transition: transform 0.3s ease;
+}
+
+/* Updated Card content overlay */
+.card-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%);
+  transition: all 0.3s ease;
+}
+
+.image-card:hover .card-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+/* Ensure proper grid layout */
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem !important;
+}
+
+/* Ensure flex layout works properly */
+@media (max-width: 768px) {
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .md\:flex-row {
+    flex-direction: column;
+  }
+  
+  .md\:w-1\/3 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .md\:space-x-10 {
+    margin-left: 0 !important;
+  }
+  
+  .space-y-10 > * + * {
+    margin-top: 2.5rem;
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .logo-container {
@@ -309,4 +374,73 @@ p {
   .section-title {
     font-size: 1.75rem;
   }
+}
+
+/* Scroll dot animation */
+@keyframes scroll-down {
+  0% {
+    opacity: 1;
+    top: 2px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    top: 26px;
+  }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 2s infinite;
+}
+
+/* Bounce animation for the down arrow */
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 1.5s infinite ease-in-out;
+}
+
+/* FAQ card hover effect */
+.faq-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Section title */
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--highlight-blue);
+  border-radius: 2px;
+}
+
+.highlight-text {
+  color: var(--highlight-blue);
+  font-weight: bold;
 }
