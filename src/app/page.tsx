@@ -1,10 +1,25 @@
-"use client";
 import Image from "next/image";
 import About from "./components/About";
 import FAQs from "./components/FAQs";
 import ScrollControls from "./components/ScrollControls";
+import { Suspense } from "react";
+
+// Preload hero image
+const preload = () => {
+  // This URL must match the src attribute of the Image component
+  const imageUrl = "/executive-businessman.jpg";
+  // Create a new Image object with proper type
+  const img = new window.Image();
+  // Set the src attribute to trigger the load
+  img.src = imageUrl;
+};
 
 export default function Home() {
+  // Preload is client-side only
+  if (typeof window !== "undefined") {
+    preload();
+  }
+
   return (
     <div className="text-white bg-primary-blue">
       {/* Scroll Controls */}
@@ -39,24 +54,35 @@ export default function Home() {
         <div className="md:w-1/2 flex items-center justify-center relative h-96 md:h-[500px]">
           <div className="absolute top-4 right-4 z-10">
             <div className="bg-white p-2 rounded-lg shadow-lg">
-              <Image
-                src="/alfa-insurance-logo.png"
-                alt="Alfa Biztosítás"
-                width={100}
-                height={50}
-                style={{ objectFit: "contain" }}
-              />
+              <Suspense fallback={<div className="w-[100px] h-[50px]"></div>}>
+                <Image
+                  src="/alfa-insurance-logo.png"
+                  alt="Alfa Biztosítás"
+                  width={100}
+                  height={50}
+                  style={{ objectFit: "contain" }}
+                />
+              </Suspense>
             </div>
           </div>
-          <Image
-            src="/executive-businessman.jpg"
-            alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 50vw"
-            style={{ objectFit: "cover" }}
-            className="rounded-lg shadow-xl"
-          />
+          <Suspense
+            fallback={
+              <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
+            }
+          >
+            <Image
+              src="/executive-businessman.jpg"
+              alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+              className="rounded-lg shadow-xl"
+              loading="eager"
+              fetchPriority="high"
+              quality={85}
+            />
+          </Suspense>
         </div>
 
         {/* Scroll indicator */}
@@ -79,14 +105,22 @@ export default function Home() {
           <div className="mb-10">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3 mb-4 md:mb-0 relative aspect-square md:aspect-[4/3] h-72 md:h-auto">
-                <Image
-                  src="/stressed-executive.jpg"
-                  alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
-                  className="rounded-lg shadow-lg"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  style={{ objectFit: "cover" }}
-                />
+                <Suspense
+                  fallback={
+                    <div className="bg-primary-blue rounded-lg w-full h-full"></div>
+                  }
+                >
+                  <Image
+                    src="/stressed-executive.jpg"
+                    alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
+                    className="rounded-lg shadow-lg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                    loading="lazy"
+                    quality={80}
+                  />
+                </Suspense>
               </div>
               <div className="md:w-2/3">
                 <h2 className="text-2xl font-bold mb-6 font-antonio">
@@ -210,13 +244,21 @@ export default function Home() {
           <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10">
             <div className="md:w-1/3 card-container">
               <div className="relative rounded-lg overflow-hidden image-card h-80">
-                <Image
-                  src="/legal-protection.jpg"
-                  alt="Jogi védekezés"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  style={{ objectFit: "cover" }}
-                />
+                <Suspense
+                  fallback={
+                    <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
+                  }
+                >
+                  <Image
+                    src="/legal-protection.jpg"
+                    alt="Jogi védekezés"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                    loading="lazy"
+                    quality={75}
+                  />
+                </Suspense>
                 <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                   <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                     JOGI VÉDEKEZÉS
@@ -234,13 +276,21 @@ export default function Home() {
 
             <div className="md:w-1/3 card-container">
               <div className="relative rounded-lg overflow-hidden image-card h-80">
-                <Image
-                  src="/claim-settlement.jpg"
-                  alt="Kártérítési összegek"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  style={{ objectFit: "cover" }}
-                />
+                <Suspense
+                  fallback={
+                    <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
+                  }
+                >
+                  <Image
+                    src="/claim-settlement.jpg"
+                    alt="Kártérítési összegek"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                    loading="lazy"
+                    quality={75}
+                  />
+                </Suspense>
                 <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                   <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                     KÁRTÉRÍTÉSI ÖSSZEGEK
@@ -257,13 +307,21 @@ export default function Home() {
 
             <div className="md:w-1/3 card-container">
               <div className="relative rounded-lg overflow-hidden image-card h-80">
-                <Image
-                  src="/reputation-damage.jpg"
-                  alt="Jó hírnév helyreállítása"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  style={{ objectFit: "cover" }}
-                />
+                <Suspense
+                  fallback={
+                    <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
+                  }
+                >
+                  <Image
+                    src="/reputation-damage.jpg"
+                    alt="Jó hírnév helyreállítása"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                    loading="lazy"
+                    quality={75}
+                  />
+                </Suspense>
                 <div className="absolute inset-0 p-6 flex flex-col justify-end card-content">
                   <h3 className="text-2xl font-bold text-white mb-3 font-antonio">
                     BIZTONSÁG HIÁNYÁNAK
@@ -365,13 +423,21 @@ export default function Home() {
 
             <div className="md:w-1/2">
               <div className="relative h-[500px] w-full rounded-lg overflow-hidden">
-                <Image
-                  src="/handshake-business.jpg"
-                  alt="Üzleti partnerek"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  className="rounded-lg shadow-xl"
-                />
+                <Suspense
+                  fallback={
+                    <div className="bg-secondary-blue rounded-lg w-full h-full"></div>
+                  }
+                >
+                  <Image
+                    src="/handshake-business.jpg"
+                    alt="Üzleti partnerek"
+                    fill
+                    style={{ objectFit: "cover" }}
+                    className="rounded-lg shadow-xl"
+                    loading="lazy"
+                    quality={75}
+                  />
+                </Suspense>
               </div>
             </div>
           </div>
