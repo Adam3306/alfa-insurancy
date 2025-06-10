@@ -15,6 +15,7 @@ html {
   }
 }
 
+/* Antonio Font */
 @font-face {
   font-family: 'Antonio';
   src: url('/fonts/Antonio-Regular.woff2') format('woff2'),
@@ -33,34 +34,42 @@ html {
   font-display: swap;
 }
 
-/* Use system fonts as fallback for Telegraf */
+/* Telegraf Font */
 @font-face {
   font-family: 'Telegraf';
-  src: local('Helvetica Neue'), local('Arial'), local('sans-serif');
+  src: url('/fonts/Telegraf-Regular.woff2') format('woff2'),
+       url('/fonts/Telegraf-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Telegraf';
-  src: local('Helvetica Neue Bold'), local('Arial Bold'), local('sans-serif');
+  src: url('/fonts/Telegraf-Bold.woff2') format('woff2'),
+       url('/fonts/Telegraf-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
-/* Use system fonts as fallback for TT Interphases */
+/* TT Interphases Font */
 @font-face {
   font-family: 'TT Interphases';
-  src: local('Helvetica Neue'), local('Arial'), local('sans-serif');
+  src: url('/fonts/TTInterphases-Regular.woff2') format('woff2'),
+       url('/fonts/TTInterphases-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'TT Interphases';
-  src: local('Helvetica Neue Bold'), local('Arial Bold'), local('sans-serif');
+  src: url('/fonts/TTInterphases-Bold.woff2') format('woff2'),
+       url('/fonts/TTInterphases-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -76,17 +85,49 @@ body {
   font-family: 'Telegraf', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--primary-blue);
   color: var(--text-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Antonio', sans-serif;
   letter-spacing: 0.02em;
   font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h2 {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+h3 {
+  letter-spacing: 0.02em;
 }
 
 p {
   line-height: 1.6;
   margin-bottom: 1rem;
+  font-family: 'Telegraf', sans-serif;
+}
+
+.font-antonio {
+  font-family: 'Antonio', sans-serif !important;
+  letter-spacing: 0.02em;
+}
+
+.font-telegraf {
+  font-family: 'Telegraf', sans-serif !important;
+}
+
+.font-interphases {
+  font-family: 'TT Interphases', sans-serif !important;
 }
 
 /* Navigation bar styles */
@@ -113,6 +154,7 @@ nav a:hover {
 #hero h1 {
   letter-spacing: 0.04em;
   line-height: 1.15;
+  text-transform: uppercase;
 }
 
 #hero .cta-button {
@@ -204,11 +246,6 @@ section.scroll-target {
   animation: pulse-subtle 2s infinite ease-in-out;
 }
 
-/* Add classes for interphases font */
-.font-interphases {
-  font-family: 'TT Interphases', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 /* Add utility classes for animations */
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
@@ -248,9 +285,11 @@ section.scroll-target {
   font-weight: bold;
   font-family: 'Antonio', sans-serif;
   border-radius: 0.375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   transition: all 0.3s ease;
+  text-decoration: none;
   cursor: pointer;
-  text-align: center;
 }
 
 .cta-button:hover {
@@ -259,136 +298,201 @@ section.scroll-target {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Card container to prevent overflow */
+/* Improved card styles */
 .card-container {
-  padding: 10px;
   position: relative;
-  overflow: visible;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Card Animation Effects - Fixed to prevent overlapping */
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
 .image-card {
-  transition: all 0.4s ease;
-  overflow: hidden;
   position: relative;
-  aspect-ratio: 4/3;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  margin: 0;
-  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Use scale and shadow for hover effect instead of translate */
 .image-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.image-card img, 
-.image-card > span {
-  transition: all 0.6s ease;
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute !important;
-  top: 0;
-  left: 0;
+.image-card img {
+  transition: transform 0.6s ease, filter 0.6s ease;
+  filter: brightness(0.8) saturate(1.1);
 }
 
-.image-card:hover img,
-.image-card:hover > span {
+.image-card:hover img {
   transform: scale(1.05);
+  filter: brightness(0.9) saturate(1.2);
 }
 
 .image-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 2;
+  transition: transform 0.4s ease, color 0.4s ease;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .image-card:hover h3 {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  color: rgba(255, 255, 255, 1);
 }
 
-/* Updated Card content overlay */
 .card-content {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%);
-  transition: all 0.3s ease;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 0.4s ease;
 }
 
 .image-card:hover .card-content {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.75) 60%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
-/* FAQ cards */
+/* Improved FAQ card styles */
 .faq-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 0;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
 }
 
 .faq-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  border-left-color: var(--highlight-blue);
+  transform: translateX(3px);
 }
 
 .faq-card h3 {
-  transition: transform 0.3s ease;
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
+  transition: color 0.3s ease;
+  font-weight: 700;
   line-height: 1.3;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
 }
 
 .faq-card:hover h3 {
-  transform: scale(1.02);
-  color: white;
+  color: var(--highlight-blue);
 }
 
-/* Button animations */
+/* Arrow animation in buttons */
 .cta-button:hover .arrow {
-  animation: bounceRight 1s infinite;
+  transform: translateX(5px);
 }
 
 .cta-button .arrow {
-  margin-left: 0.5rem;
+  display: inline-block;
   transition: transform 0.3s ease;
 }
 
-/* Ensure proper grid layout */
-.grid-cols-3 {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem !important;
+/* Section separation and highlighting */
+.section-divider {
+  height: 4px;
+  background: linear-gradient(90deg, var(--highlight-blue), var(--light-blue));
+  width: 80px;
+  margin: 0 auto 2rem;
+  border-radius: 2px;
 }
 
-/* Ensure flex layout works properly */
+.text-highlight {
+  color: var(--highlight-blue);
+  font-weight: 700;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #fff, var(--highlight-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.highlight-box {
+  background-color: rgba(59, 103, 193, 0.1);
+  border-left: 3px solid var(--highlight-blue);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+/* Section titles with accent */
+.section-title {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--highlight-blue), var(--light-blue));
+  border-radius: 2px;
+}
+
+/* List styling */
+ul.feature-list {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+ul.feature-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+ul.feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--highlight-blue);
+  font-weight: bold;
+}
+
+/* Improve responsiveness */
 @media (max-width: 768px) {
-  .flex-col {
-    display: flex;
-    flex-direction: column;
+  .section-title {
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
   }
   
-  .md\:flex-row {
-    flex-direction: column;
+  .section-title::after {
+    width: 60px;
+    height: 3px;
   }
   
-  .md\:w-1\/3 {
-    width: 100%;
-    margin-bottom: 2rem;
+  .highlight-box {
+    padding: 1rem;
+    margin: 1rem 0;
   }
-  
-  .md\:space-x-10 {
-    margin-left: 0 !important;
+}
+
+/* Improved scroll indicator animation */
+@keyframes scroll-down {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
-  
-  .space-y-10 > * + * {
-    margin-top: 2.5rem;
+  75% {
+    opacity: 1;
+    transform: translate(-50%, 8px);
   }
-  
-  .grid-cols-3 {
-    grid-template-columns: minmax(0, 1fr);
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 10px);
   }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 1.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
 }
 
 .logo-container {
@@ -407,11 +511,6 @@ section.scroll-target {
   50% {
     transform: translateX(5px);
   }
-}
-
-.text-highlight {
-  font-weight: bold;
-  color: var(--highlight-blue);
 }
 
 .hero-title {
@@ -516,4 +615,163 @@ section.scroll-target {
 .highlight-text {
   color: var(--highlight-blue);
   font-weight: bold;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  .flex-col-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .md\:flex-row {
+    flex-direction: column;
+  }
+  
+  .md\:w-1\/2, .md\:w-1\/3, .md\:w-2\/3 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .space-y-mobile > * + * {
+    margin-top: 1.5rem;
+  }
+  
+  .md\:space-x-4, .md\:space-x-6, .md\:space-x-8 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+  
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .image-card {
+    height: 250px;
+  }
+}
+
+/* Additional typography enhancements */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.05em;
+}
+
+.letter-spacing-wider {
+  letter-spacing: 0.1em;
+}
+
+.font-antonio-bold {
+  font-family: 'Antonio', sans-serif;
+  font-weight: bold;
+}
+
+.font-telegraf-bold {
+  font-family: 'Telegraf', sans-serif;
+  font-weight: bold;
+}
+
+.font-interphases-bold {
+  font-family: 'TT Interphases', sans-serif;
+  font-weight: bold;
+}
+
+/* Enhanced section styles */
+section {
+  position: relative;
+  padding: 3rem 0;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    rgba(255,255,255,0) 0%, 
+    rgba(255,255,255,0.1) 50%, 
+    rgba(255,255,255,0) 100%
+  );
+}
+
+/* Animation improvements */
+.hover-lift {
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* Styled separators */
+.separator {
+  height: 4px;
+  width: 60px;
+  background: var(--highlight-blue);
+  margin: 1.5rem 0;
+  border-radius: 2px;
+}
+
+.separator-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.separator-gradient {
+  background: linear-gradient(90deg, var(--highlight-blue), var(--light-blue));
+}
+
+/* Better form element styling */
+input, textarea, select {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--highlight-blue);
+  box-shadow: 0 0 0 2px rgba(59, 103, 193, 0.2);
+  outline: none;
+}
+
+/* Visually highlighted content */
+.feature-card {
+  background-color: rgba(59, 103, 193, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-card:hover {
+  background-color: rgba(59, 103, 193, 0.15);
+  transform: translateY(-3px);
 }

@@ -16,7 +16,44 @@ export default function RootLayout({
 }) {
   return (
     <html lang="hu">
-      <body className="antialiased">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/Antonio-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Antonio-Bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Telegraf-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Telegraf-Bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/TTInterphases-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body className="antialiased font-telegraf">
         <Navbar />
         <div className="pt-16">{children}</div>
       </body>

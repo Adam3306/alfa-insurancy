@@ -66,7 +66,7 @@ const About = () => {
           <div className="md:w-1/2 relative mt-6 md:mt-0">
             <div className="relative h-[300px] md:h-[600px] w-full rounded-lg overflow-hidden">
               <Image
-                src="/insurance-consultant.jpg"
+                src="/do_ceo.jpg"
                 alt="Biztosítási szakértő"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

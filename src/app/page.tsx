@@ -31,13 +31,13 @@ export default function Home() {
         id="hero"
       >
         {/* Left column - Image */}
-        <div className="md:w-1/2 bg-[#3A5D98] relative flex flex-col h-[40vh] md:h-auto">
+        <div className="md:w-1/2 relative flex flex-col h-[50vh] md:h-auto">
           <div className="h-full w-full relative flex-grow">
             <Suspense
               fallback={<div className="bg-[#3A5D98] w-full h-full"></div>}
             >
               <Image
-                src="/executive-handshake.jpg"
+                src="/ajanlos.jpg"
                 alt="Executive handshake in professional environment"
                 fill
                 priority
@@ -53,10 +53,10 @@ export default function Home() {
         </div>
 
         {/* Right column - Text and logo */}
-        <div className="md:w-1/2 bg-[#0C1D3D] p-6 md:p-16 lg:p-20 flex flex-col justify-center">
-          <div className="mb-8 md:mb-14">
+        <div className="md:w-1/2 bg-[#0C1D3D] p-5 md:p-16 lg:p-20 flex flex-col justify-center">
+          <div className="mb-6 md:mb-14 w-full overflow-hidden">
             {/* Placeholder logo */}
-            <div className="mb-8 md:mb-14">
+            <div className="mb-6 md:mb-14">
               <div className="text-white text-xl md:text-3xl font-bold font-antonio tracking-widest">
                 <div className="flex flex-col items-start">
                   <div className="relative">
@@ -69,23 +69,31 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white font-antonio leading-tight tracking-wide">
+            <h1 className="text-[1.35rem] sm:text-2xl md:text-5xl lg:text-6xl font-bold text-white font-antonio leading-tight tracking-wide break-words hyphens-auto">
               BIZTONSÁGBAN
               <br />
               ÜGYVEZETŐKÉNT IS:
               <br />
-              <span className="text-2xl md:text-4xl lg:text-5xl">A D&O</span>
+              <span className="text-[1.15rem] sm:text-xl md:text-4xl lg:text-5xl">
+                A D&O
+              </span>
               <br />
-              FELELŐSSÉGBIZTOSÍTÁS,
+              <span className="text-[1.35rem] sm:text-2xl md:text-5xl lg:text-6xl">
+                FELELŐSSÉG-
+              </span>
+              <br className="sm:hidden" />
+              <span className="text-[1.35rem] sm:text-2xl md:text-5xl lg:text-6xl">
+                BIZTOSÍTÁS,
+              </span>
               <br />
               AMI ÖNT VÉDI
             </h1>
           </div>
 
-          <div className="mt-6 md:mt-10">
+          <div className="mt-5 md:mt-10">
             <a
               href="#free-quote"
-              className="cta-button inline-block text-sm md:text-base"
+              className="cta-button inline-block text-xs sm:text-sm md:text-base px-4 sm:px-6 py-3 md:py-3 whitespace-normal"
             >
               INGYENES AJÁNLATOT KÉREK
               <span className="arrow ml-2">→</span>
