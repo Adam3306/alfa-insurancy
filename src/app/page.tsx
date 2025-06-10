@@ -4,6 +4,7 @@ import About from "./components/About";
 import FAQs from "./components/FAQs";
 import ScrollControls from "./components/ScrollControls";
 import { Suspense, useState } from "react";
+import { trackFormSubmission } from "./utils/tracker";
 
 // Preload hero image
 const preload = () => {
@@ -49,6 +50,9 @@ export default function Home() {
     setFormStatus({ submitting: true, submitted: false, error: null });
 
     try {
+      // Track form submission
+      trackFormSubmission("quote-request-form", formData);
+
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -551,13 +555,13 @@ export default function Home() {
                 <div className="relative h-8 w-8 md:h-10 md:w-10 mr-2">
                   <Image
                     src="/alfa-insurance-logo.png"
-                    alt="Alfa Biztosítás"
+                    alt="Alpha Biztosítás"
                     fill
                     style={{ objectFit: "contain" }}
                   />
                 </div>
                 <span className="text-lg md:text-xl font-bold font-antonio">
-                  ALFA BIZTOSÍTÁS
+                  ALPHA BIZTOSÍTÁS
                 </span>
               </div>
               <p className="text-xs md:text-sm font-telegraf mt-3 md:mt-4 text-gray-300">

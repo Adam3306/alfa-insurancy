@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import CookieConsent from "./components/CookieConsent";
 
 export const metadata: Metadata = {
   title:
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body className="antialiased font-telegraf">
         <Navbar />
         <div className="pt-16">{children}</div>
+        <CookieConsent />
       </body>
     </html>
   );
