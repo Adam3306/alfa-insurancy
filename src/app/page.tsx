@@ -1,8 +1,9 @@
+"use client";
 import Image from "next/image";
 import About from "./components/About";
 import FAQs from "./components/FAQs";
 import ScrollControls from "./components/ScrollControls";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 
 // Preload hero image
 const preload = () => {
@@ -19,6 +20,66 @@ export default function Home() {
   if (typeof window !== "undefined") {
     preload();
   }
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [formStatus, setFormStatus] = useState<{
+    submitting: boolean;
+    submitted: boolean;
+    error: string | null;
+  }>({
+    submitting: false,
+    submitted: false,
+    error: null,
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormStatus({ submitting: true, submitted: false, error: null });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data.message || "Hiba történt az ajánlatkérés küldése során."
+        );
+      }
+
+      // Reset form on success
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setFormStatus({ submitting: false, submitted: true, error: null });
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : "Hiba történt az ajánlatkérés küldése során.";
+      setFormStatus({
+        submitting: false,
+        submitted: false,
+        error: errorMessage,
+      });
+    }
+  };
 
   return (
     <div className="text-white bg-primary-blue">
@@ -357,7 +418,7 @@ export default function Home() {
                 kapcsolatot. Kérdés esetén keressen bizalommal!
               </p>
 
-              <form className="space-y-3 md:space-y-4">
+              <form className="space-y-3 md:space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label
                     htmlFor="name"
@@ -371,6 +432,8 @@ export default function Home() {
                     className="w-full p-2 md:p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue text-sm md:text-base"
                     placeholder="Teljes név"
                     required
+                    value={formData.name}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -387,6 +450,8 @@ export default function Home() {
                     className="w-full p-2 md:p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue text-sm md:text-base"
                     placeholder="email@pelda.hu"
                     required
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -402,6 +467,8 @@ export default function Home() {
                     id="phone"
                     className="w-full p-2 md:p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue text-sm md:text-base"
                     placeholder="+36 xx xxx xxxx"
+                    value={formData.phone}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -417,15 +484,34 @@ export default function Home() {
                     rows={4}
                     className="w-full p-2 md:p-3 rounded-md bg-primary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue text-sm md:text-base"
                     placeholder="Kérem írja le röviden, hogy miben segíthetek..."
+                    required
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
+
+                {formStatus.submitted && (
+                  <div className="bg-green-800 text-white p-3 rounded-md">
+                    Az ajánlatkérés sikeresen elküldve! Hamarosan felvesszük
+                    Önnel a kapcsolatot.
+                  </div>
+                )}
+
+                {formStatus.error && (
+                  <div className="bg-red-800 text-white p-3 rounded-md">
+                    {formStatus.error}
+                  </div>
+                )}
 
                 <div>
                   <button
                     type="submit"
                     className="cta-button w-full justify-center py-2 md:py-3 text-sm md:text-base"
+                    disabled={formStatus.submitting}
                   >
-                    KÉREM AZ INGYENES AJÁNLATOT
+                    {formStatus.submitting
+                      ? "Küldés folyamatban..."
+                      : "KÉREM AZ INGYENES AJÁNLATOT"}
                   </button>
                 </div>
               </form>
@@ -592,7 +678,7 @@ export default function Home() {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <span>info@alfabiztositas.hu</span>
+                  <span>szego@premiumbiztositasok.hu</span>
                 </li>
               </ul>
               <div className="flex space-x-4 mt-4">

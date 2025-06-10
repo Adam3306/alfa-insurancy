@@ -22,6 +22,33 @@ A következő elemekre van még szükség a teljes implementációhoz:
    - `reputation-damage.jpg`
    - `insurance-consultant.jpg`
 
+## Email küldés beállítása
+
+A weboldal űrlapja működőképes, és a beküldött üzeneteket a megadott email címre küldi. A következő lépéseket kell elvégezni a funkció aktiválásához:
+
+1. Hozzon létre egy `.env.local` fájlt a projekt gyökérkönyvtárában az alábbi változókkal:
+
+```
+# Email konfiguráció
+EMAIL_SERVER=smtp.példa.hu
+EMAIL_PORT=587
+EMAIL_USER=az-ön-email-címe@példa.hu
+EMAIL_PASSWORD=az-ön-jelszava
+EMAIL_SECURE=false
+
+# Fogadó email cím
+RECIPIENT_EMAIL=info@alfabiztositas.hu
+```
+
+2. Helyettesítse a fenti értékeket a valós SMTP szerver adataival. Ha Gmail-t használ, akkor:
+
+   - EMAIL_SERVER=smtp.gmail.com
+   - EMAIL_PORT=587
+   - EMAIL_SECURE=false
+   - Engedélyeznie kell az "alkalmazásjelszavak" funkciót a Google-fiókjában
+
+3. A RECIPIENT_EMAIL változó határozza meg, hogy melyik email címre érkezzenek a beküldött űrlapok.
+
 ## A weboldal futtatása
 
 A fejlesztői szerver indításához:
