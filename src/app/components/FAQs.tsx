@@ -15,30 +15,30 @@ const FAQs = () => {
 
   const faqItems = [
     {
-      question: "MI AZ A PTK. SZERINTI ÜGYVEZETŐI FELELŐSSÉG, ÉRTHETŐEN?",
+      question: "Mi az a Ptk. szerinti ügyvezetői felelősség, érthetően?",
       answer:
-        "A 2014-es Polgári Törvénykönyv szerint a vezető tisztségviselők kötelesek a társaság érdekeinek elsődlegessége szerint eljárni. Ha ezt megszegik, akkor a társaságnak okozott károkért személyesen felelnek. Sőt, bizonyos esetekben akár harmadik személyek felé is közvetlenül felelősséggel tartozhatnak, ami a magánvagyonukat is érintheti.",
+        "Egyszerűen fogalmazva, a 2014 óta érvényben lévő törvény (Ptk.) lehetővé teszi, hogy ha Ön, mint vezető, hibázik vagy mulaszt a munkája során, ami kárt okoz, akkor nem csak a cég, de akár Ön személyesen is felelhet érte a magánvagyonával. Ez egy fontos jogszabályi változás volt.",
     },
     {
-      question: 'MIBEN MÁS EZ, MINT A CÉGÜNK "NORMÁL" FELELŐSSÉGBIZTOSÍTÁSA?',
+      question: 'Miben más ez, mint a cégünk "normál" felelősségbiztosítása?',
       answer:
-        "A cég általános felelősségbiztosítása a társaság által okozott károkat fedezi, míg a D&O biztosítás kifejezetten a vezető tisztségviselők személyes felelősségére vonatkozik. Ez lényeges különbség, hiszen a vezető magánvagyonát védi, nem pedig a cég vagyonát.",
+        "A cég általános felelősségbiztosítása a cég működésével kapcsolatos balesetekre, károkra (pl. valaki elesik az irodában) nyújt fedezetet. A D&O biztosítás viszont kifejezetten az Ön, mint vezető döntéseiből, munkájából eredő hibákra vonatkozik, és az azokból adódó személyes felelősségére.",
     },
     {
       question:
-        "MI TÖRTÉNIK, HA ELHAGYOM A VEZETŐI POZÍCIÓT? VÉGE A FELELŐSSÉGEMNEK?",
+        "Mi történik, ha elhagyom a vezetői pozíciót? Vége a felelősségemnek?",
       answer:
-        'Nem, a felelősség nem szűnik meg automatikusan a pozíció elhagyásával. A korábbi döntéseiért való felelősség akár évekig fennmaradhat. Ezért fontos, hogy a biztosítás kiterjedjen a pozíció elhagyása utáni időszakra is (ezt hívják "extended reporting period"-nak).',
+        'Fontos tudni, hogy a korábbi vezetői döntéseiért való felelőssége nem szűnik meg automatikusan a távozással. A D&O biztosítások tartalmaznak egy "kiterjesztett jelentési időszakot", ami azt jelenti, hogy a biztosítás idején történt, de később felmerülő hibákra is vonatkozhat a fedezet a biztosítás megszűnése után még egy bizonyos ideig (jellemzően 12 hónapig).',
     },
     {
-      question: "MIKOR NEM FIZET A D&O BIZTOSÍTÁS?",
+      question: "Mikor nem fizet a D&O biztosítás?",
       answer:
-        "A biztosítás nem fizet szándékos károkozás, bűncselekmények, jogszabályok szándékos megsértése, vagy ha a vezető személyes haszonszerzésre használta pozícióját. Fontos a kötvény pontos feltételeit ismerni, mert biztosítónként eltérések lehetnek a kizárásokban.",
+        "Ahogy más biztosításoknál, itt is vannak kivételek. Például, ha szándékosan okoz valamilyen kárt, arra a biztosítás nem vonatkozik. Büntetőjogi eljárásban kiszabott bírságokat vagy börtönbüntetést sem fedez (ez törvényileg tiltott lenne), de a védekezés jogi költségeit fedezi.",
     },
     {
-      question: "MI TÖRTÉNIK, HA FELSZÁMOLÁS ALÁ KERÜL A CÉG?",
+      question: "Mi van, ha felszámolás alá kerül a cég?",
       answer:
-        'Ez különösen kockázatos helyzet a vezetők számára, hiszen ilyenkor kerülnek leginkább célkeresztbe. A jó D&O biztosítás tartalmaz "run-off" fedezetet, ami a cég megszűnése után is védi a vezetőket egy meghatározott ideig. Fontos, hogy a biztosítást még a felszámolási eljárás megindítása előtt megkössük, mert utána már nem vagy csak speciális feltételekkel lehetséges.',
+        "Sajnos felszámolás esetén a hitelezők és a felszámoló is vizsgálhatják a vezetői tevékenységet, és felléphetnek a vezetővel szemben. A D&O biztosítás segíthet az ezzel járó jogi költségek és kártérítési kötelezettség kezelésében.",
     },
   ];
 
@@ -49,9 +49,9 @@ const FAQs = () => {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 font-antonio text-white">
-          KÉRDÉSE VAN?
+          Kérdése Van?
           <br />
-          ÍME A LEGGYAKORIBB KÉRDÉSEK A D&O BIZTOSÍTÁSRÓL
+          Íme a Leggyakoribb Kérdések a D&O Biztosításról
         </h2>
 
         <div className="grid grid-cols-1 gap-3 sm:gap-4">

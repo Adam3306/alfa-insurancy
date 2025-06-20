@@ -131,23 +131,11 @@ export default function Home() {
             </div>
 
             <h1 className="text-[1.35rem] sm:text-2xl md:text-5xl lg:text-6xl font-bold text-white font-antonio leading-tight tracking-wide break-words hyphens-auto">
-              BIZTONSÁGBAN
-              <br />
-              ÜGYVEZETŐKÉNT IS:
+              Biztonságban Ügyvezetőként is:
               <br />
               <span className="text-[1.15rem] sm:text-xl md:text-4xl lg:text-5xl">
-                A D&O
+                A D&O Felelősségbiztosítás, ami Önt Védi
               </span>
-              <br />
-              <span className="text-[1.35rem] sm:text-2xl md:text-5xl lg:text-6xl">
-                FELELŐSSÉG-
-              </span>
-              <br className="sm:hidden" />
-              <span className="text-[1.35rem] sm:text-2xl md:text-5xl lg:text-6xl">
-                BIZTOSÍTÁS,
-              </span>
-              <br />
-              AMI ÖNT VÉDI
             </h1>
           </div>
 
@@ -156,7 +144,7 @@ export default function Home() {
               href="#free-quote"
               className="cta-button inline-block text-xs sm:text-sm md:text-base px-4 sm:px-6 py-3 md:py-3 whitespace-normal"
             >
-              INGYENES AJÁNLATOT KÉREK
+              Kérek Ingyenes Ajánlatot Kockázatmentesen!
               <span className="arrow ml-2">→</span>
             </a>
           </div>
@@ -212,11 +200,8 @@ export default function Home() {
                   <p className="text-base md:text-lg">
                     Az Ügyvezetői Szakmai Felelősségbiztosítás (Directors &
                     Officers biztosítás) a személyes pénzügyi biztonságának
-                    alapja ebben a megváltozott jogi környezetben. Ami pontosan
-                    azért jött létre, hogy segítsen Önnek nyugodtan végezni a
-                    munkáját, tudva, hogy a vezetői döntéseiből fakadó esetleges
-                    jogi és anyagi következmények pénzügyi terheit átvállalja a
-                    biztosító.
+                    alapja ebben a megváltozott jogi környezetben. 
+                    Ami pontosan azért jött létre, hogy segítsen Önnek nyugodtan végezni a munkáját, tudva, hogy a vezetői döntéseiből fakadó esetleges jogi és anyagi következmények pénzügyi terheit átvállalja a biztosító.
                   </p>
                 </div>
               </div>
@@ -232,7 +217,7 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center font-antonio tracking-wide">
-            MIK AZOK A VEZETŐI KOCKÁZATOK, AMIKRE ÉRDEMES FELKÉSZÜLNI?
+            Mik azok a Vezetői Kockázatok, Amikre Érdemes Felkészülni?
           </h2>
           <p className="text-base md:text-lg font-telegraf text-center mb-8 md:mb-12 max-w-3xl mx-auto">
             Vezetőként számos helyzet adódhat, amikor a Ptk. alapján személyes
@@ -244,7 +229,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
-                SZEMÉLYES FELELŐSSÉG A PTK. SZERINT
+                Személyes Felelősség a Ptk. Szerint
               </h3>
               <p className="text-sm md:text-base font-interphases">
                 A törvény lehetőséget ad arra, hogy a károsultak (pl. partnerek,
@@ -254,18 +239,17 @@ export default function Home() {
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
-                JOGI ELJÁRÁSOK KÖLTSÉGEI
+                Jogi Eljárások Költségei
               </h3>
               <p className="text-sm md:text-base font-interphases">
                 Akár jogos, akár alaptalan az igény, egy jogi eljárás vagy
                 hatósági vizsgálat jelentős költségekkel járhat a védekezés
-                során (ügyvédi díjak, szakértők). A biztosítás éves díjának
-                sokszorosa lehet.
+                során (ügyvédi díjak, szakértők). A a biztosítás éves díjának sokszorosa lehet.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
-                HATÓSÁGI BÍRSÁGOK
+                Hatósági Bírságok
               </h3>
               <p className="text-sm md:text-base font-interphases">
                 Bizonyos esetekben a hatóságok nem csak a cégre, de közvetlenül
@@ -274,13 +258,45 @@ export default function Home() {
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
-                BÜNTETŐJOGI ELJÁRÁSOK VÉDEKEZÉSI KÖLTSÉGEI
+                Büntetőjogi Eljárások Védekezési Költségei
               </h3>
               <p className="text-sm md:text-base font-interphases">
                 Bár a biztosítás nem fedezi a büntetést, a büntetőjogi
                 eljárással kapcsolatos jogi védekezés költségei nagyon magasak
                 lehetnek, ezek fedezésében segít a D&O biztosítás a bűnösség
                 bizonyításáig.
+              </p>
+            </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Jó Hírnév Védelme
+              </h3>
+              <p className="text-sm md:text-base font-interphases">
+                Egy per vagy vizsgálat rossz sajtót generálhat. Az ügyvezető szakmai felelősségbiztosítása segíthet a hírnév helyreállításával kapcsolatos költségekben.
+              </p>
+            </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Védekezés Alaptalan Vádak Ellen
+              </h3>
+              <p className="text-sm md:text-base font-interphases">
+                Sajnos előfordulhatnak alaptalan követelések is, amelyekkel szemben szintén védekezni kell, ami időbe és pénzbe kerül.
+              </p>
+            </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Felelősség Időbeli Terjedelme
+              </h3>
+              <p className="text-sm md:text-base font-interphases">
+                Fontos tudni, hogy a korábbi vezetői döntéseiért való felelőssége nem szűnik meg azonnal a pozíció elhagyásával. Sajnos a halála után a hagyatéka is perelhető a korábbi hibák miatt.
+              </p>
+            </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Csődhelyzet és Hitelezői Követelések
+              </h3>
+              <p className="text-sm md:text-base font-interphases">
+                Csőd esetén a hitelezők és a felszámoló is felléphetnek a vezetővel szemben, ami anyagi következményekkel járhat.
               </p>
             </div>
           </div>
@@ -294,103 +310,63 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center font-antonio tracking-wide">
-            MIBEN SEGÍT AZ ÜGYVEZETŐI FELELŐSSÉGBIZTOSÍTÁS?
+            Miben Segít Az Ügyvezetői Felelősségbiztosítás? A D&O Biztosítás Létfontosságú Fedezetei
           </h2>
           <p className="text-base md:text-lg font-telegraf text-center mb-8 md:mb-12 max-w-3xl mx-auto">
             Az Ügyvezetői Szakmai Felelősségbiztosítás az a pajzs, amire
             szüksége van a fent említett kockázatokkal szemben. Ez a biztosítás
             nem a hibákat akadályozza meg, hanem azok pénzügyi következményeitől
-            véd meg.
+            véd meg. Főbb fedezetek (mindig a konkrét kötvény a mérvadó):
           </p>
 
-          <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
-            <div className="md:w-1/3 card-container">
-              <div className="relative overflow-hidden image-card h-64 md:h-80 rounded-none">
-                <Suspense
-                  fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
-                >
-                  <Image
-                    src="/legal-protection.jpg"
-                    alt="Jogi védekezés"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    style={{ objectFit: "cover" }}
-                    loading="lazy"
-                    quality={75}
-                  />
-                </Suspense>
-                <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 font-antonio tracking-wide">
-                    JOGI VÉDEKEZÉS
-                    <br />
-                    KÖLTSÉGEINEK FEDEZÉSE
-                  </h3>
-                  <p className="text-sm md:text-base text-white font-telegraf">
-                    Átvállalja a jogi eljárások minden indokolt költségét
-                    (ügyvédi díjak, bírósági költségek), akár a bűnösség jogerős
-                    kimondásáig büntetőügyekben is.
-                  </p>
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Jogi Védekezés Költségeinek Fedezése
+              </h3>
+              <p className="text-sm md:text-base font-interphases flex-grow">
+                Átvállalja a jogi eljárások minden indokolt költségét (ügyvédi díjak, bírósági költségek), akár a bűnösség jogerős kimondásáig büntetőügyekben is.
+              </p>
             </div>
-
-            <div className="md:w-1/3 card-container">
-              <div className="relative overflow-hidden image-card h-64 md:h-80 rounded-none">
-                <Suspense
-                  fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
-                >
-                  <Image
-                    src="/claim-settlement.jpg"
-                    alt="Kártérítési összegek"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    style={{ objectFit: "cover" }}
-                    loading="lazy"
-                    quality={75}
-                  />
-                </Suspense>
-                <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 font-antonio tracking-wide">
-                    KÁRTÉRÍTÉSI ÖSSZEGEK
-                    <br />
-                    KIFIZETÉSE
-                  </h3>
-                  <p className="text-sm md:text-base text-white font-telegraf">
-                    Segít a jogosan megítélt kártérítési összegek megfizetésében
-                    a biztosítási limit erejéig.
-                  </p>
-                </div>
-              </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Kártérítési Összegek Kifizetése
+              </h3>
+              <p className="text-sm md:text-base font-interphases flex-grow">
+                Segít a jogosan megítélt kártérítési összegek megfizetésében a biztosítási limit erejéig.
+              </p>
             </div>
-
-            <div className="md:w-1/3 card-container">
-              <div className="relative overflow-hidden image-card h-64 md:h-80 rounded-none">
-                <Suspense
-                  fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
-                >
-                  <Image
-                    src="/reputation-defense.jpg"
-                    alt="Jó hírnév helyreállítása"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    style={{ objectFit: "cover" }}
-                    loading="lazy"
-                    quality={75}
-                  />
-                </Suspense>
-                <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end card-content">
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 font-antonio tracking-wide">
-                    BIZTONSÁG HIÁNYÁNAK
-                    <br />
-                    FEDEZÉSE
-                  </h3>
-                  <p className="text-sm md:text-base text-white font-telegraf">
-                    Segít a hírnév helyreállításában, szakértői tanácsadást
-                    biztosít krízishelyzetekben, és anyagi támogatást nyújt a
-                    nehéz időszakokban.
-                  </p>
-                </div>
-              </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Bizonyos Bírságok Fedezete
+              </h3>
+              <p className="text-sm md:text-base font-interphases flex-grow">
+                Fedezetet nyújthat bizonyos hatósági bírságokra.
+              </p>
+            </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Jó Hírnév Helyreállításának Támogatása
+              </h3>
+              <p className="text-sm md:text-base font-interphases flex-grow">
+                Hozzájárulhat a hírnév visszaállításával kapcsolatos költségekhez.
+              </p>
+            </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Múltbeli Tevékenység Fedezete
+              </h3>
+              <p className="text-sm md:text-base font-interphases flex-grow">
+                Gyakran kiterjed a korábbi vezetői döntésekkel kapcsolatos igényekre is.
+              </p>
+            </div>
+            <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
+              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 font-antonio tracking-wide">
+                Védelem Távozás Után is
+              </h3>
+              <p className="text-sm md:text-base font-interphases flex-grow">
+                Fontos tudni, hogy a vezetői döntések következményei akár évekkel a pozíció elhagyása után is előkerülhetnek. a biztosítás lejárta után is fedezetet nyújt azokra a kárigényekre, amelyeket ebben a meghosszabbított időszakban jelentenek be, feltéve, hogy a károkozó cselekmény a biztosítási időszak alatt történt. Ez nyugalmat biztosít a távozó vezetők számára a múltbéli tevékenységükkel kapcsolatban.
+              </p>
             </div>
           </div>
         </div>
