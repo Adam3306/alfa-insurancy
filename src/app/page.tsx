@@ -287,9 +287,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <About />
-
       {/* D&O Insurance Benefits */}
       <section
         className="py-10 md:py-16 px-4 sm:px-12 lg:px-24 bg-[#3A5D98] border-t border-[#0C1D3D]"
@@ -398,6 +395,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* About Section */}
+      <About />
 
       {/* FAQs Section */}
       <FAQs />
@@ -607,11 +607,6 @@ export default function Home() {
                 Jogi Információk
               </h3>
               <ul className="space-y-1 md:space-y-2 font-telegraf text-sm md:text-base">
-                <li>
-                  <a href="/aszf" className="hover:text-blue-300 transition">
-                    Általános Szerződési Feltételek
-                  </a>
-                </li>
                 <li>
                   <a
                     href="/adatvedelem"

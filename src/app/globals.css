@@ -93,28 +93,29 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Antonio', sans-serif;
   letter-spacing: 0.02em;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.6;
   margin-bottom: 0.5em;
 }
 
 h1 {
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-h3 {
+h2 {
   letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h3 {
+  letter-spacing: 0.01em;
 }
 
 p {
-  line-height: 1.6;
+  line-height: 2;
   margin-bottom: 1rem;
   font-family: 'Telegraf', sans-serif;
+  letter-spacing: -0.01em;
 }
 
 .font-antonio {
