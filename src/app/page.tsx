@@ -98,8 +98,8 @@ export default function Home() {
               fallback={<div className="bg-[#3A5D98] w-full h-full"></div>}
             >
               <Image
-                src="/ajanlos.jpg"
-                alt="Executive handshake in professional environment"
+                src="/executive-businessman.jpg"
+                alt="Ajánlatkérés"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -159,17 +159,16 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-6 md:mb-10">
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-              <div className="w-full md:w-1/3 mb-4 md:mb-0 relative aspect-square md:aspect-[4/3] h-60 md:h-72">
+              <div className="w-full md:w-1/3 mb-4 md:mb-0 relative aspect-[3/2] h-80 md:h-[28rem]">
                 <Suspense
                   fallback={<div className="bg-[#0C1D3D] w-full h-full"></div>}
                 >
                   <Image
-                    src="/stressed-executive.jpg"
+                    src="/do_ceo.jpg"
                     alt="Ügyvezetői felelősség biztosítás szükségessége, vagyonvédelem"
-                    className="rounded-none shadow-lg"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "contain", backgroundColor: "transparent" }} // changed here
                     loading="lazy"
                     quality={80}
                   />
@@ -200,8 +199,11 @@ export default function Home() {
                   <p className="text-base md:text-lg">
                     Az Ügyvezetői Szakmai Felelősségbiztosítás (Directors &
                     Officers biztosítás) a személyes pénzügyi biztonságának
-                    alapja ebben a megváltozott jogi környezetben. 
-                    Ami pontosan azért jött létre, hogy segítsen Önnek nyugodtan végezni a munkáját, tudva, hogy a vezetői döntéseiből fakadó esetleges jogi és anyagi következmények pénzügyi terheit átvállalja a biztosító.
+                    alapja ebben a megváltozott jogi környezetben. Ami pontosan
+                    azért jött létre, hogy segítsen Önnek nyugodtan végezni a
+                    munkáját, tudva, hogy a vezetői döntéseiből fakadó esetleges
+                    jogi és anyagi következmények pénzügyi terheit átvállalja a
+                    biztosító.
                   </p>
                 </div>
               </div>
@@ -244,7 +246,8 @@ export default function Home() {
               <p className="text-sm md:text-base font-interphases">
                 Akár jogos, akár alaptalan az igény, egy jogi eljárás vagy
                 hatósági vizsgálat jelentős költségekkel járhat a védekezés
-                során (ügyvédi díjak, szakértők). A a biztosítás éves díjának sokszorosa lehet.
+                során (ügyvédi díjak, szakértők). A a biztosítás éves díjának
+                sokszorosa lehet.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
@@ -272,7 +275,9 @@ export default function Home() {
                 Jó Hírnév Védelme
               </h3>
               <p className="text-sm md:text-base font-interphases">
-                Egy per vagy vizsgálat rossz sajtót generálhat. Az ügyvezető szakmai felelősségbiztosítása segíthet a hírnév helyreállításával kapcsolatos költségekben.
+                Egy per vagy vizsgálat rossz sajtót generálhat. Az ügyvezető
+                szakmai felelősségbiztosítása segíthet a hírnév
+                helyreállításával kapcsolatos költségekben.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
@@ -280,7 +285,8 @@ export default function Home() {
                 Védekezés Alaptalan Vádak Ellen
               </h3>
               <p className="text-sm md:text-base font-interphases">
-                Sajnos előfordulhatnak alaptalan követelések is, amelyekkel szemben szintén védekezni kell, ami időbe és pénzbe kerül.
+                Sajnos előfordulhatnak alaptalan követelések is, amelyekkel
+                szemben szintén védekezni kell, ami időbe és pénzbe kerül.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
@@ -288,7 +294,10 @@ export default function Home() {
                 Felelősség Időbeli Terjedelme
               </h3>
               <p className="text-sm md:text-base font-interphases">
-                Fontos tudni, hogy a korábbi vezetői döntéseiért való felelőssége nem szűnik meg azonnal a pozíció elhagyásával. Sajnos a halála után a hagyatéka is perelhető a korábbi hibák miatt.
+                Fontos tudni, hogy a korábbi vezetői döntéseiért való
+                felelőssége nem szűnik meg azonnal a pozíció elhagyásával.
+                Sajnos a halála után a hagyatéka is perelhető a korábbi hibák
+                miatt.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card">
@@ -296,7 +305,8 @@ export default function Home() {
                 Csődhelyzet és Hitelezői Követelések
               </h3>
               <p className="text-sm md:text-base font-interphases">
-                Csőd esetén a hitelezők és a felszámoló is felléphetnek a vezetővel szemben, ami anyagi következményekkel járhat.
+                Csőd esetén a hitelezők és a felszámoló is felléphetnek a
+                vezetővel szemben, ami anyagi következményekkel járhat.
               </p>
             </div>
           </div>
@@ -310,7 +320,8 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center font-antonio tracking-wide">
-            Miben Segít Az Ügyvezetői Felelősségbiztosítás? A D&O Biztosítás Létfontosságú Fedezetei
+            Miben Segít Az Ügyvezetői Felelősségbiztosítás? A D&O Biztosítás
+            Létfontosságú Fedezetei
           </h2>
           <p className="text-base md:text-lg font-telegraf text-center mb-8 md:mb-12 max-w-3xl mx-auto">
             Az Ügyvezetői Szakmai Felelősségbiztosítás az a pajzs, amire
@@ -325,7 +336,9 @@ export default function Home() {
                 Jogi Védekezés Költségeinek Fedezése
               </h3>
               <p className="text-sm md:text-base font-interphases flex-grow">
-                Átvállalja a jogi eljárások minden indokolt költségét (ügyvédi díjak, bírósági költségek), akár a bűnösség jogerős kimondásáig büntetőügyekben is.
+                Átvállalja a jogi eljárások minden indokolt költségét (ügyvédi
+                díjak, bírósági költségek), akár a bűnösség jogerős kimondásáig
+                büntetőügyekben is.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
@@ -333,7 +346,8 @@ export default function Home() {
                 Kártérítési Összegek Kifizetése
               </h3>
               <p className="text-sm md:text-base font-interphases flex-grow">
-                Segít a jogosan megítélt kártérítési összegek megfizetésében a biztosítási limit erejéig.
+                Segít a jogosan megítélt kártérítési összegek megfizetésében a
+                biztosítási limit erejéig.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
@@ -349,7 +363,8 @@ export default function Home() {
                 Jó Hírnév Helyreállításának Támogatása
               </h3>
               <p className="text-sm md:text-base font-interphases flex-grow">
-                Hozzájárulhat a hírnév visszaállításával kapcsolatos költségekhez.
+                Hozzájárulhat a hírnév visszaállításával kapcsolatos
+                költségekhez.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
@@ -357,7 +372,8 @@ export default function Home() {
                 Múltbeli Tevékenység Fedezete
               </h3>
               <p className="text-sm md:text-base font-interphases flex-grow">
-                Gyakran kiterjed a korábbi vezetői döntésekkel kapcsolatos igényekre is.
+                Gyakran kiterjed a korábbi vezetői döntésekkel kapcsolatos
+                igényekre is.
               </p>
             </div>
             <div className="bg-[#183762] p-4 md:p-6 border-t-4 border-white shadow-lg faq-card flex flex-col">
@@ -365,7 +381,13 @@ export default function Home() {
                 Védelem Távozás Után is
               </h3>
               <p className="text-sm md:text-base font-interphases flex-grow">
-                Fontos tudni, hogy a vezetői döntések következményei akár évekkel a pozíció elhagyása után is előkerülhetnek. a biztosítás lejárta után is fedezetet nyújt azokra a kárigényekre, amelyeket ebben a meghosszabbított időszakban jelentenek be, feltéve, hogy a károkozó cselekmény a biztosítási időszak alatt történt. Ez nyugalmat biztosít a távozó vezetők számára a múltbéli tevékenységükkel kapcsolatban.
+                Fontos tudni, hogy a vezetői döntések következményei akár
+                évekkel a pozíció elhagyása után is előkerülhetnek. a biztosítás
+                lejárta után is fedezetet nyújt azokra a kárigényekre, amelyeket
+                ebben a meghosszabbított időszakban jelentenek be, feltéve, hogy
+                a károkozó cselekmény a biztosítási időszak alatt történt. Ez
+                nyugalmat biztosít a távozó vezetők számára a múltbéli
+                tevékenységükkel kapcsolatban.
               </p>
             </div>
           </div>
@@ -527,13 +549,13 @@ export default function Home() {
                 <div className="relative h-8 w-8 md:h-10 md:w-10 mr-2">
                   <Image
                     src="/alfa-insurance-logo.png"
-                    alt="Alfa Biztosítás"
+                    alt="Alpha Trust Insurance Kft."
                     fill
                     style={{ objectFit: "contain" }}
                   />
                 </div>
                 <span className="text-lg md:text-xl font-bold font-antonio">
-                  ALFA BIZTOSÍTÁS
+                  ALPHA TRUST INSURANCE KFT.
                 </span>
               </div>
               <p className="text-xs md:text-sm font-telegraf mt-3 md:mt-4 text-gray-300">
@@ -626,7 +648,7 @@ export default function Home() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>1052 Budapest, Váci utca 12.</span>
+                  <span>2120 Dunakeszi, Felsőtabán utca 11.</span>
                 </li>
                 <li className="flex items-start md:items-center">
                   <svg
@@ -637,7 +659,7 @@ export default function Home() {
                   >
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.948.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
-                  <span>+36 1 123 4567</span>
+                  <span>+36 30 18 18 047</span>
                 </li>
                 <li className="flex items-start md:items-center">
                   <svg
@@ -703,13 +725,13 @@ export default function Home() {
           <div className="pt-6 md:pt-8 mt-6 md:mt-8 border-t border-secondary-blue">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="font-telegraf text-xs md:text-sm text-gray-400 mb-4 md:mb-0 text-center md:text-left">
-                © {new Date().getFullYear()} Alfa Biztosítás. Minden jog
-                fenntartva.
+                © {new Date().getFullYear()} Alpha Trust Insurance Kft. Minden
+                jog fenntartva.
               </p>
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-xs md:text-sm font-telegraf text-gray-400 text-center md:text-left">
                 <span>MNB engedély szám: H-EN-I-596/2018</span>
                 <span className="hidden md:inline">|</span>
-                <span>Adószám: 12345678-2-41</span>
+                <span>Adószám: 27181553-2-13</span>
               </div>
             </div>
           </div>

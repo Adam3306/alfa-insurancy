@@ -32,30 +32,30 @@ export default function Adatvedelem() {
         <div className="prose prose-lg prose-invert max-w-none font-telegraf">
           <p className="mb-4">
             Jelen Adatvédelmi Tájékoztató (a továbbiakban: Tájékoztató) célja,
-            hogy az Alfa Biztosítás (a továbbiakban: Adatkezelő) által végzett
+            hogy az Alpha Trust Insurance Kft. (a továbbiakban: Adatkezelő) által végzett
             adatkezelési tevékenységekről tájékoztatást nyújtson az érintettek
             számára.
           </p>
 
           <h2 className="text-2xl font-bold font-antonio mt-8 mb-4">
-            1. Az adatkezelő adatai
+            1. AZ ADATKEZELŐ ADATAI
           </h2>
           <p className="mb-4">
-            Név: Alfa Biztosítás
+            Név: Alpha Trust Insurance Kft.
             <br />
-            Székhely: 1052 Budapest, Váci utca 12.
+            Székhely: 2120 Dunakeszi, Felsőtabán utca 11.
             <br />
-            Cégjegyzékszám: 01-10-123456
+            Cégjegyzékszám: 2120 Dunakeszi, Felsőtabán utca 11.
             <br />
-            Adószám: 12345678-2-41
+            Adószám: 27181553-2-13
             <br />
-            E-mail: info@alfabiztositas.hu
+            E-mail: szego@premiumbiztositasok.hu
             <br />
-            Telefon: +36 1 123 4567
+            Telefon: +36 30 18 18 047
           </p>
 
           <h2 className="text-2xl font-bold font-antonio mt-8 mb-4">
-            2. Az adatkezelés alapelvei
+            2. AZ ADATKEZELÉS ALAPELVEI
           </h2>
           <p className="mb-4">
             Az Adatkezelő a személyes adatok kezelése során a következő
@@ -66,20 +66,19 @@ export default function Adatvedelem() {
             <li>Célhoz kötöttség</li>
             <li>Adattakarékosság</li>
             <li>Pontosság</li>
-            <li>Korlátozott tárolhatóság</li>
             <li>Integritás és bizalmas jelleg</li>
             <li>Elszámoltathatóság</li>
           </ul>
 
           <h2 className="text-2xl font-bold font-antonio mt-8 mb-4">
-            3. A kezelt adatok köre és az adatkezelés célja
+            3. A KEZELT ADATOK KÖRE ÉS AZ ADATKEZELÉS CÉLJA
           </h2>
           <p className="mb-4">3.1 Ajánlatkérés során kezelt adatok:</p>
           <ul className="list-disc ml-6 mb-4">
             <li>Név - azonosítás céljából</li>
             <li>E-mail cím - kapcsolattartás céljából</li>
             <li>Telefonszám - kapcsolattartás céljából</li>
-            <li>Cég neve - ajánlat elkészítése céljából</li>
+            <li>Cég neve - azonosítás céljából</li>
             <li>Üzenet tartalma - ajánlat elkészítése céljából</li>
           </ul>
 
@@ -96,7 +95,7 @@ export default function Adatvedelem() {
           </ul>
 
           <h2 className="text-2xl font-bold font-antonio mt-8 mb-4">
-            4. Az adatkezelés jogalapja
+            4. AZ ADATKEZELÉS JOGALAPJA
           </h2>
           <p className="mb-4">
             Az adatkezelés jogalapja az alábbiak szerint alakul:
@@ -117,25 +116,7 @@ export default function Adatvedelem() {
           </ul>
 
           <h2 className="text-2xl font-bold font-antonio mt-8 mb-4">
-            5. Az adatkezelés időtartama
-          </h2>
-          <p className="mb-4">
-            Az adatkezelés időtartama az adatkezelés céljától és jogalapjától
-            függően az alábbiak szerint alakul:
-          </p>
-          <ul className="list-disc ml-6 mb-4">
-            <li>
-              Ajánlatkérés esetén: az ajánlat elfogadásáig vagy elutasításáig,
-              de legfeljebb 1 évig
-            </li>
-            <li>Szerződés esetén: a szerződés megszűnését követő 5 évig</li>
-            <li>
-              Számviteli bizonylatok esetén: a számviteli törvény alapján 8 évig
-            </li>
-          </ul>
-
-          <h2 className="text-2xl font-bold font-antonio mt-8 mb-4">
-            6. Az érintettek jogai
+            6. AZ ÉRINTETTEK JOGAI
           </h2>
           <p className="mb-4">Az érintetteket a következő jogok illetik meg:</p>
           <ul className="list-disc ml-6 mb-4">
@@ -149,7 +130,7 @@ export default function Adatvedelem() {
           </ul>
 
           <h2 className="text-2xl font-bold font-antonio mt-8 mb-4">
-            7. Adatfeldolgozók
+            7. ADATFELDOLGOZÓK
           </h2>
           <p className="mb-4">
             Az Adatkezelő az alábbi adatfeldolgozókat veszi igénybe:
@@ -164,7 +145,7 @@ export default function Adatvedelem() {
           </ul>
 
           <h2 className="text-2xl font-bold font-antonio mt-8 mb-4">
-            8. Adatbiztonság
+            8. ADATBIZTONSÁG
           </h2>
           <p className="mb-4">
             Az Adatkezelő az adatok biztonságáról megfelelő technikai és
@@ -184,7 +165,7 @@ export default function Adatvedelem() {
           </p>
 
           <p className="mt-8 text-sm">
-            Jelen Adatvédelmi Tájékoztató 2023. január 1. napjától hatályos.
+            Jelen Adatvédelmi Tájékoztató 2025. június 6. napjától hatályos.
           </p>
         </div>
       </div>

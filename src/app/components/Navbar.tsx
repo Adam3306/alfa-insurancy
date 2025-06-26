@@ -18,13 +18,13 @@ const Navbar = () => {
             <div className="relative h-12 w-12 mr-2">
               <Image
                 src="/alfa-insurance-logo.png"
-                alt="Alfa Biztosítás"
+                alt="Alpha Trust Insurance Kft."
                 fill
                 style={{ objectFit: "contain" }}
               />
             </div>
             <span className="text-2xl font-bold font-antonio">
-              ALFA BIZTOSÍTÁS
+              ALPHA TRUST INSURANCE
             </span>
           </a>
 
