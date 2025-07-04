@@ -79,6 +79,7 @@ html {
   --highlight-blue: #3B67C1;
   --text-light: #FFFFFF;
   --hero-left-blue: #3A5D98;
+  --gold: #E2C044;
 }
 
 body {
@@ -775,4 +776,9 @@ input:focus, textarea:focus, select:focus {
 .feature-card:hover {
   background-color: rgba(59, 103, 193, 0.15);
   transform: translateY(-3px);
+}
+
+/* Utility for gold border */
+.border-gold {
+  border-color: var(--gold) !important;
 }
