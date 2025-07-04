@@ -88,12 +88,12 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="flex flex-col md:flex-row min-h-[70vh] md:min-h-[60vh] items-stretch relative bg-[#3A5D98]"
+        className="flex flex-col md:flex-row min-h-[70vh] md:min-h-[60vh] items-center md:items-stretch relative bg-[#3A5D98] px-2 sm:px-4"
         id="hero"
       >
         {/* Left column - Image with blue border */}
-        <div className="md:w-1/2 flex items-center justify-center bg-[#3A5D98] p-6 md:p-10">
-          <div className="border-8 border-[#4592c6] bg-white w-full max-w-md aspect-square flex items-center justify-center">
+        <div className="w-full md:w-1/2 flex items-center justify-center bg-[#3A5D98] pt-6 md:pt-0 pb-4 md:pb-0">
+          <div className="border-8 border-[#4592c6] bg-white w-full max-w-xs sm:max-w-sm md:max-w-md aspect-square flex items-center justify-center mx-auto">
             <img
               src="/executive-businessman.jpg"
               alt="Kézfogás, bizalom"
@@ -103,22 +103,22 @@ export default function Home() {
           </div>
         </div>
         {/* Right column - Logo and headline */}
-        <div className="md:w-1/2 flex flex-col justify-center items-start bg-[#0C1D3D] p-8 md:p-16">
-          <div className="flex flex-col items-start w-full">
-            <div className="mb-8" style={{ background: '#0C1D3D', borderRadius: 0 }}>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start bg-[#0C1D3D] px-4 py-6 md:p-16">
+          <div className="flex flex-col items-center md:items-start w-full">
+            <div className="mb-6 md:mb-8 flex justify-center md:justify-start w-full">
               <Image
                 src="/alfa-insurance-logo.png"
                 alt="Alpha Trust Insurance Kft. logó"
-                width={160}
-                height={160}
-                className="w-32 md:w-40"
+                width={120}
+                height={120}
+                className="w-24 md:w-32"
                 style={{ maxWidth: '180px', height: 'auto', background: 'transparent' }}
               />
             </div>
-            <h1 className="hero-title font-antonio font-bold text-white text-left">
+            <h1 className="hero-title font-antonio font-bold text-white text-center md:text-left text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight">
               BIZTONSÁGBAN<br />ÜGYVEZETŐKÉNT IS:
               <br />
-              <span className="hero-subtitle font-antonio font-bold block mt-2">
+              <span className="hero-subtitle font-antonio font-bold block mt-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl">
                 A D&O FELELŐSSÉGBIZTOSÍTÁS,<br />AMI ÖNT VÉDI
               </span>
             </h1>

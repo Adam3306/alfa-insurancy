@@ -4,9 +4,12 @@ import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title:
-    "Ügyvezetői Felelősségbiztosítás: Nyugodt döntéshozatal vezető pozícióban! | D&O Biztosítás - Alfa Biztosítás",
+    "Alfa Trust Insurance Kft.",
   description:
     "Ügyvezetőként személyes vagyonával felel a 2014-es Ptk. alapján hozott döntéseiért. Tudjon meg többet D&O biztosítással kapcsolatban! Kérjen ajánlatot vezető tisztségviselő felelősségbiztosításra!",
+    icons: {
+      icon: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({
@@ -52,6 +55,7 @@ export default function RootLayout({
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        <link rel="icon" href="//favicon.ico" sizes="any" />
       </head>
       <body className="antialiased font-telegraf">
         <Navbar />
