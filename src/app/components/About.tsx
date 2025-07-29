@@ -10,16 +10,27 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
           <div className="md:w-1/2">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 font-antonio text-white">
-              MIÉRT ÉRDEMES ENGEM VÁLASZTANIA D&O BIZTOSÍTÁSI PARTNERÉÜL? KEDVESEN SEGÍTÜNK!
+              MIÉRT ÉRDEMES ENGEM VÁLASZTANIA D&O BIZTOSÍTÁSI PARTNERÉÜL?
+              KEDVESEN SEGÍTÜNK!
             </h2>
 
             <div className="space-y-4 md:space-y-6 font-telegraf text-white">
               <p className="text-sm md:text-base">
-                Tudjuk, hogy a biztosítás világa néha bonyolultnak tűnhet. Különösen igaz ez a szakmai felelősségbiztosításokra, amelynek feltételei sokfélék lehetnek. Azt is tudom, hogy a döntéshozóként kevés ideje marad foglalkozni egyéb ügyekkel.
+                Tudjuk, hogy a biztosítás világa néha bonyolultnak tűnhet.
+                Különösen igaz ez a szakmai felelősségbiztosításokra, amelynek
+                feltételei sokfélék lehetnek. Azt is tudom, hogy a
+                döntéshozóként kevés ideje marad foglalkozni egyéb ügyekkel.
               </p>
 
               <p className="text-sm md:text-base">
-                Én, mint független biztosítási alkusz, azért vagyok, hogy segítsek Önnek eligazodni a lehetőséges labirintusában. Nem egy biztosító termékét kínálom, hanem megértem az Ön helyzetét, a specifikus kockázatait (beleértve a Ptk. szerinti szempontokat), és összehasonlítom a piacon elérhető legjobb ajánlatokat. Célom, hogy személyre szabott, érthető és valóban megfelelő D&O biztosítást találjunk Önnek, ami illeszkedik az igényeihez és a költségvetéséhez.
+                Én, mint független biztosítási alkusz, azért vagyok, hogy
+                segítsek Önnek eligazodni a lehetőségek labirintusában. Nem egy
+                biztosító termékét kínálom, hanem megértem az Ön helyzetét, a
+                specifikus kockázatait (beleértve a Ptk. szerinti szempontokat),
+                és összehasonlítom a piacon elérhető legjobb ajánlatokat. Célom,
+                hogy személyre szabott, érthető és valóban megfelelő D&O
+                biztosítást találjunk Önnek, ami illeszkedik az igényeihez és a
+                költségvetéséhez.
               </p>
 
               <p className="font-bold text-sm md:text-base">
@@ -27,7 +38,8 @@ const About = () => {
               </p>
 
               <p className="text-sm md:text-base">
-                Ne aggódjon az ügyintézés hossza miatt. Lépjen velem kapcsolatba, és együtt megtaláljuk a legjobb védelmet!
+                Ne aggódjon az ügyintézés hossza miatt. Lépjen velem
+                kapcsolatba, és együtt megtaláljuk a legjobb védelmet!
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-6 md:mt-8">
@@ -40,7 +52,7 @@ const About = () => {
                 </a>
 
                 <a
-                  href="mailto:szego@premiumbiztositasok.hu"
+                  href="/kapcsolat"
                   className="cta-button bg-secondary-blue hover:bg-light-blue text-sm md:text-base"
                 >
                   Kérdésem Van / Konzultációt Kérek

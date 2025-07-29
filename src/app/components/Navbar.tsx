@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <a href="#" className="flex items-center group">
+          <Link href="/" className="flex items-center group">
             <div className="relative h-14 w-14 mr-3 transition-transform group-hover:scale-105">
               <Image
                 src="/alfa-insurance-logo.png"
@@ -26,24 +27,30 @@ const Navbar = () => {
             <span className="text-3xl font-bold font-antonio tracking-wider transition-colors group-hover:text-highlight-blue">
               ALPHA TRUST INSURANCE
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
+            <Link
+              href="/"
+              className="hover:text-highlight-blue transition font-telegraf relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-highlight-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full"
+            >
+              Főoldal
+            </Link>
             <a
-              href="#services"
+              href="/szolgaltatasok"
               className="hover:text-highlight-blue transition font-telegraf relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-highlight-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full"
             >
               Szolgáltatásaink
             </a>
             <a
-              href="#about"
+              href="/bemutatkozas"
               className="hover:text-highlight-blue transition font-telegraf relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-highlight-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full"
             >
               Bemutatkozás
             </a>
             <a
-              href="#contact"
+              href="/kapcsolat"
               className="hover:text-highlight-blue transition font-telegraf relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-highlight-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full"
             >
               Kapcsolat
@@ -51,16 +58,21 @@ const Navbar = () => {
             <a
               href="#free-quote"
               className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm ml-2 transition-colors duration-200"
-              style={{ background: '#E2C044', color: '#0C1D3D', borderColor: '#E2C044', boxShadow: '0 2px 12px 0 rgba(226,192,68,0.10)' }}
-              onMouseOver={e => {
-                e.currentTarget.style.background = '#0C1D3D';
-                e.currentTarget.style.color = '#E2C044';
-                e.currentTarget.style.borderColor = '#E2C044';
+              style={{
+                background: "#E2C044",
+                color: "#0C1D3D",
+                borderColor: "#E2C044",
+                boxShadow: "0 2px 12px 0 rgba(226,192,68,0.10)",
               }}
-              onMouseOut={e => {
-                e.currentTarget.style.background = '#E2C044';
-                e.currentTarget.style.color = '#0C1D3D';
-                e.currentTarget.style.borderColor = '#E2C044';
+              onMouseOver={(e) => {
+                e.currentTarget.style.background = "#0C1D3D";
+                e.currentTarget.style.color = "#E2C044";
+                e.currentTarget.style.borderColor = "#E2C044";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background = "#E2C044";
+                e.currentTarget.style.color = "#0C1D3D";
+                e.currentTarget.style.borderColor = "#E2C044";
               }}
             >
               Ingyenes Ajánlat
@@ -92,24 +104,36 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`bg-secondary-blue/95 backdrop-blur-md md:hidden transition-all duration-500 overflow-hidden ${isMobileMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}`}
-        style={{ boxShadow: isMobileMenuOpen ? '0 8px 32px 0 rgba(44,62,80,0.15)' : 'none' }}
+        className={`bg-secondary-blue/95 backdrop-blur-md md:hidden transition-all duration-500 overflow-hidden ${
+          isMobileMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+        style={{
+          boxShadow: isMobileMenuOpen
+            ? "0 8px 32px 0 rgba(44,62,80,0.15)"
+            : "none",
+        }}
       >
         <nav className="flex flex-col space-y-4 p-4">
+          <Link
+            href="/"
+            className="text-white hover:text-highlight-blue transition font-telegraf text-lg"
+          >
+            Főoldal
+          </Link>
           <a
-            href="#services"
+            href="/szolgaltatasok"
             className="text-white hover:text-highlight-blue transition font-telegraf text-lg"
           >
             Szolgáltatásaink
           </a>
           <a
-            href="#about"
+            href="/bemutatkozas"
             className="text-white hover:text-highlight-blue transition font-telegraf text-lg"
           >
             Bemutatkozás
           </a>
           <a
-            href="#contact"
+            href="/kapcsolat"
             className="text-white hover:text-highlight-blue transition font-telegraf text-lg"
           >
             Kapcsolat
@@ -117,16 +141,21 @@ const Navbar = () => {
           <a
             href="#free-quote"
             className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm mt-2 transition-colors duration-200 text-center"
-            style={{ background: '#E2C044', color: '#0C1D3D', borderColor: '#E2C044', boxShadow: '0 2px 12px 0 rgba(226,192,68,0.10)' }}
-            onMouseOver={e => {
-              e.currentTarget.style.background = '#0C1D3D';
-              e.currentTarget.style.color = '#E2C044';
-              e.currentTarget.style.borderColor = '#E2C044';
+            style={{
+              background: "#E2C044",
+              color: "#0C1D3D",
+              borderColor: "#E2C044",
+              boxShadow: "0 2px 12px 0 rgba(226,192,68,0.10)",
             }}
-            onMouseOut={e => {
-              e.currentTarget.style.background = '#E2C044';
-              e.currentTarget.style.color = '#0C1D3D';
-              e.currentTarget.style.borderColor = '#E2C044';
+            onMouseOver={(e) => {
+              e.currentTarget.style.background = "#0C1D3D";
+              e.currentTarget.style.color = "#E2C044";
+              e.currentTarget.style.borderColor = "#E2C044";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.background = "#E2C044";
+              e.currentTarget.style.color = "#0C1D3D";
+              e.currentTarget.style.borderColor = "#E2C044";
             }}
           >
             Ingyenes Ajánlat
