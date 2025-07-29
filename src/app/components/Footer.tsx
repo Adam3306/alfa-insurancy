@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 
 export default function Footer() {
@@ -98,69 +97,42 @@ export default function Footer() {
               Kapcsolat
             </h3>
             <ul className="space-y-1 md:space-y-2 font-telegraf text-sm md:text-base">
-              <li className="flex items-start md:items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 md:h-5 md:w-5 mr-2 text-light-blue flex-shrink-0 mt-0.5 md:mt-0"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span>2120 Dunakeszi, Felsőtabán utca 11.</span>
-              </li>
-              <li className="flex items-start md:items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 md:h-5 md:w-5 mr-2 text-light-blue flex-shrink-0 mt-0.5 md:mt-0"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.948.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
+              <li>
                 <a
                   href="tel:+36301818047"
-                  className="hover:text-highlight-blue transition"
+                  className="hover:text-blue-300 transition"
                 >
                   +36 30 18 18 047
                 </a>
               </li>
-              <li className="flex items-start md:items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 md:h-5 md:w-5 mr-2 text-light-blue flex-shrink-0 mt-0.5 md:mt-0"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
+              <li>
                 <a
                   href="mailto:szego@premiumbiztositasok.hu"
-                  className="hover:text-highlight-blue transition"
+                  className="hover:text-blue-300 transition"
                 >
                   szego@premiumbiztositasok.hu
                 </a>
+              </li>
+              <li className="text-gray-300">
+                2120 Dunakeszi, Felsőtabán utca 11.
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom copyright and certification */}
-        <div className="pt-6 md:pt-8 mt-6 md:mt-8 border-t border-secondary-blue">
+        {/* Bottom Section */}
+        <div className="border-t border-secondary-blue pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-telegraf text-xs md:text-sm text-gray-400 mb-4 md:mb-0 text-center md:text-left">
-              © {new Date().getFullYear()} Alpha Trust Insurance Kft. Minden jog
-              fenntartva.
-            </p>
-            <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-xs md:text-sm font-telegraf text-gray-400 text-center md:text-left">
-              <span>MNB engedély szám: H-EN-I-596/2018</span>
-              <span className="hidden md:inline">|</span>
-              <span>Adószám: 27181553-2-13</span>
+            <div className="text-xs md:text-sm font-telegraf text-gray-300 mb-4 md:mb-0">
+              © 2024 Alpha Trust Insurance Kft. Minden jog fenntartva.
+            </div>
+            <div className="flex space-x-4">
+              <div className="text-xs md:text-sm font-telegraf text-gray-300">
+                Adószám: 27181553-2-13
+              </div>
+              <div className="text-xs md:text-sm font-telegraf text-gray-300">
+                MNB engedély: H-EN-I-596/2018
+              </div>
             </div>
           </div>
         </div>

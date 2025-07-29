@@ -1,5 +1,5 @@
-"use client";
 import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 
 export default function Kapcsolat() {
   return (
@@ -163,10 +163,10 @@ export default function Kapcsolat() {
                         <p className="text-light-blue font-telegraf font-bold text-lg mb-1">
                           Cím
                         </p>
-                        <p className="text-white font-telegraf text-lg font-bold">
+                        <p className="text-white font-telegraf text-lg">
                           2120 Dunakeszi, Felsőtabán utca 11.
                         </p>
-                        <p className="text-light-blue font-telegraf text-sm">
+                        <p className="text-highlight-blue font-telegraf text-sm mt-1">
                           (nem iroda)
                         </p>
                       </div>
@@ -183,12 +183,12 @@ export default function Kapcsolat() {
               </h2>
 
               <div className="space-y-8">
-                {/* Cég információk */}
+                {/* Adószám */}
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-highlight-blue/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
                   <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-highlight-blue/50 transition-all duration-300">
                     <h3 className="font-bold text-2xl font-antonio text-white mb-6">
-                      Prémium Biztosítási Alkusz Kft.
+                      Adószám
                     </h3>
                     <div className="space-y-4 text-lg font-telegraf">
                       <div className="flex justify-between items-center">
@@ -260,95 +260,7 @@ export default function Kapcsolat() {
             Küldjön üzenetet
           </h2>
 
-          <form className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block mb-2 font-telegraf text-white"
-                >
-                  Név *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full p-3 rounded-md bg-secondary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue font-telegraf"
-                  placeholder="Teljes név"
-                  required
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block mb-2 font-telegraf text-white"
-                >
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full p-3 rounded-md bg-secondary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue font-telegraf"
-                  placeholder="email@pelda.hu"
-                  required
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                htmlFor="phone"
-                className="block mb-2 font-telegraf text-white"
-              >
-                Telefon
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                className="w-full p-3 rounded-md bg-secondary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue font-telegraf"
-                placeholder="+36 xx xxx xxxx"
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="subject"
-                className="block mb-2 font-telegraf text-white"
-              >
-                Tárgy
-              </label>
-              <input
-                type="text"
-                id="subject"
-                className="w-full p-3 rounded-md bg-secondary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue font-telegraf"
-                placeholder="Miben segíthetek?"
-                required
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="message"
-                className="block mb-2 font-telegraf text-white"
-              >
-                Üzenet *
-              </label>
-              <textarea
-                id="message"
-                rows={6}
-                className="w-full p-3 rounded-md bg-secondary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue font-telegraf"
-                placeholder="Kérem írja le részletesen, hogy miben segíthetek..."
-                required
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-md hover:bg-yellow-400 transition-colors font-telegraf text-lg"
-            >
-              ÜZENET KÜLDÉSE
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
 
