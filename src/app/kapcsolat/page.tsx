@@ -215,38 +215,6 @@ export default function Kapcsolat() {
                     </div>
                   </div>
                 </div>
-
-                {/* Nyitvatartás */}
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-highlight-blue/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                  <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-highlight-blue/50 transition-all duration-300">
-                    <h3 className="font-bold text-2xl font-antonio text-white mb-6">
-                      Nyitvatartás
-                    </h3>
-                    <div className="space-y-4 text-lg font-telegraf">
-                      <div className="flex justify-between items-center">
-                        <span className="text-light-blue font-bold">
-                          Hétfő - Péntek:
-                        </span>
-                        <span className="text-white font-bold">
-                          9:00 - 17:00
-                        </span>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-light-blue font-bold">
-                          Szombat - Vasárnap:
-                        </span>
-                        <span className="text-white font-bold">Zárt</span>
-                      </div>
-                      <div className="mt-6 p-4 bg-gradient-to-r from-highlight-blue/20 to-yellow-400/20 rounded-xl border border-highlight-blue/30">
-                        <p className="text-highlight-blue font-bold text-center text-sm">
-                          * Egyéb időpontokban is elérhető előzetes egyeztetés
-                          alapján
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

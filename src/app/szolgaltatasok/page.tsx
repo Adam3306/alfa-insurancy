@@ -3,18 +3,6 @@ import Footer from "../components/Footer";
 export default function Szolgaltatasok() {
   return (
     <div className="text-white bg-primary-blue min-h-screen">
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 px-4 sm:px-12 lg:px-24 bg-primary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 font-antonio text-white">
-            SZOLGÁLTATÁSAINK
-          </h1>
-          <p className="text-lg md:text-xl font-telegraf text-light-blue mb-8 md:mb-12">
-            Szakértői segítség a biztosítási világban
-          </p>
-        </div>
-      </section>
-
       {/* Services Grid */}
       <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-7xl mx-auto">

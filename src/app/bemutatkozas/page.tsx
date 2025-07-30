@@ -56,23 +56,26 @@ export default function Bemutatkozas() {
                   <ul className="space-y-2 text-sm md:text-base">
                     <li className="flex items-start">
                       <span className="text-highlight-blue mr-2">•</span>
-                      <span>Független alkusz - objektív tanácsadás</span>
+                      <span>Független, objektív tanácsadás</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-highlight-blue mr-2">•</span>
-                      <span>Szakértő a D&O biztosítások területén</span>
+                      <span>Szakértő a vállalati biztosítások területén</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-highlight-blue mr-2">•</span>
-                      <span>Piaci összehasonlítás és legjobb ajánlatok</span>
+                      <span>Piaci összehasonlítás</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-highlight-blue mr-2">•</span>
-                      <span>Személyre szabott megoldások</span>
+                      <span>Dedikált vállalati megoldások</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-highlight-blue mr-2">•</span>
-                      <span>Folyamatos támogatás és ügyintézés</span>
+                      <span>
+                        Folyamatos támogatás és ügyintézés (kárügyintézés,
+                        igazolások, kötvények)
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -115,24 +118,6 @@ export default function Bemutatkozas() {
                   className="rounded-lg"
                   loading="lazy"
                 />
-              </div>
-
-              <div className="mt-6 bg-primary-blue p-4 rounded-lg">
-                <h4 className="font-bold text-lg font-antonio text-white mb-2">
-                  Cégadatok
-                </h4>
-                <div className="space-y-1 text-sm font-telegraf text-light-blue">
-                  <p>
-                    <span className="text-white">
-                      Prémium Biztosítási Alkusz Kft.
-                    </span>
-                  </p>
-                  <p>Adószám: 27181553-2-13</p>
-                  <p>MNB engedély: H-EN-I-596/2018</p>
-                  <p className="text-highlight-blue font-bold mt-2">
-                    A Prémium Biztosítási Alkusz Kft. csoport tagja
-                  </p>
-                </div>
               </div>
             </div>
           </div>
