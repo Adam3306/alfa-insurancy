@@ -1,21 +1,8 @@
 import Footer from "../components/Footer";
-import ContactForm from "../components/ContactForm";
 
 export default function Kapcsolat() {
   return (
     <div className="text-white bg-primary-blue min-h-screen">
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 px-4 sm:px-12 lg:px-24 bg-primary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8 font-antonio text-white">
-            KAPCSOLAT
-          </h1>
-          <p className="text-lg md:text-xl font-telegraf text-light-blue mb-8 md:mb-12">
-            Kérdése van? Keressen meg bizalommal!
-          </p>
-        </div>
-      </section>
-
       {/* Contact Information */}
       <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-gradient-to-br from-secondary-blue to-primary-blue">
         <div className="max-w-6xl mx-auto">
@@ -218,17 +205,6 @@ export default function Kapcsolat() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Contact Form */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-primary-blue">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center font-antonio text-white">
-            Küldjön üzenetet
-          </h2>
-
-          <ContactForm />
         </div>
       </section>
 
