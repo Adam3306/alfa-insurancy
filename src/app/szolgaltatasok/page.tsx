@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Szolgaltatasok() {
   return (
@@ -63,20 +64,26 @@ export default function Szolgaltatasok() {
               </p>
             </div>
 
-            {/* Ügyvezetői felelősségbiztosítás */}
-            <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full">
-              <h3 className="text-lg font-bold mb-4 font-antonio text-white uppercase">
-                Ügyvezetői felelősségbiztosítás (D&O, Directors & Officers)
-              </h3>
-              <p className="text-white font-telegraf text-sm mb-6 leading-relaxed">
-                Alapvető védelmet nyújt a cégvezetőknek és vezető
-                tisztségviselőknek a vállalkozás irányításával kapcsolatos
-                döntésekből és mulasztásokból eredő jogi és anyagi
-                követelésekkel szemben. Egy jól biztosított vezetői pozíció
-                vonzóbbá válhat a tehetséges szakemberek számára, mivel
-                csökkenti a személyes kockázatot, ami egy vezetői szereppel jár.
-              </p>
-            </div>
+            {/* Ügyvezetői felelősségbiztosítás - CLICKABLE */}
+            <Link href="/#do-insurance" className="block">
+              <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full cursor-pointer group">
+                <h3 className="text-lg font-bold mb-4 font-antonio text-white uppercase group-hover:text-highlight-blue transition-colors">
+                  Ügyvezetői felelősségbiztosítás (D&O, Directors & Officers)
+                </h3>
+                <p className="text-white font-telegraf text-sm mb-6 leading-relaxed">
+                  Alapvető védelmet nyújt a cégvezetőknek és vezető
+                  tisztségviselőknek a vállalkozás irányításával kapcsolatos
+                  döntésekből és mulasztásokból eredő jogi és anyagi
+                  követelésekkel szemben. Egy jól biztosított vezetői pozíció
+                  vonzóbbá válhat a tehetséges szakemberek számára, mivel
+                  csökkenti a személyes kockázatot, ami egy vezetői szereppel
+                  jár.
+                </p>
+                <div className="text-highlight-blue font-telegraf font-bold text-sm group-hover:text-yellow-400 transition-colors">
+                  Részletek →
+                </div>
+              </div>
+            </Link>
 
             {/* Kötelező kivitelezői felelősségbiztosítás */}
             <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full">
