@@ -160,6 +160,44 @@ export default function Kapcsolat() {
                     </div>
                   </div>
                 </div>
+
+                {/* Email írási gomb */}
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-highlight-blue/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                  <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-highlight-blue/50 transition-all duration-300">
+                    <div className="text-center">
+                      <div className="bg-gradient-to-br from-highlight-blue to-yellow-400 p-4 rounded-2xl mb-6 inline-block shadow-2xl">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-8 w-8 text-primary-blue"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="font-bold text-2xl font-antonio text-white mb-4">
+                        Email írása
+                      </h3>
+                      <p className="text-light-blue font-telegraf mb-6">
+                        Kattintson a gombra, és automatikusan megnyílik az email
+                        kliens
+                      </p>
+                      <a
+                        href="mailto:szego@premiumbiztositasok.hu?subject=Ajánlatkérés&body=Kedves Szegő Zsombor!%0D%0A%0D%0AÉrdeklődöm a szolgáltatásaitok iránt.%0D%0A%0D%0AÜdvözlettel,"
+                        className="bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg inline-block"
+                      >
+                        EMAIL ÍRÁSA
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

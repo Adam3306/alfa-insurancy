@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -33,30 +34,25 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1 md:space-y-2 font-telegraf text-sm md:text-base">
               <li>
-                <a
-                  href="/bemutatkozas"
-                  className="hover:text-blue-300 transition"
-                >
+                <Link href="/" className="hover:text-blue-300 transition">
                   Bemutatkozás
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/szolgaltatasok"
                   className="hover:text-blue-300 transition"
                 >
                   Szolgáltatások
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/kapcsolat" className="hover:text-blue-300 transition">
-                  Ajánlatkérés
-                </a>
-              </li>
-              <li>
-                <a href="/kapcsolat" className="hover:text-blue-300 transition">
+                <Link
+                  href="/kapcsolat"
+                  className="hover:text-blue-300 transition"
+                >
                   Kapcsolat
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -68,25 +64,25 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1 md:space-y-2 font-telegraf text-sm md:text-base">
               <li>
-                <a
+                <Link
                   href="/adatvedelem"
                   className="hover:text-blue-300 transition"
                 >
                   Adatvédelmi Tájékoztató
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/cookie" className="hover:text-blue-300 transition">
+                <Link href="/cookie" className="hover:text-blue-300 transition">
                   Cookie Szabályzat
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/impresszum"
                   className="hover:text-blue-300 transition"
                 >
                   Impresszum
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -98,20 +94,20 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1 md:space-y-2 font-telegraf text-sm md:text-base">
               <li>
-                <a
+                <Link
                   href="tel:+36301818047"
                   className="hover:text-blue-300 transition"
                 >
                   +36 30 18 18 047
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="mailto:szego@premiumbiztositasok.hu"
                   className="hover:text-blue-300 transition"
                 >
                   szego@premiumbiztositasok.hu
-                </a>
+                </Link>
               </li>
               <li className="text-gray-300">
                 2120 Dunakeszi, Felsőtabán utca 11.

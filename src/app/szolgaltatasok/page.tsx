@@ -65,25 +65,25 @@ export default function Szolgaltatasok() {
             </div>
 
             {/* Ügyvezetői felelősségbiztosítás - CLICKABLE */}
-            <Link href="/#do-insurance" className="block">
-              <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full cursor-pointer group">
-                <h3 className="text-lg font-bold mb-4 font-antonio text-white uppercase group-hover:text-highlight-blue transition-colors">
-                  Ügyvezetői felelősségbiztosítás (D&O, Directors & Officers)
-                </h3>
-                <p className="text-white font-telegraf text-sm mb-6 leading-relaxed">
-                  Alapvető védelmet nyújt a cégvezetőknek és vezető
-                  tisztségviselőknek a vállalkozás irányításával kapcsolatos
-                  döntésekből és mulasztásokból eredő jogi és anyagi
-                  követelésekkel szemben. Egy jól biztosított vezetői pozíció
-                  vonzóbbá válhat a tehetséges szakemberek számára, mivel
-                  csökkenti a személyes kockázatot, ami egy vezetői szereppel
-                  jár.
-                </p>
+
+            <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full cursor-pointer group">
+              <h3 className="text-lg font-bold mb-4 font-antonio text-white uppercase group-hover:text-highlight-blue transition-colors">
+                Ügyvezetői felelősségbiztosítás (D&O, Directors & Officers)
+              </h3>
+              <p className="text-white font-telegraf text-sm mb-6 leading-relaxed">
+                Alapvető védelmet nyújt a cégvezetőknek és vezető
+                tisztségviselőknek a vállalkozás irányításával kapcsolatos
+                döntésekből és mulasztásokból eredő jogi és anyagi
+                követelésekkel szemben. Egy jól biztosított vezetői pozíció
+                vonzóbbá válhat a tehetséges szakemberek számára, mivel
+                csökkenti a személyes kockázatot, ami egy vezetői szereppel jár.
+              </p>
+              <Link href="/szolgaltatasok/d&o">
                 <div className="text-highlight-blue font-telegraf font-bold text-sm group-hover:text-yellow-400 transition-colors">
                   Részletek →
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
 
             {/* Kötelező kivitelezői felelősségbiztosítás */}
             <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full">

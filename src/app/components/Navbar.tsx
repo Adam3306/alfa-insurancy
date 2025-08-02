@@ -35,27 +35,21 @@ const Navbar = () => {
               href="/"
               className="hover:text-highlight-blue transition font-telegraf relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-highlight-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full"
             >
-              Főoldal
+              Bemutatkozás
             </Link>
-            <a
+            <Link
               href="/szolgaltatasok"
               className="hover:text-highlight-blue transition font-telegraf relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-highlight-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full"
             >
               Szolgáltatásaink
-            </a>
-            <a
-              href="/bemutatkozas"
-              className="hover:text-highlight-blue transition font-telegraf relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-highlight-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full"
-            >
-              Bemutatkozás
-            </a>
-            <a
+            </Link>
+            <Link
               href="/kapcsolat"
               className="hover:text-highlight-blue transition font-telegraf relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-highlight-blue after:transition-all after:duration-300 hover:after:w-full after:rounded-full"
             >
               Kapcsolat
-            </a>
-            <a
+            </Link>
+            <Link
               href="#free-quote"
               className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm ml-2 transition-colors duration-200"
               style={{
@@ -76,7 +70,7 @@ const Navbar = () => {
               }}
             >
               Ingyenes Ajánlat
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -118,26 +112,20 @@ const Navbar = () => {
             href="/"
             className="text-white hover:text-highlight-blue transition font-telegraf text-lg"
           >
-            Főoldal
+            Bemutatkozás
           </Link>
-          <a
+          <Link
             href="/szolgaltatasok"
             className="text-white hover:text-highlight-blue transition font-telegraf text-lg"
           >
             Szolgáltatásaink
-          </a>
-          <a
-            href="/bemutatkozas"
-            className="text-white hover:text-highlight-blue transition font-telegraf text-lg"
-          >
-            Bemutatkozás
-          </a>
-          <a
+          </Link>
+          <Link
             href="/kapcsolat"
             className="text-white hover:text-highlight-blue transition font-telegraf text-lg"
           >
             Kapcsolat
-          </a>
+          </Link>
           <a
             href="#free-quote"
             className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm mt-2 transition-colors duration-200 text-center"
