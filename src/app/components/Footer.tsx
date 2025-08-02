@@ -120,7 +120,7 @@ export default function Footer() {
         <div className="border-t border-secondary-blue pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-xs md:text-sm font-telegraf text-gray-300 mb-4 md:mb-0">
-              © 2024 Alpha Trust Insurance Kft. Minden jog fenntartva.
+              © 2021 Alpha Trust Insurance Kft. Minden jog fenntartva.
             </div>
             <div className="flex space-x-4">
               <div className="text-xs md:text-sm font-telegraf text-gray-300">
