@@ -1,4 +1,4 @@
-# Alfa Biztosítás - D&O Biztosítás Weboldal
+# Alpha Biztosítás - D&O Biztosítás Weboldal
 
 Ez a projekt egy Next.js alapú weboldal a D&O (Directors & Officers) biztosítási szolgáltatások bemutatására.
 

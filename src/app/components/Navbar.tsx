@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center group">
             <div className="relative h-14 w-14 mr-3 transition-transform group-hover:scale-105">
               <Image
-                src="/alfa-insurance-logo.png"
+                src="/alpha-insurance-logo.png"
                 alt="Alpha Trust Insurance Kft."
                 fill
                 style={{ objectFit: "contain" }}

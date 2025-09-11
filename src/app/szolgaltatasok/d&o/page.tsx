@@ -44,7 +44,7 @@ export default function DAndO() {
           <div className="flex flex-col items-center md:items-start w-full">
             <div className="mb-6 md:mb-8 flex justify-center md:justify-start w-full">
               <Image
-                src="/alfa-insurance-logo.png"
+                src="/alpha-insurance-logo.png"
                 alt="Alpha Trust Insurance Kft. logó"
                 width={120}
                 height={120}

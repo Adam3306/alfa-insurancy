@@ -28,12 +28,12 @@ export async function POST(request: NextRequest) {
 
     // Set recipient email
     const recipientEmail =
-      process.env.RECIPIENT_EMAIL || "info@alfabiztositas.hu";
+      process.env.RECIPIENT_EMAIL || "info@alphabiztositas.hu";
 
     // Compose email
     const mailOptions = {
-      from: `"Alfa Biztosítás" <${
-        process.env.EMAIL_USER || "noreply@alfabiztositas.hu"
+      from: `"Alpha Biztosítás" <${
+        process.env.EMAIL_USER || "noreply@alphabiztositas.hu"
       }>`,
       to: recipientEmail,
       subject: `Új ajánlatkérés - ${name}`,

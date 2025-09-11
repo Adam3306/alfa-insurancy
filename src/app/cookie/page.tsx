@@ -31,7 +31,7 @@ export default function CookiePolicy() {
 
         <div className="prose prose-lg prose-invert max-w-none font-telegraf">
           <p className="mb-4">
-            Jelen Cookie Szabályzat célja, hogy az Alfa Biztosítás (a
+            Jelen Cookie Szabályzat célja, hogy az Alpha Biztosítás (a
             továbbiakban: Adatkezelő) által üzemeltetett weboldal (a
             továbbiakban: Weboldal) cookie-k használatával kapcsolatos
             tájékoztatást nyújtson a látogatók számára.
