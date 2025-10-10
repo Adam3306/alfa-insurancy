@@ -88,17 +88,20 @@ export default function Szolgaltatasok() {
             </div>
 
             {/* Kötelező kivitelezői felelősségbiztosítás */}
-            <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full">
-              <h3 className="text-lg font-bold mb-4 font-antonio text-white uppercase">
-                Kötelező kivitelezői felelősségbiztosítás
-              </h3>
-              <p className="text-white font-telegraf text-sm mb-6 leading-relaxed">
-                A törvény által előírt biztosítás, amely a kivitelezési
-                tevékenység során okozott károkra nyújt fedezetet. Előnye, hogy
-                védi a kivitelezőt a váratlan anyagi terhektől, és biztosítja a
-                megrendelők számára az esetleges károk megtérítését.
-              </p>
-            </div>
+            <Link href="https://alphabiztositas.com">
+              <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full">
+                <h3 className="text-lg font-bold mb-4 font-antonio text-white uppercase">
+                  Kötelező kivitelezői felelősségbiztosítás
+                </h3>
+                <p className="text-white font-telegraf text-sm mb-6 leading-relaxed">
+                  A törvény által előírt biztosítás, amely a kivitelezési
+                  tevékenység során okozott károkra nyújt fedezetet. Előnye,
+                  hogy védi a kivitelezőt a váratlan anyagi terhektől, és
+                  biztosítja a megrendelők számára az esetleges károk
+                  megtérítését.
+                </p>
+              </div>
+            </Link>
 
             {/* Orvos szakmai felelősségbiztosítás */}
             <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full">
