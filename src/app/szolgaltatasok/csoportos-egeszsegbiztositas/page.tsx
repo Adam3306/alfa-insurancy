@@ -1,4 +1,5 @@
 import Footer from "../../components/Footer";
+import Image from "next/image";
 
 export default function CsoportosEgeszsegbiztositas() {
   return (
@@ -11,19 +12,21 @@ export default function CsoportosEgeszsegbiztositas() {
         {/* Left column - Image with blue border */}
         <div className="w-full md:w-1/2 flex items-center justify-center bg-[#3A5D98] pt-6 md:pt-0 pb-4 md:pb-0">
           <div className="border-8 border-[#4592c6] bg-white w-full max-w-xs sm:max-w-sm md:max-w-md aspect-square flex items-center justify-center mx-auto">
-            <img
+            <Image
               src="/insurance-consultant.jpg"
               alt="Csoportos egészségbiztosítás"
+              width={400}
+              height={400}
               className="object-cover w-full h-full"
               style={{ objectFit: "cover" }}
-              loading="eager"
+              priority
             />
           </div>
         </div>
         {/* Right column - Logo and headline */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start bg-[#0C1D3D] px-4 py-6 md:p-16">
           <div className="text-center md:text-left">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 font-antonio text-white uppercase tracking-wider">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-6 font-antonio text-white uppercase tracking-wider leading-tight">
               CÉGES EGÉSZSÉGBIZTOSÍTÁS ÉS CSOPORTOS SZOLGÁLTATÁS-FINANSZÍROZÓ
               BIZTOSÍTÁS
             </h1>
@@ -54,7 +57,7 @@ export default function CsoportosEgeszsegbiztositas() {
           <h2 className="text-2xl md:text-3xl font-bold mb-6 font-antonio text-white text-center">
             Befektetés Munkavállalóiba, Hatékonyság Cégébe
           </h2>
-          <div className="text-lg font-telegraf text-gray-200 leading-relaxed space-y-4">
+          <div className="text-lg font-telegraf text-gray-200 leading-relaxed space-y-4 max-w-5xl mx-auto">
             <p>
               Cégvezetőként jól tudja, hogy a kiváló munkaerő megtartása és a
               munkavállalói elégedettség kulcsfontosságú a sikerhez. A{" "}
@@ -98,7 +101,7 @@ export default function CsoportosEgeszsegbiztositas() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
             Milyen problémákra nyújt megoldást a céges egészségbiztosítás?
           </h2>
-          <div className="text-lg font-telegraf text-gray-200 leading-relaxed space-y-4 mb-8">
+          <div className="text-lg font-telegraf text-gray-200 leading-relaxed space-y-4 mb-8 max-w-5xl mx-auto">
             <p>
               A munkavállaló betegsége egy cég életében olyan, mint egy{" "}
               <strong className="text-highlight-blue">humán üzemszünet</strong>:
@@ -183,7 +186,7 @@ export default function CsoportosEgeszsegbiztositas() {
                 számára:
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div>
                   <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
                     Munkavállalói elégedettség és megtartás:
@@ -337,7 +340,7 @@ export default function CsoportosEgeszsegbiztositas() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
                 <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
                   Gyors hozzáférés:
@@ -468,7 +471,7 @@ export default function CsoportosEgeszsegbiztositas() {
               segítséget:
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
                 <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
                   Egészségügyi asszisztencia:
@@ -637,7 +640,7 @@ export default function CsoportosEgeszsegbiztositas() {
               munkaadó, míg a biztosítottak a munkavállalók.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-secondary-blue border border-highlight-blue p-4 rounded-lg">
                 <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
                   Kedvezőbb díjazásúak
@@ -684,7 +687,7 @@ export default function CsoportosEgeszsegbiztositas() {
             Milyen típusú céges egészségbiztosítások léteznek?
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4 font-antonio text-highlight-blue uppercase">
                 Szolgáltatásfinanszírozó egészségbiztosítás:
@@ -721,8 +724,8 @@ export default function CsoportosEgeszsegbiztositas() {
             Költségek és Adózás: Mennyibe kerül a céges egészségbiztosítás?
           </h2>
 
-          <div className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg mb-8">
-            <p className="text-lg font-telegraf text-gray-200 mb-6">
+          <div className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg mb-8 max-w-5xl mx-auto">
+            <p className="text-lg font-telegraf text-gray-200 mb-6 leading-relaxed">
               Egy{" "}
               <strong className="text-highlight-blue">
                 csoportos egészségbiztosítás
@@ -790,8 +793,8 @@ export default function CsoportosEgeszsegbiztositas() {
             céges egészségbiztosítást?
           </h2>
 
-          <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg">
-            <p className="text-lg font-telegraf text-gray-200 mb-6">
+          <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg max-w-5xl mx-auto">
+            <p className="text-lg font-telegraf text-gray-200 mb-6 leading-relaxed">
               A{" "}
               <strong className="text-highlight-blue">
                 céges egészségbiztosítások
@@ -805,7 +808,7 @@ export default function CsoportosEgeszsegbiztositas() {
               vagy összegtérítéses megoldás megtalálása komplex feladat lehet.
             </p>
 
-            <p className="text-lg font-telegraf text-gray-200">
+            <p className="text-lg font-telegraf text-gray-200 leading-relaxed">
               Éppen ezért érdemes lehet tapasztalt, független biztosítási
               szakértő segítségét kérni, aki átlátja a piaci kínálatot, bekéri
               az ajánlatokat, és segít kiválasztani az Ön cégének ideális{" "}
@@ -825,7 +828,7 @@ export default function CsoportosEgeszsegbiztositas() {
             Kérdése van a céges egészségbiztosítással kapcsolatban? Kérjen
             visszahívást!
           </h2>
-          <p className="text-lg font-telegraf text-gray-200 mb-8">
+          <p className="text-lg font-telegraf text-gray-200 mb-8 leading-relaxed max-w-4xl mx-auto">
             Találja meg az igényeinek megfelelő{" "}
             <strong className="text-highlight-blue">
               céges egészségbiztosítási
