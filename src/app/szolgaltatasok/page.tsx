@@ -23,19 +23,21 @@ export default function Szolgaltatasok() {
               </p>
             </div>
 
-            {/* Csoportos egészségbiztosítás */}
-            <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full">
-              <h3 className="text-lg font-bold mb-4 font-antonio text-white uppercase">
-                Csoportos egészségbiztosítás
-              </h3>
-              <p className="text-white font-telegraf text-sm mb-6 leading-relaxed">
-                Ez a biztosítás a munkavállalók számára nyújt széles körű
-                egészségügyi szolgáltatásokat, mint például magánorvosi ellátás,
-                szűrővizsgálatok térítése. Előnye, hogy növeli a munkavállalói
-                elégedettséget és hűséget, miközben hozzájárul az egészségesebb
-                és produktívabb munkaerőhöz.
-              </p>
-            </div>
+            {/* Csoportos egészségbiztosítás - CLICKABLE */}
+            <Link href="/szolgaltatasok/csoportos-egeszsegbiztositas">
+              <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full cursor-pointer group">
+                <h3 className="text-lg font-bold mb-4 font-antonio text-white uppercase group-hover:text-highlight-blue transition-colors">
+                  Csoportos egészségbiztosítás
+                </h3>
+                <p className="text-white font-telegraf text-sm mb-6 leading-relaxed">
+                  Ez a biztosítás a munkavállalók számára nyújt széles körű
+                  egészségügyi szolgáltatásokat, mint például magánorvosi
+                  ellátás, szűrővizsgálatok térítése. Előnye, hogy növeli a
+                  munkavállalói elégedettséget és hűséget, miközben hozzájárul
+                  az egészségesebb és produktívabb munkaerőhöz.
+                </p>
+              </div>
+            </Link>
 
             {/* Üzemszünet-biztosítás */}
             <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full">

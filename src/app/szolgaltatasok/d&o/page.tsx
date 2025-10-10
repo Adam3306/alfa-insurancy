@@ -5,22 +5,7 @@ import About from "../../components/About";
 import FAQs from "../../components/FAQs";
 import Footer from "../../components/Footer";
 
-// Preload hero image
-const preload = () => {
-  // This URL must match the src attribute of the Image component
-  const imageUrl = "/executive-businessman.jpg";
-  // Create a new Image object with proper type
-  const img = new window.Image();
-  // Set the src attribute to trigger the load
-  img.src = imageUrl;
-};
-
 export default function DAndO() {
-  // Preload is client-side only
-  if (typeof window !== "undefined") {
-    preload();
-  }
-
   return (
     <div className="text-white bg-primary-blue">
       {/* Hero Section */}
@@ -36,6 +21,7 @@ export default function DAndO() {
               alt="Kézfogás, bizalom"
               className="object-cover w-full h-full"
               style={{ objectFit: "cover" }}
+              loading="eager"
             />
           </div>
         </div>
