@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <div className="text-white bg-primary-blue min-h-screen">
       {/* About Content */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <main className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
             {/* Text Content */}
-            <div className="md:w-2/3">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 font-antonio text-white">
+            <article className="md:w-2/3">
+              <h1 className="text-2xl md:text-3xl font-bold mb-6 font-antonio text-white">
                 MIÉRT ÉRDEMES ENGEM MEGBÍZNIA AZ ÜGYINTÉZÉSSEL?
-              </h2>
+              </h1>
 
               <div className="space-y-6 font-telegraf text-white">
                 <p className="text-base md:text-lg">
@@ -37,10 +37,10 @@ export default function Home() {
                   költségvetéséhez.
                 </p>
 
-                <div className="bg-primary-blue p-6 rounded-lg">
-                  <h3 className="font-bold text-lg mb-3 font-antonio text-highlight-blue">
+                <aside className="bg-primary-blue p-6 rounded-lg">
+                  <h2 className="font-bold text-lg mb-3 font-antonio text-highlight-blue">
                     MIÉRT ÉRDEMES ENGEM VÁLASZTANIA?
-                  </h3>
+                  </h2>
                   <ul className="space-y-2 text-sm md:text-base">
                     <li className="flex items-start">
                       <span className="text-highlight-blue mr-2">•</span>
@@ -66,7 +66,7 @@ export default function Home() {
                       </span>
                     </li>
                   </ul>
-                </div>
+                </aside>
 
                 <p className="text-base md:text-lg font-bold text-highlight-blue">
                   Bízza rám a keresést és az összehasonlítást!
@@ -92,10 +92,10 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-            </div>
+            </article>
 
             {/* Image */}
-            <div className="md:w-1/3">
+            <aside className="md:w-1/3">
               <div className="relative h-[400px] md:h-[500px] w-full rounded-lg overflow-hidden">
                 <Image
                   src="/ceo.jpg"
@@ -107,10 +107,10 @@ export default function Home() {
                   loading="lazy"
                 />
               </div>
-            </div>
+            </aside>
           </div>
         </div>
-      </section>
+      </main>
 
       {/* Values Section */}
       <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-primary-blue">

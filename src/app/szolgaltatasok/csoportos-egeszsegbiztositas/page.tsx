@@ -1,11 +1,38 @@
 import Footer from "../../components/Footer";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Céges Egészségbiztosítás és Csoportos Szolgáltatás-Finanszírozó Biztosítás | Alpha Trust Insurance",
+  description:
+    "Céges egészségbiztosítás Budapesten. Csoportos konstrukciók, szolgáltatás-finanszírozó biztosítás, kedvezőbb díjak nagyobb létszámú csoportoknak. Ingyenes ajánlatkérés!",
+  keywords: [
+    "céges egészségbiztosítás",
+    "csoportos egészségbiztosítás",
+    "szolgáltatás-finanszírozó biztosítás",
+    "vállalati egészségbiztosítás",
+    "csoportos konstrukció",
+    "munkavállalói egészségbiztosítás",
+    "céges biztosítás Budapest",
+    "biztosítási alkusz",
+  ],
+  alternates: {
+    canonical: "/szolgaltatasok/csoportos-egeszsegbiztositas",
+  },
+  openGraph: {
+    title: "Céges Egészségbiztosítás | Alpha Trust Insurance",
+    description:
+      "Céges egészségbiztosítás Budapesten. Csoportos konstrukciók, szolgáltatás-finanszírozó biztosítás, kedvezőbb díjak.",
+    url: "https://alphabiztositas.com/szolgaltatasok/csoportos-egeszsegbiztositas",
+  },
+};
 
 export default function CsoportosEgeszsegbiztositas() {
   return (
     <div className="text-white bg-primary-blue">
       {/* Hero Section */}
-      <section
+      <header
         className="flex flex-col md:flex-row min-h-[60vh] md:min-h-[60vh] items-center md:items-stretch relative bg-[#3A5D98] px-2 sm:px-4"
         id="hero"
       >
@@ -49,9 +76,7 @@ export default function CsoportosEgeszsegbiztositas() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Introduction Section */}
+      </header>
       <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 font-antonio text-white text-center">

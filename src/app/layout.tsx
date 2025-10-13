@@ -4,11 +4,72 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Alpha Trust Insurance Kft.",
+  title:
+    "Alpha Trust Insurance Kft. | Ügyvezetői Felelősségbiztosítás és Céges Biztosítások",
   description:
-    "Ügyvezetőként személyes vagyonával felel a 2014-es Ptk. alapján hozott döntéseiért. Tudjon meg többet D&O biztosítással kapcsolatban! Kérjen ajánlatot vezető tisztségviselő felelősségbiztosításra!",
+    "Független biztosítási alkusz Budapesten. D&O biztosítás, céges egészségbiztosítás, társasházbiztosítás. Szakértő tanácsadás és piaci összehasonlítás. Ingyenes ajánlatkérés!",
+  keywords: [
+    "D&O biztosítás",
+    "ügyvezetői felelősségbiztosítás",
+    "céges egészségbiztosítás",
+    "társasházbiztosítás",
+    "biztosítási alkusz Budapest",
+    "független biztosítási tanácsadó",
+    "vállalati biztosítások",
+    "csoportos egészségbiztosítás",
+    "üzemzünet biztosítás",
+    "építési szerelési biztosítás",
+  ],
+  authors: [{ name: "Szegő Zsombor" }],
+  creator: "Alpha Trust Insurance Kft.",
+  publisher: "Alpha Trust Insurance Kft.",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://alphabiztositas.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Alpha Trust Insurance Kft. | Ügyvezetői Felelősségbiztosítás",
+    description:
+      "Független biztosítási alkusz Budapesten. D&O biztosítás, céges egészségbiztosítás, társasházbiztosítás. Szakértő tanácsadás és piaci összehasonlítás.",
+    url: "https://alphabiztositas.com",
+    siteName: "Alpha Trust Insurance Kft.",
+    images: [
+      {
+        url: "/alpha-insurance-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Alpha Trust Insurance Kft. logó",
+      },
+    ],
+    locale: "hu_HU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alpha Trust Insurance Kft. | Ügyvezetői Felelősségbiztosítás",
+    description:
+      "Független biztosítási alkusz Budapesten. D&O biztosítás, céges egészségbiztosítás, társasházbiztosítás.",
+    images: ["/alpha-insurance-logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -69,6 +130,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossOrigin="anonymous"
         />
         <link rel="icon" href="//favicon.ico" sizes="any" />
+
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "InsuranceAgency",
+              name: "Alpha Trust Insurance Kft.",
+              description:
+                "Független biztosítási alkusz Budapesten. D&O biztosítás, céges egészségbiztosítás, társasházbiztosítás.",
+              url: "https://alphabiztositas.com",
+              logo: "https://alphabiztositas.com/alpha-insurance-logo.png",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+36-30-18-18-047",
+                contactType: "customer service",
+                availableLanguage: "Hungarian",
+              },
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "HU",
+                addressLocality: "Budapest",
+              },
+              sameAs: ["https://alphabiztositas.com"],
+              serviceArea: {
+                "@type": "Country",
+                name: "Hungary",
+              },
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Biztosítási szolgáltatások",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "D&O biztosítás",
+                      description: "Ügyvezetői felelősségbiztosítás",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Céges egészségbiztosítás",
+                      description: "Csoportos egészségbiztosítás vállalatoknak",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Társasházbiztosítás",
+                      description: "Társasházak biztosítása",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
+        />
       </head>
       <body className="antialiased font-telegraf">
         {/* Google Tag Manager (noscript) */}
