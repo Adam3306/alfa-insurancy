@@ -135,61 +135,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+            __html: `{
               "@context": "https://schema.org",
               "@type": "InsuranceAgency",
-              name: "Alpha Trust Insurance Kft.",
-              description:
-                "Független biztosítási alkusz Budapesten. D&O biztosítás, céges egészségbiztosítás, társasházbiztosítás.",
-              url: "https://alphabiztositas.com",
-              logo: "https://alphabiztositas.com/alpha-insurance-logo.png",
-              contactPoint: {
+              "name": "Alpha Trust Insurance Kft.",
+              "description": "Független biztosítási alkusz Budapesten. D&O biztosítás, céges egészségbiztosítás, társasházbiztosítás.",
+              "url": "https://alphabiztositas.com",
+              "logo": "https://alphabiztositas.com/alpha-insurance-logo.png",
+              "contactPoint": {
                 "@type": "ContactPoint",
-                telephone: "+36-30-18-18-047",
-                contactType: "customer service",
-                availableLanguage: "Hungarian",
+                "telephone": "+36-30-18-18-047",
+                "contactType": "customer service",
+                "availableLanguage": "Hungarian"
               },
-              address: {
+              "address": {
                 "@type": "PostalAddress",
-                addressCountry: "HU",
-                addressLocality: "Budapest",
+                "addressCountry": "HU",
+                "addressLocality": "Budapest"
               },
-              sameAs: ["https://alphabiztositas.com"],
-              serviceArea: {
+              "sameAs": ["https://alphabiztositas.com"],
+              "serviceArea": {
                 "@type": "Country",
-                name: "Hungary",
+                "name": "Hungary"
               },
-              hasOfferCatalog: {
+              "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                name: "Biztosítási szolgáltatások",
-                itemListElement: [
+                "name": "Biztosítási szolgáltatások",
+                "itemListElement": [
                   {
                     "@type": "Offer",
-                    itemOffered: {
+                    "itemOffered": {
                       "@type": "Service",
-                      name: "D&O biztosítás",
-                      description: "Ügyvezetői felelősségbiztosítás",
-                    },
+                      "name": "D&O biztosítás",
+                      "description": "Ügyvezetői felelősségbiztosítás"
+                    }
                   },
                   {
                     "@type": "Offer",
-                    itemOffered: {
+                    "itemOffered": {
                       "@type": "Service",
-                      name: "Céges egészségbiztosítás",
-                      description: "Csoportos egészségbiztosítás vállalatoknak",
-                    },
+                      "name": "Céges egészségbiztosítás",
+                      "description": "Csoportos egészségbiztosítás vállalatoknak"
+                    }
                   },
                   {
                     "@type": "Offer",
-                    itemOffered: {
+                    "itemOffered": {
                       "@type": "Service",
-                      name: "Társasházbiztosítás",
-                      description: "Társasházak biztosítása",
-                    },
-                  },
-                ],
-              },
-            }),
+                      "name": "Társasházbiztosítás",
+                      "description": "Társasházak biztosítása"
+                    }
+                  }
+                ]
+              }
+            }`,
           }}
         />
       </head>

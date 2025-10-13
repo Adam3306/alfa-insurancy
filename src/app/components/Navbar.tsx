@@ -51,22 +51,9 @@ const Navbar = () => {
             </Link>
             <Link
               href="#free-quote"
-              className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm ml-2 transition-colors duration-200"
+              className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm ml-2 transition-colors duration-200 bg-[#E2C044] text-[#0C1D3D] border-[#E2C044] hover:bg-[#0C1D3D] hover:text-[#E2C044] hover:border-[#E2C044]"
               style={{
-                background: "#E2C044",
-                color: "#0C1D3D",
-                borderColor: "#E2C044",
                 boxShadow: "0 2px 12px 0 rgba(226,192,68,0.10)",
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.background = "#0C1D3D";
-                e.currentTarget.style.color = "#E2C044";
-                e.currentTarget.style.borderColor = "#E2C044";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.background = "#E2C044";
-                e.currentTarget.style.color = "#0C1D3D";
-                e.currentTarget.style.borderColor = "#E2C044";
               }}
             >
               Ingyenes Ajánlat
@@ -128,22 +115,9 @@ const Navbar = () => {
           </Link>
           <a
             href="#free-quote"
-            className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm mt-2 transition-colors duration-200 text-center"
+            className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm mt-2 transition-colors duration-200 text-center bg-[#E2C044] text-[#0C1D3D] border-[#E2C044] hover:bg-[#0C1D3D] hover:text-[#E2C044] hover:border-[#E2C044]"
             style={{
-              background: "#E2C044",
-              color: "#0C1D3D",
-              borderColor: "#E2C044",
               boxShadow: "0 2px 12px 0 rgba(226,192,68,0.10)",
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.background = "#0C1D3D";
-              e.currentTarget.style.color = "#E2C044";
-              e.currentTarget.style.borderColor = "#E2C044";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.background = "#E2C044";
-              e.currentTarget.style.color = "#0C1D3D";
-              e.currentTarget.style.borderColor = "#E2C044";
             }}
           >
             Ingyenes Ajánlat

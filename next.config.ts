@@ -9,10 +9,6 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 86400,
     domains: [],
   },
-  i18n: {
-    locales: ["hu"],
-    defaultLocale: "hu",
-  },
   compress: true,
   poweredByHeader: false,
 };
