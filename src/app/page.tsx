@@ -104,7 +104,8 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                   style={{ objectFit: "cover" }}
                   className="rounded-lg"
-                  loading="lazy"
+                  priority={true}
+                  quality={85}
                 />
               </div>
             </aside>

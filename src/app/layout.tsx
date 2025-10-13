@@ -94,9 +94,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
         {/* End Google Tag Manager */}
+        {/* Critical Fonts - Preload only the most important ones */}
         <link
           rel="preload"
-          href="/fonts/Antonio-Regular.woff2"
+          href="/fonts/Telegraf-Regular.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
@@ -108,9 +109,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           type="font/woff2"
           crossOrigin="anonymous"
         />
+
+        {/* Non-critical fonts - Load with font-display: swap */}
         <link
           rel="preload"
-          href="/fonts/Telegraf-Regular.woff2"
+          href="/fonts/Antonio-Regular.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
@@ -130,6 +133,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossOrigin="anonymous"
         />
         <link rel="icon" href="//favicon.ico" sizes="any" />
+
+        {/* Resource Hints */}
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link
+          rel="preconnect"
+          href="https://www.googletagmanager.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
 
         {/* Structured Data */}
         <script
@@ -193,6 +214,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </head>
       <body className="antialiased font-telegraf">
+        {/* Critical CSS inline for above-the-fold content */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+            .font-telegraf { font-family: 'Telegraf', system-ui, -apple-system, sans-serif; }
+            .font-antonio { font-family: 'Antonio', system-ui, -apple-system, sans-serif; }
+            .bg-primary-blue { background-color: #0C1D3D; }
+            .bg-secondary-blue { background-color: #1A2B4A; }
+            .text-highlight-blue { color: #E2C044; }
+            .text-white { color: #ffffff; }
+          `,
+          }}
+        />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
