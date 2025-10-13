@@ -182,10 +182,6 @@ nav a:hover {
     min-height: 100vh;
   }
   
-  #hero h1 {
-    font-size: 2.5rem;
-  }
-  
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
