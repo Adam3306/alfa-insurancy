@@ -17,7 +17,7 @@ export default function DAndO() {
         <div className="w-full md:w-1/2 flex items-center justify-center bg-[#3A5D98] pt-6 md:pt-0 pb-4 md:pb-0">
           <div className="border-8 border-[#4592c6] bg-white w-full max-w-xs sm:max-w-sm md:max-w-md aspect-square flex items-center justify-center mx-auto">
             <img
-              src="/executive-businessman.jpg"
+              src="/do.jpg"
               alt="Kézfogás, bizalom"
               className="object-cover w-full h-full"
               style={{ objectFit: "cover" }}
@@ -42,17 +42,27 @@ export default function DAndO() {
                 }}
               />
             </div>
-            <h1 className="hero-title font-antonio font-bold text-white text-center md:text-left text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight">
-              BIZTONSÁGBAN
+            <h1 className="hero-title font-antonio font-bold text-white text-center md:text-left text-xl sm:text-xl md:text-2xl lg:text-2xl leading-tight">
+              BIZTONSÁGBAN ÜGYVEZETŐKÉNT IS:
               <br />
-              ÜGYVEZETŐKÉNT IS:
-              <br />
-              <span className="hero-subtitle font-antonio font-bold block mt-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl">
-                A D&O FELELŐSSÉGBIZTOSÍTÁS,
-                <br />
-                AMI ÖNT VÉDI
+              <span className="hero-subtitle font-antonio font-bold block mt-2 text-lg sm:text-xl md:text-2xl lg:text-2xl">
+                A D&O FELELŐSSÉGBIZTOSÍTÁS, AMI ÖNT VÉDI
               </span>
             </h1>
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start mt-6">
+              <a
+                href="/kapcsolat"
+                className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+              >
+                AJÁNLATKÉRÉS
+              </a>
+              <a
+                href="tel:+36301818047"
+                className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 px-6 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+              >
+                +36 30 18 18 047
+              </a>
+            </div>
           </div>
         </div>
       </section>

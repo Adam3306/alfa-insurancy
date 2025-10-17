@@ -40,7 +40,7 @@ export default function CsoportosEgeszsegbiztositas() {
         <div className="w-full md:w-1/2 flex items-center justify-center bg-[#3A5D98] pt-4 md:pt-0 pb-4 md:pb-0">
           <div className="border-4 md:border-8 border-[#4592c6] bg-white w-full max-w-xs sm:max-w-sm md:max-w-md aspect-square flex items-center justify-center mx-auto">
             <Image
-              src="/insurance-consultant.jpg"
+              src="/egbizt.jpg"
               alt="Csoportos egészségbiztosítás"
               width={400}
               height={400}
@@ -78,44 +78,67 @@ export default function CsoportosEgeszsegbiztositas() {
         </div>
       </header>
       <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-primary-blue">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 font-antonio text-white text-center">
-            Befektetés Munkavállalóiba, Hatékonyság Cégébe
-          </h2>
-          <div className="text-lg font-telegraf text-gray-200 leading-relaxed space-y-4 max-w-5xl mx-auto">
-            <p>
-              Cégvezetőként jól tudja, hogy a kiváló munkaerő megtartása és a
-              munkavállalói elégedettség kulcsfontosságú a sikerhez. A{" "}
-              <strong className="text-highlight-blue">
-                béren kívüli juttatások
-              </strong>
-              , mint például a{" "}
-              <strong className="text-highlight-blue">
-                csoportos egészségbiztosítás
-              </strong>
-              , hatékony eszközt jelentenek dolgozói megbecsülésének
-              kifejezésére, életminőségük javítására és a{" "}
-              <strong className="text-highlight-blue">
-                cég iránti lojalitás fokozására
-              </strong>
-              .
-            </p>
-            <p>
-              Egy jól megválasztott{" "}
-              <strong className="text-highlight-blue">
-                céges egészségbiztosítás
-              </strong>
-              , különösen egy{" "}
-              <strong className="text-highlight-blue">
-                szolgáltatásfinanszírozó
-              </strong>{" "}
-              konstrukció (amit szoktak{" "}
-              <strong className="text-highlight-blue">humán CASCO-nak</strong>{" "}
-              is nevezni), kiszámítható, szakszerű ellátást biztosít, és
-              jelentősen hozzájárulhat a munkavállalók betegszabadságon töltött
-              idejének csökkentéséhez, gyorsabb és stresszmentes gyógyulásukat
-              segítve.
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            {/* Text Content */}
+            <div className="lg:w-2/3">
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 font-antonio text-white text-center lg:text-left">
+                Befektetés Munkavállalóiba, Hatékonyság Cégébe
+              </h2>
+              <div className="text-lg font-telegraf text-gray-200 leading-relaxed space-y-4">
+                <p>
+                  Cégvezetőként jól tudja, hogy a kiváló munkaerő megtartása és
+                  a munkavállalói elégedettség kulcsfontosságú a sikerhez. A{" "}
+                  <strong className="text-highlight-blue">
+                    béren kívüli juttatások
+                  </strong>
+                  , mint például a{" "}
+                  <strong className="text-highlight-blue">
+                    csoportos egészségbiztosítás
+                  </strong>
+                  , hatékony eszközt jelentenek dolgozói megbecsülésének
+                  kifejezésére, életminőségük javítására és a{" "}
+                  <strong className="text-highlight-blue">
+                    cég iránti lojalitás fokozására
+                  </strong>
+                  .
+                </p>
+                <p>
+                  Egy jól megválasztott{" "}
+                  <strong className="text-highlight-blue">
+                    céges egészségbiztosítás
+                  </strong>
+                  , különösen egy{" "}
+                  <strong className="text-highlight-blue">
+                    szolgáltatásfinanszírozó
+                  </strong>{" "}
+                  konstrukció (amit szoktak{" "}
+                  <strong className="text-highlight-blue">
+                    humán CASCO-nak
+                  </strong>{" "}
+                  is nevezni), kiszámítható, szakszerű ellátást biztosít, és
+                  jelentősen hozzájárulhat a munkavállalók betegszabadságon
+                  töltött idejének csökkentéséhez, gyorsabb és stresszmentes
+                  gyógyulásukat segítve.
+                </p>
+              </div>
+            </div>
+
+            {/* Image */}
+            <div className="lg:w-1/3">
+              <div className="relative h-[300px] md:h-[400px] w-full rounded-lg overflow-hidden">
+                <Image
+                  src="/handshake-business.jpg"
+                  alt="Céges egészségbiztosítás és munkavállalói elégedettség"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  style={{ objectFit: "cover" }}
+                  className="rounded-lg shadow-xl"
+                  loading="lazy"
+                  quality={75}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -200,9 +223,10 @@ export default function CsoportosEgeszsegbiztositas() {
             egészségbiztosítást?
           </h2>
 
-          <div className="space-y-6">
-            <div className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg">
-              <p className="text-lg font-telegraf text-gray-200 mb-6">
+          <div className="space-y-8">
+            {/* Bevezető szöveg */}
+            <div className="text-center">
+              <p className="text-lg font-telegraf text-gray-200 max-w-4xl mx-auto">
                 A{" "}
                 <strong className="text-highlight-blue">
                   csoportos egészségbiztosítás
@@ -210,121 +234,114 @@ export default function CsoportosEgeszsegbiztositas() {
                 bevezetése számos kézzelfogható előnnyel jár az Ön vállalata
                 számára:
               </p>
+            </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div>
-                  <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                    Munkavállalói elégedettség és megtartás:
+            {/* Főbb előnyök kártyákban */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Munkavállalói előnyök */}
+              <div className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary-blue font-bold text-xl">
+                      👥
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold font-antonio text-highlight-blue uppercase">
+                    Munkavállalói előnyök
                   </h3>
-                  <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>
-                        Versenyképes juttatásként növeli a dolgozók kötődését és
-                        csökkenti a fluktuációt
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>
-                        A{" "}
-                        <strong className="text-highlight-blue">
-                          munkáltatói egészségbiztosítás
-                        </strong>{" "}
-                        vonzóbbá teszi a céget
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>
-                        Főleg a Z generációhoz tartozó fiatal munkaerőnek
-                      </span>
-                    </li>
-                  </ul>
                 </div>
+                <ul className="space-y-3 text-gray-200 font-telegraf">
+                  <li className="flex items-start">
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
+                    <span>
+                      Versenyképes juttatásként növeli a dolgozók kötődését
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
+                    <span>Csökkenti a fluktuációt, főleg a Z generációnál</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
+                    <span>Vonzóbbá teszi a céget új munkaerő számára</span>
+                  </li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                    Csökkenő hiányzások:
+              {/* Üzleti előnyök */}
+              <div className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary-blue font-bold text-xl">
+                      📈
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold font-antonio text-highlight-blue uppercase">
+                    Üzleti előnyök
                   </h3>
-                  <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>
-                        A gyorsabb orvosi ellátás és a hatékony gyógyulás révén
-                        kevesebb a táppénzen töltött nap
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>Nő a termelékenység</span>
-                    </li>
-                  </ul>
                 </div>
+                <ul className="space-y-3 text-gray-200 font-telegraf">
+                  <li className="flex items-start">
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
+                    <span>Csökkennek a betegszabadságok és hiányzások</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
+                    <span>Nő a termelékenység és hatékonyság</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
+                    <span>Csökken az adminisztrációs teher</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-                <div>
-                  <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                    Növekvő produktivitás:
-                  </h3>
-                  <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>
-                        Az egészségesebb és kiegyensúlyozottabb munkavállalók
-                        hatékonyabban látják el feladataikat
-                      </span>
-                    </li>
-                  </ul>
+            {/* További előnyök */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    🏆
+                  </span>
                 </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Vonzó imázs
+                </h4>
+                <p className="text-gray-200 font-telegraf text-sm">
+                  Megmutatja, hogy a cég törődik munkatársai egészségével és
+                  jóllétével
+                </p>
+              </div>
 
-                <div>
-                  <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                    Vonzó munkáltatói imázs:
-                  </h3>
-                  <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>
-                        Megmutatja, hogy a cég törődik munkatársai egészségével
-                        és jóllétével
-                      </span>
-                    </li>
-                  </ul>
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    ⚙️
+                  </span>
                 </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Rugalmas csomagok
+                </h4>
+                <p className="text-gray-200 font-telegraf text-sm">
+                  Lehetőség van a biztosítási védelem mértékét munkakörhöz
+                  igazítani
+                </p>
+              </div>
 
-                <div>
-                  <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                    Adminisztrációs teher csökkentése:
-                  </h3>
-                  <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>
-                        Gyors és szakszerű ellátásszervezés révén kevesebb
-                        adminisztráció hárul a HR-re
-                      </span>
-                    </li>
-                  </ul>
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    💡
+                  </span>
                 </div>
-
-                <div>
-                  <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                    Rugalmas csomagok:
-                  </h3>
-                  <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                    <li className="flex items-start">
-                      <span className="text-highlight-blue mr-2 mt-1">•</span>
-                      <span>
-                        Lehetőség van a biztosítási védelem mértékét munkakörhöz
-                        vagy pozícióhoz igazítani a{" "}
-                        <strong className="text-highlight-blue">
-                          vállalati egészségbiztosításon
-                        </strong>{" "}
-                        belül
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Szakszerű szervezés
+                </h4>
+                <p className="text-gray-200 font-telegraf text-sm">
+                  Gyors és szakszerű ellátásszervezés révén kevesebb
+                  adminisztráció
+                </p>
               </div>
             </div>
           </div>
@@ -347,7 +364,7 @@ export default function CsoportosEgeszsegbiztositas() {
               </strong>{" "}
               köszönhetően. Egy{" "}
               <strong className="text-highlight-blue">
-                szolgáltatásfinanszírozó
+                szolgáltatás finanszírozó
               </strong>{" "}
               szerkezet különösen kézzelfogható előnyöket nyújt a
               munkavállalóknak a gyors és szervezett magánegészségügyi
@@ -486,158 +503,184 @@ export default function CsoportosEgeszsegbiztositas() {
             Mit tartalmaz a szolgáltatásfinanszírozó egészségbiztosítás?
           </h2>
 
-          <div className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg mb-8">
-            <p className="text-lg font-telegraf text-gray-200 mb-6">
-              <strong className="text-highlight-blue">
-                Szolgáltatásfinanszírozó
-              </strong>{" "}
-              programok csomagjai széles körű szolgáltatásokat foglalnak
-              magukban, biztosítva munkavállalóinak a szükséges orvosi
-              segítséget:
-            </p>
+          <div className="space-y-8">
+            {/* Bevezető szöveg */}
+            <div className="text-center mb-8">
+              <p className="text-lg font-telegraf text-gray-200 max-w-4xl mx-auto">
+                <strong className="text-highlight-blue">
+                  Szolgáltatásfinanszírozó
+                </strong>{" "}
+                programok csomagjai széles körű szolgáltatásokat foglalnak
+                magukban, biztosítva munkavállalóinak a szükséges orvosi
+                segítséget.
+              </p>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div>
-                <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                  Egészségügyi asszisztencia:
-                </h3>
-                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
+            {/* Főbb szolgáltatások */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {/* Alapvető szolgáltatások */}
+              <div className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary-blue font-bold text-xl">
+                      📞
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold font-antonio text-highlight-blue uppercase">
+                    Egészségügyi asszisztencia
+                  </h3>
+                </div>
+                <ul className="space-y-3 text-gray-200 font-telegraf">
                   <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
                     <span>Egész héten elérhető telefonos segítség (24/7)</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
                     <span>Egészségügyi tanácsadás</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
                     <span>Betegút-szervezés</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
                     <span>Időpontfoglalás a partnerintézményekbe</span>
                   </li>
                 </ul>
               </div>
 
-              <div>
-                <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                  Járóbeteg-szakellátás:
-                </h3>
-                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
+              {/* Orvosi ellátás */}
+              <div className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary-blue font-bold text-xl">
+                      🏥
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold font-antonio text-highlight-blue uppercase">
+                    Orvosi ellátás
+                  </h3>
+                </div>
+                <ul className="space-y-3 text-gray-200 font-telegraf">
                   <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
                     <span>Szakrendelések széles skálája</span>
                   </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                  Diagnosztikai vizsgálatok:
-                </h3>
-                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
                   <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>Laborvizsgálatok</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>
-                      Képalkotó diagnosztika (ultrahang, CT, MR) – a választott
-                      csomagtól függően
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                  Megelőző vizsgálatok:
-                </h3>
-                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>
-                      Éves preventív{" "}
-                      <strong className="text-highlight-blue">
-                        szűrővizsgálatok
-                      </strong>{" "}
-                      (bizonyos csomagokban)
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                  Műtétek és Kórházi ellátás:
-                </h3>
-                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
                     <span>Ambuláns műtétek</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
                     <span>Egynapos sebészet</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>
-                      Fekvőbeteg-ellátás (akár emelt szintű elhelyezéssel
-                      bizonyos csomagokban)
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                  Onkológiai ellátás:
-                </h3>
-                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>Kivizsgálás, szakvélemény, tanácsadás</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>
-                      Összegbiztosítás rosszindulatú daganatos betegségekre
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-bold mb-3 font-antonio text-highlight-blue uppercase">
-                  Egyéb szolgáltatások:
-                </h3>
-                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>Gyógytorna (bizonyos csomagban)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>Házivizit</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>Betegszállítás</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-highlight-blue mr-2 mt-1">•</span>
-                    <span>Nemzetközi második orvosi vélemény</span>
+                    <span className="text-highlight-blue mr-3 mt-1">✓</span>
+                    <span>Fekvőbeteg-ellátás (emelt szintű elhelyezéssel)</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="mt-6 bg-highlight-blue bg-opacity-20 border border-highlight-blue p-4 rounded-lg">
-              <p className="text-gray-200 font-telegraf">
+            {/* Diagnosztika és vizsgálatok */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    🔬
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Diagnosztikai vizsgálatok
+                </h4>
+                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
+                  <li>Laborvizsgálatok</li>
+                  <li>Képalkotó diagnosztika</li>
+                  <li>Ultrahang, CT, MR</li>
+                </ul>
+              </div>
+
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    🛡️
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Megelőző vizsgálatok
+                </h4>
+                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
+                  <li>Éves preventív szűrővizsgálatok</li>
+                  <li>Bizonyos csomagokban</li>
+                </ul>
+              </div>
+
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    🎗️
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Onkológiai ellátás
+                </h4>
+                <ul className="space-y-2 text-gray-200 font-telegraf text-sm">
+                  <li>Kivizsgálás, szakvélemény</li>
+                  <li>Tanácsadás</li>
+                  <li>Összegbiztosítás</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Egyéb szolgáltatások */}
+            <div className="bg-highlight-blue bg-opacity-20 border border-highlight-blue p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4 font-antonio text-white uppercase text-center">
+                Egyéb szolgáltatások
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-primary-blue font-bold text-lg">
+                      🏃
+                    </span>
+                  </div>
+                  <p className="text-white font-telegraf text-sm">Gyógytorna</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-primary-blue font-bold text-lg">
+                      🏠
+                    </span>
+                  </div>
+                  <p className="text-white font-telegraf text-sm">Házivizit</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-primary-blue font-bold text-lg">
+                      🚑
+                    </span>
+                  </div>
+                  <p className="text-white font-telegraf text-sm">
+                    Betegszállítás
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-primary-blue font-bold text-lg">
+                      🌍
+                    </span>
+                  </div>
+                  <p className="text-white font-telegraf text-sm">
+                    Nemzetközi második orvosi vélemény
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Fontos megjegyzés */}
+            <div className="bg-highlight-blue bg-opacity-20 border border-highlight-blue p-6 rounded-lg text-center">
+              <p className="text-white font-telegraf font-bold">
                 Több különböző szolgáltatási csomag áll rendelkezésre, amelyek
                 eltérő tartalommal bírnak, így kiválaszthatja a munkavállalói
                 igényeinek és a cég lehetőségeinek leginkább megfelelőt.
@@ -654,94 +697,124 @@ export default function CsoportosEgeszsegbiztositas() {
             Miben más a céges (csoportos) egészségbiztosítás?
           </h2>
 
-          <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg mb-8">
-            <p className="text-lg font-telegraf text-gray-200 mb-6">
-              A{" "}
-              <strong className="text-highlight-blue">
-                céges egészségbiztosítás
-              </strong>{" "}
-              egy csoportos konstrukció, melynek leglényegesebb különbsége az
-              egyéni biztosításokhoz képest, hogy a szerződő (a díjfizető) a
-              munkaadó, míg a biztosítottak a munkavállalók.
-            </p>
+          <div className="space-y-8">
+            {/* Bevezető szöveg */}
+            <div className="text-center mb-8">
+              <p className="text-lg font-telegraf text-gray-200 max-w-4xl mx-auto">
+                A{" "}
+                <strong className="text-highlight-blue">
+                  céges egészségbiztosítás
+                </strong>{" "}
+                egy csoportos konstrukció, melynek leglényegesebb különbsége az
+                egyéni biztosításokhoz képest, hogy a szerződő (a díjfizető) a
+                munkaadó, míg a biztosítottak a munkavállalók.
+              </p>
+            </div>
 
-            <p className="text-lg font-telegraf text-gray-200 mb-6">
-              Ennek a felépítésnek köszönhetően a csoportos biztosítások
-              általában:
-            </p>
+            {/* Főbb előnyök */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    💰
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Kedvezőbb díjazás
+                </h4>
+                <p className="text-gray-200 font-telegraf text-sm">
+                  Egy főre vetítve kedvezőbb, különösen nagyobb létszámú
+                  csoportok esetén
+                </p>
+              </div>
 
-            <div className="space-y-4 mb-6">
-              <div className="flex items-start">
-                <span className="text-highlight-blue mr-3 mt-1 text-xl">•</span>
-                <div>
-                  <strong className="text-highlight-blue">
-                    Kedvezőbb díjazásúak
-                  </strong>{" "}
-                  (egy főre vetítve), különösen nagyobb létszámú csoportok
-                  esetén.
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    📋
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Egyszerűbb feltételek
+                </h4>
+                <p className="text-gray-200 font-telegraf text-sm">
+                  Gyakran nincs szükség orvosi vizsgálatra vagy egészségügyi
+                  nyilatkozatra
+                </p>
+              </div>
+
+              <div className="bg-primary-blue border border-highlight-blue p-6 rounded-lg text-center">
+                <div className="w-16 h-16 bg-highlight-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-blue font-bold text-2xl">
+                    ⚙️
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold font-antonio text-highlight-blue uppercase mb-3">
+                  Rugalmas alakítás
+                </h4>
+                <p className="text-gray-200 font-telegraf text-sm">
+                  Lehetővé teszi a dolgozói csoportok közötti differenciálást
+                </p>
+              </div>
+            </div>
+
+            {/* Biztosítási típusok */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary-blue font-bold text-xl">
+                      🏥
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold font-antonio text-highlight-blue uppercase">
+                    Szolgáltatásfinanszírozó
+                  </h3>
+                </div>
+                <p className="text-gray-200 font-telegraf mb-4">
+                  A biztosító nem pénzbeli térítést nyújt, hanem megszervezi és
+                  finanszírozza a biztosított magánegészségügyi ellátását a
+                  szerződött partnereinél.
+                </p>
+                <div className="bg-highlight-blue bg-opacity-20 border border-highlight-blue p-3 rounded-lg">
+                  <p className="text-white font-telegraf text-sm font-bold">
+                    ✓ Gyors és szervezett hozzáférés a privát ellátáshoz
+                  </p>
                 </div>
               </div>
-              <div className="flex items-start">
-                <span className="text-highlight-blue mr-3 mt-1 text-xl">•</span>
-                <div>
-                  <strong className="text-highlight-blue">
-                    Egyszerűbb szerződési feltételekkel
-                  </strong>{" "}
-                  bírnak, gyakran nincs szükség orvosi vizsgálatra vagy
-                  egészségügyi nyilatkozatra.
+
+              <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-highlight-blue rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary-blue font-bold text-xl">
+                      💵
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold font-antonio text-highlight-blue uppercase">
+                    Összegtérítéses
+                  </h3>
                 </div>
-              </div>
-              <div className="flex items-start">
-                <span className="text-highlight-blue mr-3 mt-1 text-xl">•</span>
-                <div>
-                  <strong className="text-highlight-blue">
-                    Rugalmasan alakíthatók
-                  </strong>
-                  , lehetővé téve akár a dolgozói csoportok közötti
-                  differenciálást a szolgáltatások terén.
+                <p className="text-gray-200 font-telegraf mb-4">
+                  Meghatározott egészségügyi események bekövetkezése esetén
+                  előre meghatározott összeget fizet ki a biztosítottnak
+                  utólagosan.
+                </p>
+                <div className="bg-highlight-blue bg-opacity-20 border border-highlight-blue p-3 rounded-lg">
+                  <p className="text-white font-telegraf text-sm font-bold">
+                    ✓ A kifizetett összeg szabadon felhasználható
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 bg-highlight-blue bg-opacity-20 border border-highlight-blue p-4 rounded-lg">
-              <p className="text-white font-telegraf">
+            {/* Fontos megjegyzés */}
+            <div className="bg-highlight-blue bg-opacity-20 border border-highlight-blue p-6 rounded-lg text-center">
+              <p className="text-white font-telegraf font-bold">
                 A{" "}
                 <strong className="text-white">
                   céges egészségbiztosítási
                 </strong>{" "}
                 védelem a munkaviszony fennállásáig tart.
-              </p>
-            </div>
-          </div>
-
-          <h2 className="text-xl md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
-            Milyen típusú céges egészségbiztosítások léteznek?
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-4 font-antonio text-highlight-blue uppercase">
-                Szolgáltatásfinanszírozó egészségbiztosítás:
-              </h3>
-              <p className="text-gray-200 font-telegraf mb-4">
-                Ebben az esetben a biztosító nem pénzbeli térítést nyújt, hanem
-                megszervezi és finanszírozza a biztosított magánegészségügyi
-                ellátását a szerződött partnereinél. A hangsúly itt a gyors és
-                szervezett hozzáférésen van a privát ellátáshoz.
-              </p>
-            </div>
-
-            <div className="bg-primary-blue border-2 border-highlight-blue p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-4 font-antonio text-highlight-blue uppercase">
-                Összegtérítéses egészségbiztosítás:
-              </h3>
-              <p className="text-gray-200 font-telegraf mb-4">
-                Ez a típus meghatározott egészségügyi események (pl. csonttörés,
-                műtét, kritikus betegség) bekövetkezése esetén előre
-                meghatározott összeget fizet ki a biztosítottnak utólagosan. A
-                kifizetett összeg szabadon felhasználható. Céges konstrukciókban
-                gyakran csoportos élet- vagy balesetbiztosítással kombinálva
-                érhető el.
               </p>
             </div>
           </div>
