@@ -78,7 +78,9 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start mt-6">
               <a
-                href="/kapcsolat"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
               >
                 AJÁNLATKÉRÉS
@@ -231,7 +233,9 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
-              href="/kapcsolat"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
             >
               AJÁNLATKÉRÉS
@@ -485,7 +489,9 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
-              href="/kapcsolat"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
             >
               AJÁNLATKÉRÉS
@@ -582,10 +588,12 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
-              href="/kapcsolat"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue text-center"
             >
-              AJÁNLATKÉRÉS
+              INGYENES AJÁNLATKÉRÉS
             </a>
             <a
               href="tel:+36301818047"
