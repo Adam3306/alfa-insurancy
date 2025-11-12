@@ -38,7 +38,7 @@ export default function Szolgaltatasok() {
             <h1 className="text-2xl md:text-3xl font-bold text-center font-antonio text-white mb-4">
               BIZTOSÍTÁSI SZOLGÁLTATÁSAINK
             </h1>
-            <p className="text-center text-light-blue font-telegraf text-base md:text-lg max-w-3xl mx-auto">
+            <p className="text-center text-yellow-400 font-telegraf text-base md:text-lg max-w-3xl mx-auto">
               Teljes körű biztosítási megoldásokat kínálunk vállalatoknak és
               magánszemélyeknek. Független alkuszként a legjobb ajánlatokat
               találjuk meg Önnek.
