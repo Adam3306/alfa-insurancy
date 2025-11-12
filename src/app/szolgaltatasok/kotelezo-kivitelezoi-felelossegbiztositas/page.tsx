@@ -514,7 +514,7 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
               className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 text-center group"
             >
               <h3 className="text-xl font-bold font-antonio text-highlight-blue mb-3 uppercase group-hover:text-yellow-400 transition-colors">
-                1. Kivitelezői Kép
+                Kivitelezői
               </h3>
               <p className="text-white font-telegraf">
                 191/2009. (IX. 15.) Kormányrendelet
@@ -527,7 +527,7 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
               className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 text-center group"
             >
               <h3 className="text-xl font-bold font-antonio text-highlight-blue mb-3 uppercase group-hover:text-yellow-400 transition-colors">
-                2. Műszaki Tervező Link
+                Műszaki Tervező
               </h3>
               <p className="text-white font-telegraf">
                 266/2013. (VII. 17.) Kormányrendelet
