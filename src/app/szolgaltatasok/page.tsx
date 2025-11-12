@@ -127,10 +127,10 @@ export default function Szolgaltatasok() {
               </div>
             </Link>
 
-            {/* Kötelező kivitelezői felelősségbiztosítás */}
-            <Link href="https://alphabiztositas.com">
-              <div className="bg-primary-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full shadow-lg">
-                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-white uppercase">
+            {/* Kötelező kivitelezői felelősségbiztosítás - CLICKABLE */}
+            <Link href="/szolgaltatasok/kotelezo-kivitelezoi-felelossegbiztositas">
+              <div className="bg-primary-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full cursor-pointer group shadow-lg">
+                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-white uppercase group-hover:text-highlight-blue transition-colors">
                   Kötelező kivitelezői felelősségbiztosítás
                 </h3>
                 <p className="text-white font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
@@ -140,6 +140,9 @@ export default function Szolgaltatasok() {
                   biztosítja a megrendelők számára az esetleges károk
                   megtérítését.
                 </p>
+                <div className="text-highlight-blue font-telegraf font-bold text-sm group-hover:text-yellow-400 transition-colors">
+                  Részletek →
+                </div>
               </div>
             </Link>
 
