@@ -51,7 +51,9 @@ export default function DAndO() {
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start mt-6">
               <a
-                href="/kapcsolat"
+                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
               >
                 AJÁNLATKÉRÉS
@@ -138,6 +140,35 @@ export default function DAndO() {
               esetleges jogi és anyagi következmények pénzügyi terheit
               átvállalja a biztosító.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-secondary-blue border-2 border-highlight-blue p-6 md:p-8 rounded-lg">
+            <p className="text-white font-telegraf text-base md:text-lg mb-6">
+              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a részleteket, én pedig összehasonlítom a legjobb piaci ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+              >
+                Ajánlatok összehasonlítása
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+              >
+                Meglévő szerződés felülvizsgálata
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -262,6 +293,20 @@ export default function DAndO() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+        <div className="max-w-4xl mx-auto text-center">
+          <a
+            href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
+          >
+            D&O biztosítás ajánlatkérés
+          </a>
+        </div>
+      </section>
+
       {/* D&O Insurance Explanation Section */}
       <section className="py-12 md:py-20 px-4 sm:px-12 lg:px-24 bg-primary-blue border-t border-gold">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
@@ -289,6 +334,20 @@ export default function DAndO() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+        <div className="max-w-4xl mx-auto text-center">
+          <a
+            href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
+          >
+            Ingyenes D&O ajánlatkérés
+          </a>
         </div>
       </section>
 
@@ -431,11 +490,62 @@ export default function DAndO() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+        <div className="max-w-4xl mx-auto text-center">
+          <a
+            href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border-2 border-highlight-blue text-highlight-blue font-bold py-4 px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-lg"
+          >
+            Kérjen D&O ajánlatot
+          </a>
+        </div>
+      </section>
+
       {/* About Section */}
       <About />
 
       {/* FAQs Section */}
       <FAQs />
+
+      {/* CTA Section */}
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-secondary-blue border-2 border-highlight-blue p-6 md:p-8 rounded-lg mb-6">
+            <p className="text-white font-telegraf text-base md:text-lg mb-6">
+              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a részleteket, én pedig összehasonlítom a legjobb piaci ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+              >
+                Ajánlatok összehasonlítása
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+              >
+                Meglévő szerződés felülvizsgálata
+              </a>
+            </div>
+          </div>
+          <a
+            href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
+          >
+            D&O biztosítás ajánlatkérés
+          </a>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section

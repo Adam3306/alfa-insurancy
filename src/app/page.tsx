@@ -79,7 +79,9 @@ export default function Home() {
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
                   <a
-                    href="/kapcsolat"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-md hover:bg-yellow-400 transition-colors font-telegraf text-center"
                   >
                     Kérek Ingyenes Ajánlatot Kockázatmentesen!

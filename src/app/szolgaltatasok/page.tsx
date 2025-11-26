@@ -38,11 +38,37 @@ export default function Szolgaltatasok() {
             <h1 className="text-2xl md:text-3xl font-bold text-center font-antonio text-white mb-4">
               BIZTOSÍTÁSI SZOLGÁLTATÁSAINK
             </h1>
-            <p className="text-center text-yellow-400 font-telegraf text-base md:text-lg max-w-3xl mx-auto">
+            <p className="text-center text-yellow-400 font-telegraf text-base md:text-lg max-w-3xl mx-auto mb-6">
               Teljes körű biztosítási megoldásokat kínálunk vállalatoknak és
               magánszemélyeknek. Független alkuszként a legjobb ajánlatokat
               találjuk meg Önnek.
             </p>
+            {/* CTA Section at top */}
+            <div className="bg-secondary-blue border-2 border-highlight-blue p-6 md:p-8 rounded-lg max-w-4xl mx-auto mb-8">
+              <p className="text-white font-telegraf text-base md:text-lg mb-6 text-center">
+                Van már szerződése? Nézzük meg, van-e jobb! Küldje el a
+                részleteket, én pedig összehasonlítom a legjobb piaci
+                ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+                >
+                  Ajánlatok összehasonlítása
+                </a>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+                >
+                  Meglévő szerződés felülvizsgálata
+                </a>
+              </div>
+            </div>
           </header>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {/* Társasházbiztosítás */}
@@ -171,6 +197,32 @@ export default function Szolgaltatasok() {
           <p className="text-base md:text-lg font-telegraf text-light-blue mb-6 md:mb-8">
             Keressen meg bizalommal, és együtt megtaláljuk a legjobb megoldást!
           </p>
+          {/* Comparison CTA */}
+          <div className="bg-primary-blue border-2 border-highlight-blue p-6 md:p-8 rounded-lg mb-8">
+            <p className="text-white font-telegraf text-base md:text-lg mb-6">
+              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a
+              részleteket, én pedig összehasonlítom a legjobb piaci
+              ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+              >
+                Ajánlatok összehasonlítása
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+              >
+                Meglévő szerződés felülvizsgálata
+              </a>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/kapcsolat"

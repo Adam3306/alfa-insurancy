@@ -533,7 +533,7 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
               className="bg-secondary-blue border-2 border-highlight-blue p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 text-center group"
             >
               <h3 className="text-xl font-bold font-antonio text-highlight-blue mb-3 uppercase group-hover:text-yellow-400 transition-colors">
-                Műszaki Tervező
+                Műszaki Tervezői
               </h3>
               <p className="text-white font-telegraf">
                 266/2013. (VII. 17.) Kormányrendelet

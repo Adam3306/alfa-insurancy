@@ -83,6 +83,47 @@ export default function Kapcsolat() {
                   </div>
                 </div>
 
+                {/* Ajánlatkérés kérdőív */}
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-highlight-blue/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                  <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-highlight-blue/50 transition-all duration-300">
+                    <div className="text-center">
+                      <div className="bg-gradient-to-br from-highlight-blue to-yellow-400 p-4 rounded-2xl mb-6 inline-block shadow-2xl">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-8 w-8 text-primary-blue"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          />
+                        </svg>
+                      </div>
+                      <h3 className="font-bold text-2xl font-antonio text-white mb-4">
+                        Ingyenes Ajánlatkérés
+                      </h3>
+                      <p className="text-light-blue font-telegraf mb-6">
+                        Töltse ki a kérdőívet, és hamarosan felvesszük Önnel a
+                        kapcsolatot. A szolgáltatás ingyenes és
+                        kötelezettségmentes.
+                      </p>
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg inline-block"
+                      >
+                        AJÁNLATKÉRÉS KÉRDŐÍV
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Email */}
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-highlight-blue/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
