@@ -116,7 +116,7 @@ export default function Kapcsolat() {
                         href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg inline-block"
+                        className="cta-button"
                       >
                         AJÁNLATKÉRÉS KÉRDŐÍV
                       </a>

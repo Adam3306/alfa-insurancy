@@ -55,7 +55,7 @@ export default function Szolgaltatasok() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+                  className="cta-button text-base md:text-lg"
                 >
                   Ajánlatok összehasonlítása
                 </a>
@@ -63,7 +63,7 @@ export default function Szolgaltatasok() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+                  className="cta-button text-base md:text-lg"
                 >
                   Meglévő szerződés felülvizsgálata
                 </a>
@@ -88,18 +88,18 @@ export default function Szolgaltatasok() {
 
             {/* Csoportos egészségbiztosítás - CLICKABLE */}
             <Link href="/szolgaltatasok/csoportos-egeszsegbiztositas">
-              <div className="bg-primary-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full cursor-pointer group shadow-lg">
-                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-white uppercase group-hover:text-highlight-blue transition-colors">
+              <div className="bg-highlight-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:bg-yellow-400 transition-all duration-300 h-full cursor-pointer group shadow-lg">
+                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-primary-blue uppercase">
                   Csoportos egészségbiztosítás
                 </h3>
-                <p className="text-white font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
+                <p className="text-primary-blue font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
                   Ez a biztosítás a munkavállalók számára nyújt széles körű
                   egészségügyi szolgáltatásokat, mint például magánorvosi
                   ellátás, szűrővizsgálatok térítése. Előnye, hogy növeli a
                   munkavállalói elégedettséget és hűséget, miközben hozzájárul
                   az egészségesebb és produktívabb munkaerőhöz.
                 </p>
-                <div className="text-highlight-blue font-telegraf font-bold text-sm group-hover:text-yellow-400 transition-colors">
+                <div className="text-primary-blue font-telegraf font-bold text-sm">
                   Részletek →
                 </div>
               </div>
@@ -134,11 +134,11 @@ export default function Szolgaltatasok() {
 
             {/* Ügyvezetői felelősségbiztosítás - CLICKABLE */}
             <Link href="/szolgaltatasok/d&o">
-              <div className="bg-primary-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full cursor-pointer group shadow-lg">
-                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-white uppercase group-hover:text-highlight-blue transition-colors">
+              <div className="bg-highlight-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:bg-yellow-400 transition-all duration-300 h-full cursor-pointer group shadow-lg">
+                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-primary-blue uppercase">
                   Ügyvezetői felelősségbiztosítás (D&O, Directors & Officers)
                 </h3>
-                <p className="text-white font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
+                <p className="text-primary-blue font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
                   Alapvető védelmet nyújt a cégvezetőknek és vezető
                   tisztségviselőknek a vállalkozás irányításával kapcsolatos
                   döntésekből és mulasztásokból eredő jogi és anyagi
@@ -147,7 +147,7 @@ export default function Szolgaltatasok() {
                   csökkenti a személyes kockázatot, ami egy vezetői szereppel
                   jár.
                 </p>
-                <div className="text-highlight-blue font-telegraf font-bold text-sm group-hover:text-yellow-400 transition-colors">
+                <div className="text-primary-blue font-telegraf font-bold text-sm">
                   Részletek →
                 </div>
               </div>
@@ -155,18 +155,18 @@ export default function Szolgaltatasok() {
 
             {/* Kötelező kivitelezői felelősségbiztosítás - CLICKABLE */}
             <Link href="/szolgaltatasok/kotelezo-kivitelezoi-felelossegbiztositas">
-              <div className="bg-primary-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:border-yellow-400 transition-all duration-300 h-full cursor-pointer group shadow-lg">
-                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-white uppercase group-hover:text-highlight-blue transition-colors">
+              <div className="bg-highlight-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:bg-yellow-400 transition-all duration-300 h-full cursor-pointer group shadow-lg">
+                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-primary-blue uppercase">
                   Kötelező kivitelezői felelősségbiztosítás
                 </h3>
-                <p className="text-white font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
+                <p className="text-primary-blue font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
                   A törvény által előírt biztosítás, amely a kivitelezési
                   tevékenység során okozott károkra nyújt fedezetet. Előnye,
                   hogy védi a kivitelezőt a váratlan anyagi terhektől, és
                   biztosítja a megrendelők számára az esetleges károk
                   megtérítését.
                 </p>
-                <div className="text-highlight-blue font-telegraf font-bold text-sm group-hover:text-yellow-400 transition-colors">
+                <div className="text-primary-blue font-telegraf font-bold text-sm">
                   Részletek →
                 </div>
               </div>
@@ -183,6 +183,27 @@ export default function Szolgaltatasok() {
                 Előnye, hogy fedezi a jogi költségeket és a megítélt kártérítési
                 összegeket.
               </p>
+            </div>
+
+            {/* CTA Card - Meglévő szerződés átnézetése */}
+            <div className="bg-secondary-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg h-full shadow-lg flex flex-col justify-center">
+              <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-white uppercase text-center">
+                Van már szerződése?
+              </h3>
+              <p className="text-white font-telegraf text-sm mb-4 md:mb-6 leading-relaxed text-center">
+                Nézzük meg, van-e jobb! A meglévő szerződés felülvizsgálata
+                ingyenes és kötelezettségmentes.
+              </p>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-button text-sm"
+                >
+                  Meglévő szerződés felülvizsgálata
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -209,7 +230,7 @@ export default function Szolgaltatasok() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+                className="cta-button text-base md:text-lg"
               >
                 Ajánlatok összehasonlítása
               </a>
@@ -217,7 +238,7 @@ export default function Szolgaltatasok() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+                className="cta-button text-base md:text-lg"
               >
                 Meglévő szerződés felülvizsgálata
               </a>

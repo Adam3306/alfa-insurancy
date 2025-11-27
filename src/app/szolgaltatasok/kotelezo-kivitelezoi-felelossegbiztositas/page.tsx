@@ -81,7 +81,7 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+                className="cta-button text-base md:text-lg"
               >
                 AJÁNLATKÉRÉS
               </a>
@@ -229,17 +229,6 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
                 quality={80}
               />
             </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
-            >
-              AJÁNLATKÉRÉS
-            </a>
           </div>
         </div>
       </section>
@@ -486,17 +475,6 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
               </table>
             </div>
           </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
-            >
-              AJÁNLATKÉRÉS
-            </a>
-          </div>
         </div>
       </section>
 
@@ -591,7 +569,7 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
               href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue text-center"
+              className="cta-button"
             >
               INGYENES AJÁNLATKÉRÉS
             </a>

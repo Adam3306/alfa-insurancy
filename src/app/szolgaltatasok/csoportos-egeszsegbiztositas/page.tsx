@@ -65,7 +65,7 @@ export default function CsoportosEgeszsegbiztositas() {
                 href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+                className="cta-button text-base md:text-lg"
               >
                 AJÁNLATKÉRÉS
               </a>
@@ -150,14 +150,16 @@ export default function CsoportosEgeszsegbiztositas() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-primary-blue border-2 border-highlight-blue p-6 md:p-8 rounded-lg">
             <p className="text-white font-telegraf text-base md:text-lg mb-6">
-              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a részleteket, én pedig összehasonlítom a legjobb piaci ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
+              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a
+              részleteket, én pedig összehasonlítom a legjobb piaci
+              ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+                className="cta-button text-base md:text-lg"
               >
                 Ajánlatok összehasonlítása
               </a>
@@ -165,7 +167,7 @@ export default function CsoportosEgeszsegbiztositas() {
                 href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+                className="cta-button text-base md:text-lg"
               >
                 Meglévő szerződés felülvizsgálata
               </a>
@@ -175,9 +177,9 @@ export default function CsoportosEgeszsegbiztositas() {
       </section>
 
       {/* Problem Solving Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
             Milyen problémákra nyújt megoldást a céges egészségbiztosítás?
           </h2>
           <div className="text-lg font-telegraf text-gray-200 leading-relaxed space-y-4 mb-8 max-w-5xl mx-auto">
@@ -246,24 +248,10 @@ export default function CsoportosEgeszsegbiztositas() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-          >
-            Csoportos egészségbiztosítás ajánlatkérés
-          </a>
-        </div>
-      </section>
-
       {/* Benefits Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl sm:text-sm md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl sm:text-sm md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
             Előnyök a cég számára: Miért válasszon vállalati
             egészségbiztosítást?
           </h2>
@@ -392,25 +380,10 @@ export default function CsoportosEgeszsegbiztositas() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-          >
-            Ingyenes ajánlatkérés
-          </a>
-        </div>
-      </section>
-
       {/* Employee Benefits Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl sm:text-sm md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl sm:text-sm md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
             Előnyök a munkavállalók számára: Mit nyújt a céges
             egészségbiztosítás a dolgozóknak?
           </h2>
@@ -554,25 +527,10 @@ export default function CsoportosEgeszsegbiztositas() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-          >
-            Ajánlatkérés csoportos egészségbiztosításra
-          </a>
-        </div>
-      </section>
-
       {/* Coverage Details Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
             Mit tartalmaz a szolgáltatásfinanszírozó egészségbiztosítás?
           </h2>
 
@@ -762,25 +720,10 @@ export default function CsoportosEgeszsegbiztositas() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block border-2 border-highlight-blue text-highlight-blue font-bold py-4 px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-lg"
-          >
-            Kérjen ajánlatot
-          </a>
-        </div>
-      </section>
-
       {/* Types and Differences Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
             Miben más a céges (csoportos) egészségbiztosítás?
           </h2>
 
@@ -907,25 +850,10 @@ export default function CsoportosEgeszsegbiztositas() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-          >
-            Ajánlatkérés
-          </a>
-        </div>
-      </section>
-
       {/* Costs and Tax Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
             Költségek és Adózás: Mennyibe kerül a céges egészségbiztosítás?
           </h2>
 
@@ -985,25 +913,10 @@ export default function CsoportosEgeszsegbiztositas() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-          >
-            Ingyenes ajánlatkérés csoportos egészségbiztosításra
-          </a>
-        </div>
-      </section>
-
       {/* Implementation Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl md:text-4xl font-bold mb-8 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
             A Megfelelő Megoldás Kiválasztása: Hogyan találja meg az optimális
             céges egészségbiztosítást?
           </h2>
@@ -1057,7 +970,7 @@ export default function CsoportosEgeszsegbiztositas() {
               href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
+              className="cta-button"
             >
               Ajánlatkérés csoportos egészségbiztosításra
             </a>
@@ -1069,10 +982,7 @@ export default function CsoportosEgeszsegbiztositas() {
             </a>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/kapcsolat"
-              className="bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-            >
+            <a href="/kapcsolat" className="cta-button">
               Kérek visszahívást a céges egészségbiztosításról
             </a>
           </div>

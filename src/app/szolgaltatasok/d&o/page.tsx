@@ -54,7 +54,7 @@ export default function DAndO() {
                 href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
+                className="cta-button text-base md:text-lg"
               >
                 AJÁNLATKÉRÉS
               </a>
@@ -149,7 +149,9 @@ export default function DAndO() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-secondary-blue border-2 border-highlight-blue p-6 md:p-8 rounded-lg">
             <p className="text-white font-telegraf text-base md:text-lg mb-6">
-              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a részleteket, én pedig összehasonlítom a legjobb piaci ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
+              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a
+              részleteket, én pedig összehasonlítom a legjobb piaci
+              ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -164,7 +166,7 @@ export default function DAndO() {
                 href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+                className="cta-button text-base md:text-lg"
               >
                 Meglévő szerződés felülvizsgálata
               </a>
@@ -175,14 +177,14 @@ export default function DAndO() {
 
       {/* Protected Areas Section */}
       <section
-        className="py-12 md:py-20 px-4 sm:px-12 lg:px-24 bg-[#0C1D3D]"
+        className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-[#0C1D3D]"
         id="areas"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center font-antonio tracking-wider uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-center font-antonio tracking-wider uppercase">
             MIK AZOK A VEZETŐI KOCKÁZATOK, AMIKRE ÉRDEMES FELKÉSZÜLNI?
           </h2>
-          <p className="text-base md:text-lg font-telegraf text-center mb-10 md:mb-14 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg font-telegraf text-center mb-6 md:mb-8 max-w-3xl mx-auto">
             Vezetőként számos helyzet adódhat, amikor a Ptk. alapján személyes
             felelősség merülhet fel. Fontos, hogy ismerje ezeket, hogy
             felkészülhessen.
@@ -293,24 +295,10 @@ export default function DAndO() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-          >
-            D&O biztosítás ajánlatkérés
-          </a>
-        </div>
-      </section>
-
       {/* D&O Insurance Explanation Section */}
-      <section className="py-12 md:py-20 px-4 sm:px-12 lg:px-24 bg-primary-blue border-t border-gold">
+      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue border-t border-gold">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-center font-antonio tracking-wider uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-center font-antonio tracking-wider uppercase">
             MIBEN SEGÍT AZ ÜGYVEZETŐI FELELŐSSÉGBIZTOSÍTÁS?
           </h2>
           <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 text-center font-antonio">
@@ -320,7 +308,7 @@ export default function DAndO() {
             Az Ügyvezetői Szakmai Felelősségbiztosítás az a pajzs, amire
             szüksége van a fent említett kockázatokkal szemben.
           </p>
-          <p className="text-base md:text-lg font-telegraf text-center mb-8 md:mb-10 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg font-telegraf text-center mb-6 md:mb-8 max-w-2xl mx-auto">
             Ez a biztosítás nem a hibákat akadályozza meg, hanem azok pénzügyi
             következményeitől véd meg.
           </p>
@@ -337,27 +325,13 @@ export default function DAndO() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-          >
-            Ingyenes D&O ajánlatkérés
-          </a>
-        </div>
-      </section>
-
       {/* D&O Insurance Benefits */}
       <section
-        className="py-12 md:py-20 px-4 sm:px-12 lg:px-24 bg-primary-blue border-t border-gold"
+        className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue border-t border-gold"
         id="benefits"
       >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 md:mb-4 text-center font-antonio tracking-wider uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 md:mb-3 text-center font-antonio tracking-wider uppercase">
             MIBEN SEGÍT AZ ÜGYVEZETŐI FELELŐSSÉGBIZTOSÍTÁS?
           </h2>
           <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4 text-center font-antonio">
@@ -490,20 +464,6 @@ export default function DAndO() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
-        <div className="max-w-4xl mx-auto text-center">
-          <a
-            href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block border-2 border-highlight-blue text-highlight-blue font-bold py-4 px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-lg"
-          >
-            Kérjen D&O ajánlatot
-          </a>
-        </div>
-      </section>
-
       {/* About Section */}
       <About />
 
@@ -515,7 +475,9 @@ export default function DAndO() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-secondary-blue border-2 border-highlight-blue p-6 md:p-8 rounded-lg mb-6">
             <p className="text-white font-telegraf text-base md:text-lg mb-6">
-              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a részleteket, én pedig összehasonlítom a legjobb piaci ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
+              Van már szerződése? Nézzük meg, van-e jobb! Küldje el a
+              részleteket, én pedig összehasonlítom a legjobb piaci
+              ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -530,20 +492,12 @@ export default function DAndO() {
                 href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-highlight-blue text-highlight-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-highlight-blue hover:text-primary-blue transition-colors font-telegraf text-base md:text-lg text-center"
+                className="cta-button text-base md:text-lg"
               >
                 Meglévő szerződés felülvizsgálata
               </a>
             </div>
           </div>
-          <a
-            href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-highlight-blue text-primary-blue font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-lg border-2 border-highlight-blue"
-          >
-            D&O biztosítás ajánlatkérés
-          </a>
         </div>
       </section>
 

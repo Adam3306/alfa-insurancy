@@ -53,10 +53,7 @@ const Navbar = () => {
               href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm ml-2 transition-colors duration-200 bg-[#E2C044] text-[#0C1D3D] border-[#E2C044] hover:bg-[#0C1D3D] hover:text-[#E2C044] hover:border-[#E2C044]"
-              style={{
-                boxShadow: "0 2px 12px 0 rgba(226,192,68,0.10)",
-              }}
+              className="cta-button ml-2"
             >
               Ingyenes Ajánlat
             </a>
@@ -119,10 +116,7 @@ const Navbar = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2 rounded-md border-2 font-telegraf font-bold shadow-sm mt-2 transition-colors duration-200 text-center bg-[#E2C044] text-[#0C1D3D] border-[#E2C044] hover:bg-[#0C1D3D] hover:text-[#E2C044] hover:border-[#E2C044]"
-            style={{
-              boxShadow: "0 2px 12px 0 rgba(226,192,68,0.10)",
-            }}
+            className="cta-button mt-2"
           >
             Ingyenes Ajánlat
           </a>

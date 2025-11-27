@@ -82,7 +82,7 @@ export default function Home() {
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-md hover:bg-yellow-400 transition-colors font-telegraf text-center"
+                    className="cta-button"
                   >
                     Kérek Ingyenes Ajánlatot Kockázatmentesen!
                   </a>
