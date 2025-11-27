@@ -1,6 +1,7 @@
 import Footer from "../../components/Footer";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Breadcrumb from "../../components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
@@ -31,6 +32,13 @@ export const metadata: Metadata = {
 export default function CsoportosEgeszsegbiztositas() {
   return (
     <div className="text-white bg-primary-blue">
+      <Breadcrumb
+        items={[
+          { label: "Főoldal", href: "/" },
+          { label: "Szolgáltatások", href: "/szolgaltatasok" },
+          { label: "Csoportos Egészségbiztosítás" },
+        ]}
+      />
       {/* Hero Section */}
       <header
         className="flex flex-col md:flex-row min-h-[60vh] md:min-h-[60vh] items-center md:items-stretch relative bg-[#3A5D98] px-2 sm:px-4"

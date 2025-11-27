@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 
 export const metadata: Metadata = {
   title:
@@ -240,6 +241,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* End Google Tag Manager (noscript) */}
         <Navbar />
         <div className="pt-16">{children}</div>
+        <ScrollToTop />
         <Analytics />
       </body>
     </html>

@@ -4,10 +4,18 @@ import { Suspense } from "react";
 import About from "../../components/About";
 import FAQs from "../../components/FAQs";
 import Footer from "../../components/Footer";
+import Breadcrumb from "../../components/Breadcrumb";
 
 export default function DAndO() {
   return (
     <div className="text-white bg-primary-blue">
+      <Breadcrumb
+        items={[
+          { label: "Főoldal", href: "/" },
+          { label: "Szolgáltatások", href: "/szolgaltatasok" },
+          { label: "D&O Biztosítás" },
+        ]}
+      />
       {/* Hero Section */}
       <section
         className="flex flex-col md:flex-row min-h-[70vh] md:min-h-[60vh] items-center md:items-stretch relative bg-[#3A5D98] px-2 sm:px-4"
