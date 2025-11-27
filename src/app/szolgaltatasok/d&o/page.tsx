@@ -181,7 +181,7 @@ export default function DAndO() {
         id="areas"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-center font-antonio tracking-wider uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-center font-antonio tracking-wider uppercase">
             MIK AZOK A VEZETŐI KOCKÁZATOK, AMIKRE ÉRDEMES FELKÉSZÜLNI?
           </h2>
           <p className="text-base md:text-lg font-telegraf text-center mb-6 md:mb-8 max-w-3xl mx-auto">

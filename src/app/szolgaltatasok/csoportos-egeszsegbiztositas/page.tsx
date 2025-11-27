@@ -177,9 +177,9 @@ export default function CsoportosEgeszsegbiztositas() {
       </section>
 
       {/* Problem Solving Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section className="py-6 md:py-10 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center font-antonio text-white uppercase tracking-wider">
             Milyen problémákra nyújt megoldást a céges egészségbiztosítás?
           </h2>
           <div className="text-lg font-telegraf text-gray-200 leading-relaxed space-y-4 mb-8 max-w-5xl mx-auto">
@@ -249,9 +249,9 @@ export default function CsoportosEgeszsegbiztositas() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+      <section className="py-6 md:py-10 px-4 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl sm:text-sm md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl sm:text-sm md:text-4xl font-bold mb-4 text-center font-antonio text-white uppercase tracking-wider">
             Előnyök a cég számára: Miért válasszon vállalati
             egészségbiztosítást?
           </h2>
@@ -381,9 +381,9 @@ export default function CsoportosEgeszsegbiztositas() {
         </div>
       </section>
       {/* Employee Benefits Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section className="py-6 md:py-10 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl sm:text-sm md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl sm:text-sm md:text-4xl font-bold mb-4 text-center font-antonio text-white uppercase tracking-wider">
             Előnyök a munkavállalók számára: Mit nyújt a céges
             egészségbiztosítás a dolgozóknak?
           </h2>
@@ -528,9 +528,9 @@ export default function CsoportosEgeszsegbiztositas() {
         </div>
       </section>
       {/* Coverage Details Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+      <section className="py-6 md:py-10 px-4 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl md:text-4xl font-bold mb-4 text-center font-antonio text-white uppercase tracking-wider">
             Mit tartalmaz a szolgáltatásfinanszírozó egészségbiztosítás?
           </h2>
 
@@ -721,9 +721,9 @@ export default function CsoportosEgeszsegbiztositas() {
         </div>
       </section>
       {/* Types and Differences Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section className="py-6 md:py-10 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl md:text-4xl font-bold mb-4 text-center font-antonio text-white uppercase tracking-wider">
             Miben más a céges (csoportos) egészségbiztosítás?
           </h2>
 
@@ -851,9 +851,9 @@ export default function CsoportosEgeszsegbiztositas() {
         </div>
       </section>
       {/* Costs and Tax Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-primary-blue">
+      <section className="py-6 md:py-10 px-4 sm:px-12 lg:px-24 bg-primary-blue">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl md:text-4xl font-bold mb-4 text-center font-antonio text-white uppercase tracking-wider">
             Költségek és Adózás: Mennyibe kerül a céges egészségbiztosítás?
           </h2>
 
@@ -914,9 +914,9 @@ export default function CsoportosEgeszsegbiztositas() {
         </div>
       </section>
       {/* Implementation Section */}
-      <section className="py-8 md:py-12 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
+      <section className="py-6 md:py-10 px-4 sm:px-12 lg:px-24 bg-secondary-blue">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl md:text-4xl font-bold mb-6 text-center font-antonio text-white uppercase tracking-wider">
+          <h2 className="text-xl md:text-4xl font-bold mb-4 text-center font-antonio text-white uppercase tracking-wider">
             A Megfelelő Megoldás Kiválasztása: Hogyan találja meg az optimális
             céges egészségbiztosítást?
           </h2>
