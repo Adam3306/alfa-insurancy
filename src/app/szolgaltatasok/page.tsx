@@ -4,13 +4,15 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Biztosítási Szolgáltatások | D&O, Céges Egészségbiztosítás, Társasházbiztosítás",
+    "Biztosítási Szolgáltatások | D&O, Céges Egészségbiztosítás, Magán Egészségügyi Biztosítás, Társasházbiztosítás",
   description:
-    "Teljes körű biztosítási szolgáltatások Budapesten. D&O biztosítás, céges egészségbiztosítás, társasházbiztosítás, üzemzünet és építési szerelési biztosítás. Független alkusz.",
+    "Teljes körű biztosítási szolgáltatások Budapesten. D&O biztosítás, céges egészségbiztosítás, magán egészségügyi biztosítás, társasházbiztosítás, üzemzünet és építési szerelési biztosítás. Független alkusz.",
   keywords: [
     "biztosítási szolgáltatások",
     "D&O biztosítás",
     "céges egészségbiztosítás",
+    "magán egészségügyi biztosítás",
+    "magán egészségbiztosítás",
     "társasházbiztosítás",
     "üzemzünet biztosítás",
     "építési szerelési biztosítás",
@@ -98,6 +100,25 @@ export default function Szolgaltatasok() {
                   ellátás, szűrővizsgálatok térítése. Előnye, hogy növeli a
                   munkavállalói elégedettséget és hűséget, miközben hozzájárul
                   az egészségesebb és produktívabb munkaerőhöz.
+                </p>
+                <div className="text-primary-blue font-telegraf font-bold text-sm">
+                  Részletek →
+                </div>
+              </div>
+            </Link>
+
+            {/* Magán egészségügyi biztosítás - CLICKABLE */}
+            <Link href="/szolgaltatasok/magan-egeszsegugy-biztositas">
+              <div className="bg-highlight-blue border-2 border-highlight-blue p-4 md:p-6 rounded-lg hover:bg-yellow-400 transition-all duration-300 h-full cursor-pointer group shadow-lg">
+                <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4 font-antonio text-primary-blue uppercase">
+                  Magán egészségügyi biztosítás
+                </h3>
+                <p className="text-primary-blue font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
+                  Gyors hozzáférés minőségi magánorvosi ellátáshoz, szűrővizsgálatok,
+                  diagnosztika és műtétek térítése. Előnye, hogy kiszámítható
+                  költségekkel biztosítja a szakszerű magánorvosi ellátást, nincs
+                  várólista, és hozzáférhet a legjobb orvosokhoz és
+                  magánkórházakhoz.
                 </p>
                 <div className="text-primary-blue font-telegraf font-bold text-sm">
                   Részletek →
