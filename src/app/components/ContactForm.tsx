@@ -6,7 +6,6 @@ export default function ContactForm() {
     name: "",
     email: "",
     phone: "",
-    subject: "",
     message: "",
   });
   const [status, setStatus] = useState<{
@@ -50,7 +49,6 @@ export default function ContactForm() {
           name: "",
           email: "",
           phone: "",
-          subject: "",
           message: "",
         });
       } else {
@@ -73,10 +71,10 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       {status.type && (
         <div
-          className={`p-4 rounded-md ${
+          className={`p-4 rounded-md font-telegraf ${
             status.type === "success"
-              ? "bg-green-100 text-green-800 border border-green-200"
-              : "bg-red-100 text-red-800 border border-red-200"
+              ? "bg-green-500/20 text-green-300 border border-green-400/50"
+              : "bg-red-500/20 text-red-300 border border-red-400/50"
           }`}
         >
           {status.message}
@@ -134,24 +132,6 @@ export default function ContactForm() {
 
       <div>
         <label
-          htmlFor="subject"
-          className="block mb-2 font-telegraf text-white"
-        >
-          Tárgy
-        </label>
-        <input
-          type="text"
-          id="subject"
-          value={formData.subject}
-          onChange={handleChange}
-          className="w-full p-3 rounded-md bg-secondary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue font-telegraf"
-          placeholder="Miben segíthetek?"
-          required
-        />
-      </div>
-
-      <div>
-        <label
           htmlFor="message"
           className="block mb-2 font-telegraf text-white"
         >
@@ -173,7 +153,7 @@ export default function ContactForm() {
         disabled={isSubmitting}
         className="w-full bg-highlight-blue text-primary-blue font-bold py-3 px-6 rounded-md hover:bg-yellow-400 transition-colors font-telegraf text-lg disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {isSubmitting ? "KÜLDÉS..." : "ÜZENET KÜLDÉSE"}
+        {isSubmitting ? "KÜLDÉS..." : "AJÁNLATKÉRÉS KÜLDÉSE"}
       </button>
     </form>
   );

@@ -114,11 +114,11 @@ export default function Szolgaltatasok() {
                   Magán egészségügyi biztosítás
                 </h3>
                 <p className="text-primary-blue font-telegraf text-sm mb-4 md:mb-6 leading-relaxed">
-                  Gyors hozzáférés minőségi magánorvosi ellátáshoz, szűrővizsgálatok,
-                  diagnosztika és műtétek térítése. Előnye, hogy kiszámítható
-                  költségekkel biztosítja a szakszerű magánorvosi ellátást, nincs
-                  várólista, és hozzáférhet a legjobb orvosokhoz és
-                  magánkórházakhoz.
+                  Gyors hozzáférés minőségi magánorvosi ellátáshoz,
+                  szűrővizsgálatok, diagnosztika és műtétek térítése. Előnye,
+                  hogy kiszámítható költségekkel biztosítja a szakszerű
+                  magánorvosi ellátást, nincs várólista, és hozzáférhet a
+                  legjobb orvosokhoz és magánkórházakhoz.
                 </p>
                 <div className="text-primary-blue font-telegraf font-bold text-sm">
                   Részletek →

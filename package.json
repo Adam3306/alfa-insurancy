@@ -11,14 +11,13 @@
   "dependencies": {
     "@vercel/analytics": "^1.6.1",
     "next": "^15.5.7",
-    "nodemailer": "^7.0.11",
     "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "react-dom": "^19.2.1",
+    "resend": "^6.5.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
     "@types/node": "^20.19.25",
-    "@types/nodemailer": "^6.4.21",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.1",

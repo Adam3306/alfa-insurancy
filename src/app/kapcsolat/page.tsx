@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 
 export default function Kapcsolat() {
   return (
@@ -87,7 +88,7 @@ export default function Kapcsolat() {
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-r from-highlight-blue/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
                   <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-highlight-blue/50 transition-all duration-300">
-                    <div className="text-center">
+                    <div className="text-center mb-6">
                       <div className="bg-gradient-to-br from-highlight-blue to-yellow-400 p-4 rounded-2xl mb-6 inline-block shadow-2xl">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -112,15 +113,8 @@ export default function Kapcsolat() {
                         kapcsolatot. A szolgáltatás ingyenes és
                         kötelezettségmentes.
                       </p>
-                      <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-button"
-                      >
-                        AJÁNLATKÉRÉS KÉRDŐÍV
-                      </a>
                     </div>
+                    <ContactForm />
                   </div>
                 </div>
 
