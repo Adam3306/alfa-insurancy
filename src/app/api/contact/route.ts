@@ -9,9 +9,9 @@ export async function POST(request: NextRequest) {
     const { name, email, phone, message } = formData;
 
     // Validate form fields
-    if (!name || !email || !message) {
+    if (!name || !email || !phone || !message) {
       return NextResponse.json(
-        { message: "Név, email és üzenet mezők kötelezőek" },
+        { message: "Név, email, telefon és üzenet mezők kötelezőek" },
         { status: 400 }
       );
     }
@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
       text: `
 Név: ${name}
 Email: ${email}
-Telefon: ${phone || "Nem adott meg"}
+Telefon: ${phone}
 
 Üzenet:
 ${message}

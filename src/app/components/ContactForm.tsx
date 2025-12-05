@@ -26,7 +26,7 @@ export default function ContactForm() {
 
   // Telefonszám validáció (magyar formátumok: +36, 06, stb.)
   const validatePhone = (phone: string): boolean => {
-    if (!phone || phone.trim() === "") return true; // Opcionális mező
+    if (!phone || phone.trim() === "") return false; // Kötelező mező
     // Egyszerűsített regex: számok, szóközök, kötőjelek, + jel
     const simplePhoneRegex = /^[\d\s\-\+\(\)]+$/;
     const digitsOnly = phone.replace(/[\s\-\(\)\+]/g, "");
@@ -62,8 +62,13 @@ export default function ContactForm() {
       }
     }
 
-    if (id === "phone" && value) {
-      if (!validatePhone(value)) {
+    if (id === "phone") {
+      if (!value || value.trim() === "") {
+        setErrors({
+          ...errors,
+          phone: "A telefonszám mező kötelező",
+        });
+      } else if (!validatePhone(value)) {
         setErrors({
           ...errors,
           phone:
@@ -91,7 +96,9 @@ export default function ContactForm() {
       newErrors.email = "Kérem adjon meg egy érvényes email címet";
     }
 
-    if (formData.phone && !validatePhone(formData.phone)) {
+    if (!formData.phone || formData.phone.trim() === "") {
+      newErrors.phone = "A telefonszám mező kötelező";
+    } else if (!validatePhone(formData.phone)) {
       newErrors.phone =
         "Kérem adjon meg egy érvényes telefonszámot (pl. +36 30 123 4567)";
     }
@@ -204,7 +211,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="phone" className="block mb-2 font-telegraf text-white">
-          Telefon
+          Telefon *
         </label>
         <input
           type="tel"
@@ -217,6 +224,7 @@ export default function ContactForm() {
               : "border-light-blue focus:ring-2 focus:ring-highlight-blue"
           } text-white focus:outline-none font-telegraf`}
           placeholder="+36 30 123 4567"
+          required
         />
         {errors.phone && (
           <p className="mt-1 text-sm text-red-300 font-telegraf">
