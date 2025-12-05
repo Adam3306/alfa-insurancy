@@ -49,14 +49,12 @@ const Navbar = () => {
             >
               Kapcsolat
             </Link>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/kapcsolat"
               className="cta-button ml-2"
             >
               Ingyenes Ajánlat
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -112,14 +110,12 @@ const Navbar = () => {
           >
             Kapcsolat
           </Link>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/kapcsolat"
             className="cta-button mt-2"
           >
             Ingyenes Ajánlat
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

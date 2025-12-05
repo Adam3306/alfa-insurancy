@@ -58,12 +58,7 @@ export default function DAndO() {
               </span>
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start mt-6">
-              <a
-                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button text-base md:text-lg"
-              >
+              <a href="/kapcsolat" className="cta-button text-base md:text-lg">
                 AJÁNLATKÉRÉS
               </a>
               <a
@@ -163,19 +158,14 @@ export default function DAndO() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+                href="/kapcsolat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
               >
                 Ajánlatok összehasonlítása
               </a>
-              <a
-                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button text-base md:text-lg"
-              >
+              <a href="/kapcsolat" className="cta-button text-base md:text-lg">
                 Meglévő szerződés felülvizsgálata
               </a>
             </div>
@@ -489,19 +479,14 @@ export default function DAndO() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
+                href="/kapcsolat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-highlight-blue text-primary-blue font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-yellow-400 transition-colors font-telegraf text-base md:text-lg border-2 border-highlight-blue text-center"
               >
                 Ajánlatok összehasonlítása
               </a>
-              <a
-                href="https://docs.google.com/forms/d/1uwj1-h958UBc_qpju5sziMchHjPsls5XCiQiC6M7oiQ/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button text-base md:text-lg"
-              >
+              <a href="/kapcsolat" className="cta-button text-base md:text-lg">
                 Meglévő szerződés felülvizsgálata
               </a>
             </div>

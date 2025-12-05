@@ -85,12 +85,7 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
               Szerint!
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start mt-6">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button text-base md:text-lg"
-              >
+              <a href="/kapcsolat" className="cta-button text-base md:text-lg">
                 AJÁNLATKÉRÉS
               </a>
               <a
@@ -574,7 +569,7 @@ export default function KotelezoKivitelezoifelelossegbiztositas() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+              href="/kapcsolat"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button"

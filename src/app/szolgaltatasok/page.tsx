@@ -54,17 +54,13 @@ export default function Szolgaltatasok() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/kapcsolat"
                   className="cta-button text-base md:text-lg"
                 >
                   Ajánlatok összehasonlítása
                 </a>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/kapcsolat"
                   className="cta-button text-base md:text-lg"
                 >
                   Meglévő szerződés felülvizsgálata
@@ -217,7 +213,7 @@ export default function Szolgaltatasok() {
               </p>
               <div className="flex flex-col gap-2">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                  href="/kapcsolat"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cta-button text-sm"
@@ -248,7 +244,7 @@ export default function Szolgaltatasok() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                href="/kapcsolat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-button text-base md:text-lg"
@@ -256,7 +252,7 @@ export default function Szolgaltatasok() {
                 Ajánlatok összehasonlítása
               </a>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScNfrCzGAdZlq-Ijq3P8GVRrrEyDidGS9V4r7tKFcfAxZY68w/viewform"
+                href="/kapcsolat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-button text-base md:text-lg"

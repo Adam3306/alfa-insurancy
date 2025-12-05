@@ -44,9 +44,7 @@ const About = () => {
 
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-6 md:mt-8">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdf6TeknsM2vU5rFr1hxXf_Sal_udiGK4vAOIEyJD0unuLs1g/viewform?usp=header"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/kapcsolat"
                   className="cta-button text-sm md:text-base"
                 >
                   Kérek Ingyenes Ajánlatot Kockázatmentesen!

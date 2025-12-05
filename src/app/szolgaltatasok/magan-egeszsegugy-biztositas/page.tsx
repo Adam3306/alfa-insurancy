@@ -67,12 +67,7 @@ export default function MaganEgeszsegugyBiztositas() {
               Gyors Hozzáférés Minőségi Magánorvosi Ellátáshoz
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
-              <a
-                href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button text-base md:text-lg"
-              >
+              <a href="/kapcsolat" className="cta-button text-base md:text-lg">
                 AJÁNLATKÉRÉS
               </a>
               <a
@@ -150,20 +145,10 @@ export default function MaganEgeszsegugyBiztositas() {
               ajánlatokkal. A szolgáltatás ingyenes és kötelezettségmentes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button text-base md:text-lg"
-              >
+              <a href="/kapcsolat" className="cta-button text-base md:text-lg">
                 Ajánlatok összehasonlítása
               </a>
-              <a
-                href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button text-base md:text-lg"
-              >
+              <a href="/kapcsolat" className="cta-button text-base md:text-lg">
                 Meglévő szerződés felülvizsgálata
               </a>
             </div>
@@ -862,7 +847,7 @@ export default function MaganEgeszsegugyBiztositas() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <a
-              href="https://docs.google.com/forms/d/1XD6RLoYR_u5C_KI46Zx2ZZwB1hFgmfxvSoUgWRjDU8Q/viewform"
+              href="/kapcsolat"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button"
