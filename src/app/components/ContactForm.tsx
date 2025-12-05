@@ -12,21 +12,97 @@ export default function ContactForm() {
     type: "success" | "error" | null;
     message: string;
   }>({ type: null, message: "" });
+  const [errors, setErrors] = useState<{
+    email?: string;
+    phone?: string;
+  }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Email validáció
+  const validateEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  // Telefonszám validáció (magyar formátumok: +36, 06, stb.)
+  const validatePhone = (phone: string): boolean => {
+    if (!phone || phone.trim() === "") return true; // Opcionális mező
+    // Egyszerűsített regex: számok, szóközök, kötőjelek, + jel
+    const simplePhoneRegex = /^[\d\s\-\+\(\)]+$/;
+    const digitsOnly = phone.replace(/[\s\-\(\)\+]/g, "");
+    return (
+      simplePhoneRegex.test(phone) &&
+      digitsOnly.length >= 9 &&
+      digitsOnly.length <= 15
+    );
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
+    const { id, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.id]: e.target.value,
+      [id]: value,
     });
+
+    // Validáció valós időben
+    if (id === "email" && value) {
+      if (!validateEmail(value)) {
+        setErrors({
+          ...errors,
+          email: "Kérem adjon meg egy érvényes email címet",
+        });
+      } else {
+        setErrors((prev) => {
+          const newErrors = { ...prev };
+          delete newErrors.email;
+          return newErrors;
+        });
+      }
+    }
+
+    if (id === "phone" && value) {
+      if (!validatePhone(value)) {
+        setErrors({
+          ...errors,
+          phone:
+            "Kérem adjon meg egy érvényes telefonszámot (pl. +36 30 123 4567)",
+        });
+      } else {
+        setErrors((prev) => {
+          const newErrors = { ...prev };
+          delete newErrors.phone;
+          return newErrors;
+        });
+      }
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setStatus({ type: null, message: "" });
+
+    // Validáció submit előtt
+    const newErrors: { email?: string; phone?: string } = {};
+
+    if (!validateEmail(formData.email)) {
+      newErrors.email = "Kérem adjon meg egy érvényes email címet";
+    }
+
+    if (formData.phone && !validatePhone(formData.phone)) {
+      newErrors.phone =
+        "Kérem adjon meg egy érvényes telefonszámot (pl. +36 30 123 4567)";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      setIsSubmitting(false);
+      return;
+    }
+
+    setErrors({});
 
     try {
       const response = await fetch("/api/contact", {
@@ -51,6 +127,7 @@ export default function ContactForm() {
           phone: "",
           message: "",
         });
+        setErrors({});
       } else {
         setStatus({
           type: "error",
@@ -109,10 +186,19 @@ export default function ContactForm() {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-3 rounded-md bg-secondary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue font-telegraf"
+            className={`w-full p-3 rounded-md bg-secondary-blue border ${
+              errors.email
+                ? "border-red-400 focus:ring-2 focus:ring-red-400"
+                : "border-light-blue focus:ring-2 focus:ring-highlight-blue"
+            } text-white focus:outline-none font-telegraf`}
             placeholder="email@pelda.hu"
             required
           />
+          {errors.email && (
+            <p className="mt-1 text-sm text-red-300 font-telegraf">
+              {errors.email}
+            </p>
+          )}
         </div>
       </div>
 
@@ -125,9 +211,18 @@ export default function ContactForm() {
           id="phone"
           value={formData.phone}
           onChange={handleChange}
-          className="w-full p-3 rounded-md bg-secondary-blue border border-light-blue text-white focus:outline-none focus:ring-2 focus:ring-highlight-blue font-telegraf"
-          placeholder="+36 xx xxx xxxx"
+          className={`w-full p-3 rounded-md bg-secondary-blue border ${
+            errors.phone
+              ? "border-red-400 focus:ring-2 focus:ring-red-400"
+              : "border-light-blue focus:ring-2 focus:ring-highlight-blue"
+          } text-white focus:outline-none font-telegraf`}
+          placeholder="+36 30 123 4567"
         />
+        {errors.phone && (
+          <p className="mt-1 text-sm text-red-300 font-telegraf">
+            {errors.phone}
+          </p>
+        )}
       </div>
 
       <div>

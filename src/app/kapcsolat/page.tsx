@@ -4,8 +4,45 @@ import ContactForm from "../components/ContactForm";
 export default function Kapcsolat() {
   return (
     <div className="text-white bg-primary-blue min-h-screen">
-      {/* Contact Information */}
+      {/* Ingyenes Ajánlatkérés Form - Top Section */}
       <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-gradient-to-br from-secondary-blue to-primary-blue">
+        <div className="max-w-4xl mx-auto">
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-highlight-blue/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+            <div className="relative bg-white/10 backdrop-blur-md p-8 md:p-12 rounded-2xl border border-white/20 hover:border-highlight-blue/50 transition-all duration-300">
+              <div className="text-center mb-8">
+                <div className="bg-gradient-to-br from-highlight-blue to-yellow-400 p-4 rounded-2xl mb-6 inline-block shadow-2xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8 text-primary-blue"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 font-antonio text-white">
+                  Ingyenes Ajánlatkérés
+                </h2>
+                <p className="text-white font-telegraf text-lg md:text-xl mb-6 font-medium">
+                  Töltse ki a kérdőívet, és hamarosan felvesszük Önnel a
+                  kapcsolatot. A szolgáltatás ingyenes és kötelezettségmentes.
+                </p>
+              </div>
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Information and Company Details */}
+      <section className="py-12 md:py-16 px-4 sm:px-12 lg:px-24 bg-gradient-to-br from-primary-blue to-secondary-blue">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Details */}
@@ -81,40 +118,6 @@ export default function Kapcsolat() {
                         </a>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                {/* Ajánlatkérés kérdőív */}
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-highlight-blue/20 to-transparent rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                  <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 hover:border-highlight-blue/50 transition-all duration-300">
-                    <div className="text-center mb-6">
-                      <div className="bg-gradient-to-br from-highlight-blue to-yellow-400 p-4 rounded-2xl mb-6 inline-block shadow-2xl">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-8 w-8 text-primary-blue"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                          />
-                        </svg>
-                      </div>
-                      <h3 className="font-bold text-2xl font-antonio text-white mb-4">
-                        Ingyenes Ajánlatkérés
-                      </h3>
-                      <p className="text-light-blue font-telegraf mb-6">
-                        Töltse ki a kérdőívet, és hamarosan felvesszük Önnel a
-                        kapcsolatot. A szolgáltatás ingyenes és
-                        kötelezettségmentes.
-                      </p>
-                    </div>
-                    <ContactForm />
                   </div>
                 </div>
 
